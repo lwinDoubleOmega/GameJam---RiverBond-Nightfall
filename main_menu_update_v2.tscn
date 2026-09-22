@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="PackedScene" path="res://UI_update_v2/main_menu.tscn" id="1_v2_menu"]
+
+[node name="MainMenu" instance=ExtResource("1_v2_menu")]
+gameplay_scene_path = "res://video/intro.tscn"

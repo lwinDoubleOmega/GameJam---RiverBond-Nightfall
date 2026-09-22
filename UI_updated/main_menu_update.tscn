@@ -1,0 +1,187 @@
+[gd_scene format=3 uid="uid://crev2inf1u6xe"]
+
+[ext_resource type="Texture2D" uid="uid://b75wbaejprjc2" path="res://main_menu_background_v2.png" id="2_glbon"]
+[ext_resource type="FontFile" uid="uid://c8gywo0erkpim" path="res://Dark Distance.otf" id="2_jix8l"]
+[ext_resource type="FontFile" uid="uid://cnkbhmia0rd56" path="res://Bitten.ttf" id="3_glbon"]
+[ext_resource type="Script" uid="uid://5k2a3ltekpqy" path="res://main_menu.gd" id="4_menu"]
+[ext_resource type="AudioStream" uid="uid://dsjgjn0gq18xs" path="res://Kraken sounds.mp3" id="5_kraken"]
+[ext_resource type="Texture2D" uid="uid://dwrqmtg33d7fk" path="res://exec-14fa199c-d674-40cf-b161-cc0c6a0d5054.png" id="7_loading"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_vxw1p"]
+texture = ExtResource("2_glbon")
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ro6gw"]
+bg_color = Color(0.41568628, 0, 0, 0.039215688)
+
+[node name="MainMenu" type="Control" unique_id=802171793]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = -142.0
+offset_bottom = -167.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("4_menu")
+
+[node name="Panel" type="Panel" parent="." unique_id=515834295]
+layout_mode = 0
+offset_right = 1150.0
+offset_bottom = 646.0
+theme_override_styles/panel = SubResource("StyleBoxTexture_vxw1p")
+
+[node name="MenuPanel" type="ColorRect" parent="." unique_id=1024829283]
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.46
+anchor_right = 0.46
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.0627451, 0.117647, 0.180392, 0.9)
+
+[node name="Label" type="Label" parent="." unique_id=1928726296]
+layout_mode = 0
+offset_left = 44.0
+offset_top = 67.0
+offset_right = 787.0
+offset_bottom = 191.0
+theme_override_colors/font_color = Color(0.741176, 0.968627, 0.952941, 1)
+theme_override_fonts/font = ExtResource("2_jix8l")
+theme_override_font_sizes/font_size = 58
+text = "River Bound : Nightfall"
+
+[node name="VBoxContainer" type="VBoxContainer" parent="." unique_id=199070468]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -445.0
+offset_top = -17.5
+offset_right = 7.5
+offset_bottom = 381.5
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 24
+
+[node name="Button" type="Button" parent="VBoxContainer" unique_id=678333963]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.875, 0.875, 0.875, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(0.941176, 0.266667, 0.352941, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.941176, 0.266667, 0.352941, 1)
+theme_override_fonts/font = ExtResource("3_glbon")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_ro6gw")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_ro6gw")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ro6gw")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_ro6gw")
+theme_override_styles/focus = SubResource("StyleBoxFlat_ro6gw")
+text = "START GAME"
+
+[node name="Button2" type="Button" parent="VBoxContainer" unique_id=1928617090]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.875, 0.875, 0.875, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(0.941176, 0.266667, 0.352941, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.941176, 0.266667, 0.352941, 1)
+theme_override_fonts/font = ExtResource("3_glbon")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_ro6gw")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_ro6gw")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ro6gw")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_ro6gw")
+theme_override_styles/focus = SubResource("StyleBoxFlat_ro6gw")
+text = "OPTIONS"
+
+[node name="Button3" type="Button" parent="VBoxContainer" unique_id=1793056385]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.875, 0.875, 0.875, 1)
+theme_override_colors/font_pressed_color = Color(1, 1, 1, 1)
+theme_override_colors/font_hover_color = Color(0.941176, 0.266667, 0.352941, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.941176, 0.266667, 0.352941, 1)
+theme_override_fonts/font = ExtResource("3_glbon")
+theme_override_font_sizes/font_size = 30
+theme_override_styles/normal = SubResource("StyleBoxFlat_ro6gw")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_ro6gw")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ro6gw")
+theme_override_styles/disabled = SubResource("StyleBoxFlat_ro6gw")
+theme_override_styles/focus = SubResource("StyleBoxFlat_ro6gw")
+text = "EXIT"
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=370547966]
+position = Vector2(577, 328)
+
+[node name="KrakenIntro" type="AudioStreamPlayer" parent="." unique_id=475338784]
+stream = ExtResource("5_kraken")
+volume_db = -7.0
+autoplay = true
+
+[node name="TransitionLayer" type="CanvasLayer" parent="." unique_id=352234245]
+layer = 100
+
+[node name="LoadingScreen" type="Control" parent="TransitionLayer" unique_id=1026597285]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+[node name="Image" type="TextureRect" parent="TransitionLayer/LoadingScreen" unique_id=1051337197]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("7_loading")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="Shade" type="ColorRect" parent="TransitionLayer/LoadingScreen" unique_id=1799368488]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0.0431373, 0.0862745, 0.141176, 0.22)
+
+[node name="LoadingLabel" type="Label" parent="TransitionLayer/LoadingScreen" unique_id=504908756]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -300.0
+offset_top = -92.0
+offset_right = -50.0
+offset_bottom = -42.0
+grow_horizontal = 0
+grow_vertical = 0
+theme_override_colors/font_color = Color(0.917647, 0.94902, 0.952941, 1)
+theme_override_colors/font_shadow_color = Color(0.0431373, 0.0862745, 0.141176, 0.9)
+theme_override_constants/shadow_offset_x = 3
+theme_override_constants/shadow_offset_y = 3
+theme_override_font_sizes/font_size = 28
+text = "LOADING..."
+horizontal_alignment = 2
+
+[node name="Black" type="ColorRect" parent="TransitionLayer" unique_id=1642175287]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 0)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="TransitionLayer" unique_id=1850597159]

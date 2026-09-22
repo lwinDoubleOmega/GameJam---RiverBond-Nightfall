@@ -1,0 +1,48 @@
+[gd_scene format=3 uid="uid://bwy5pbu1njuxj"]
+
+[ext_resource type="PackedScene" uid="uid://xutoo3hrbouq" path="res://candidate_assets/quaternius_assault_rifle2_1/AssaultRifle2_1.fbx" id="1_gun"]
+[ext_resource type="AudioStream" uid="uid://doenffpej85m2" path="res://assets/audio/rifle_shot.wav" id="2_rifle_shot"]
+
+[sub_resource type="StandardMaterial3D" id="Material_muzzle_flash"]
+shading_mode = 0
+albedo_color = Color(1, 0.94, 0.58, 1)
+
+[sub_resource type="SphereMesh" id="Mesh_muzzle_flash"]
+material = SubResource("Material_muzzle_flash")
+radius = 0.075
+height = 0.15
+radial_segments = 8
+rings = 4
+
+[node name="Gun" type="Node3D" unique_id=940713292]
+
+[node name="Model" parent="." unique_id=1099607231 instance=ExtResource("1_gun")]
+transform = Transform3D(-5.429985e-07, 0, 0.15, 0, 0.15, 0, -0.15, 0, -5.429985e-07, 0, 0, 0)
+
+[node name="Grip" type="Marker3D" parent="." unique_id=618331485]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.02, 0.13)
+
+[node name="Foregrip" type="Marker3D" parent="." unique_id=466428851]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.02, -0.196)
+
+[node name="Muzzle" type="Marker3D" parent="." unique_id=721458300]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.08, -0.55)
+
+[node name="ShotAudio" type="AudioStreamPlayer3D" parent="Muzzle" unique_id=1811381363]
+stream = ExtResource("2_rifle_shot")
+volume_db = -1.0
+unit_size = 6.0
+max_distance = 28.0
+bus = &"SFX"
+
+[node name="MuzzleFlash" type="Node3D" parent="Muzzle" unique_id=1088668864]
+visible = false
+
+[node name="Flash" type="MeshInstance3D" parent="Muzzle/MuzzleFlash" unique_id=1292749266]
+transform = Transform3D(1, 0, 0, 0, 0.65, 0, 0, 0, 2.4, 0, 0, 0)
+mesh = SubResource("Mesh_muzzle_flash")
+
+[node name="Light" type="OmniLight3D" parent="Muzzle/MuzzleFlash" unique_id=106649674]
+light_color = Color(1, 0.54, 0.18, 1)
+light_energy = 2.2
+omni_range = 2.5

@@ -1,0 +1,3265 @@
+[gd_scene format=3 uid="uid://bt541vxalqye3"]
+
+[ext_resource type="PackedScene" uid="uid://cx7d0h4d122ec" path="res://environment/glTF (Godot)/Building_Large_2.gltf" id="1_large"]
+[ext_resource type="PackedScene" uid="uid://fdkluewwthgk" path="res://environment/glTF (Godot)/Building_Medium_2_001.gltf" id="2_medium"]
+[ext_resource type="PackedScene" uid="uid://budjcrv0bqcc5" path="res://environment/glTF (Godot)/Building_Small_1.gltf" id="3_small"]
+[ext_resource type="PackedScene" uid="uid://dk05ca6hsrqy7" path="res://environment/glTF (Godot)/Street_2Lane.gltf" id="4_street"]
+[ext_resource type="PackedScene" uid="uid://dgnncc2ho4oss" path="res://environment/glTF (Godot)/Street_2Lane_noSidewalk.gltf" id="5_street_nosidewalk"]
+[ext_resource type="PackedScene" uid="uid://byr68t7fdxo1p" path="res://environment/glTF (Godot)/Street_4WayIntersection.gltf" id="6_intersection"]
+[ext_resource type="PackedScene" uid="uid://di82ulkqptteu" path="res://environment/glTF (Godot)/Street_TIntersection.gltf" id="7_tintersection"]
+[ext_resource type="PackedScene" uid="uid://dygiqhatacu45" path="res://environment/glTF (Godot)/Sidewalk_Straight_3m.gltf" id="8_sidewalk"]
+[ext_resource type="PackedScene" uid="uid://uj6x84xpdjr0" path="res://environment/glTF (Godot)/Sidewalk_Corner_Round_3m.gltf" id="9_corner"]
+[ext_resource type="PackedScene" uid="uid://dbqh0m40pf5mv" path="res://environment/glTF (Godot)/Stairs_Entrance_Concrete.gltf" id="10_stairs"]
+[ext_resource type="PackedScene" uid="uid://dgwnmy5enqmd2" path="res://environment/glTF (Godot)/Prop_Bollard.gltf" id="11_bollard"]
+[ext_resource type="PackedScene" uid="uid://hrof21h6fixl" path="res://environment/glTF (Godot)/Prop_Drain.gltf" id="12_drain"]
+[ext_resource type="PackedScene" uid="uid://06ec21lmcxqy" path="res://environment/glTF (Godot)/Prop_ManholeCover.gltf" id="13_manhole"]
+[ext_resource type="PackedScene" uid="uid://b3evae517fad8" path="res://environment/glTF (Godot)/Prop_Planter_Single.gltf" id="14_planter"]
+[ext_resource type="PackedScene" uid="uid://caqxgr5j4akbf" path="res://environment/glTF (Godot)/Prop_ACUnit.gltf" id="15_ac"]
+[ext_resource type="PackedScene" uid="uid://celsherg3qpl1" path="res://environment/glTF (Godot)/Decal_DoubleYellow_Straight.gltf" id="16_yellow"]
+[ext_resource type="PackedScene" uid="uid://bjxer4tiucl51" path="res://environment/glTF (Godot)/Decal_Crosswalk.gltf" id="17_crosswalk"]
+[ext_resource type="PackedScene" uid="uid://cnl0nygtcvh2m" path="res://environment/glTF (Godot)/Brick_Inset_Window.gltf" id="18_brick_window"]
+[ext_resource type="PackedScene" uid="uid://c2p7r61din6wi" path="res://environment/glTF (Godot)/Metal_Window.gltf" id="19_metal_window"]
+[ext_resource type="PackedScene" uid="uid://o6y48pywwhou" path="res://environment/glTF (Godot)/Roof_Slate_Corner.gltf" id="20_roof_corner"]
+[ext_resource type="PackedScene" uid="uid://6idtdxafmb2p" path="res://post apocalyptic/barrel.glb" id="21_barrel"]
+[ext_resource type="PackedScene" uid="uid://dwqs3sp2u7ts1" path="res://post apocalyptic/box_1.glb" id="22_box"]
+[ext_resource type="PackedScene" uid="uid://dd77mi3mvuu0t" path="res://post apocalyptic/bush_1.glb" id="23_bush"]
+[ext_resource type="PackedScene" uid="uid://db6p46bobchlf" path="res://post apocalyptic/electric_pole_1.glb" id="24_pole"]
+[ext_resource type="PackedScene" uid="uid://dchvnyw1646nw" path="res://post apocalyptic/metal_board_2.glb" id="25_board"]
+[ext_resource type="PackedScene" uid="uid://cku6q53c68tej" path="res://post apocalyptic/pallet_cluster_1.glb" id="26_pallet"]
+[ext_resource type="PackedScene" uid="uid://cl7yxjn4ogf70" path="res://post apocalyptic/road_barrier.glb" id="27_barrier"]
+[ext_resource type="PackedScene" uid="uid://bv4rs8sbcieyj" path="res://post apocalyptic/tire.glb" id="28_tire"]
+[ext_resource type="PackedScene" uid="uid://cnpn3plgcr5t4" path="res://post apocalyptic/wall_1_brick.glb" id="29_brick_wall"]
+[ext_resource type="PackedScene" uid="uid://bhjoampc8dgp8" path="res://post apocalyptic/wall_1_door_boarded.glb" id="30_boarded_wall"]
+[ext_resource type="PackedScene" uid="uid://cgs73s0q5jv44" path="res://post apocalyptic/wall_1_hole.glb" id="31_hole_wall"]
+[ext_resource type="PackedScene" uid="uid://cu6bo64mve1i8" path="res://post apocalyptic/wall_concrete_metal.glb" id="32_concrete_wall"]
+[ext_resource type="PackedScene" uid="uid://ixwxcoboamgu" path="res://post apocalyptic/wall_metal_1.glb" id="33_metal_wall"]
+[ext_resource type="PackedScene" uid="uid://cxlh8f87dk3w3" path="res://post apocalyptic/wooden_spike_barricade.glb" id="34_wood_barricade"]
+[ext_resource type="PackedScene" uid="uid://dilc8n5w1uyr" path="res://post apocalyptic/jerry_can_with_nozzle.glb" id="38_jerry_can"]
+[ext_resource type="PackedScene" uid="uid://dfggxnvthuumy" path="res://post apocalyptic/metal_board_1.glb" id="39_metal_scrap"]
+[ext_resource type="PackedScene" uid="uid://bngihny5vgm1h" path="res://post apocalyptic/metal_board_3.glb" id="40_bent_metal"]
+[ext_resource type="PackedScene" uid="uid://ca7b177tgs7o7" path="res://post apocalyptic/wheel.glb" id="41_wheel"]
+[ext_resource type="PackedScene" uid="uid://b0rvg2etaggvs" path="res://environment/Environment-20260813T081453Z-1-001/Environment/glTF/Street_Straight.gltf" id="42_street_straight"]
+[ext_resource type="PackedScene" uid="uid://b3k7e6fu4h2yt" path="res://environment/Environment-20260813T081453Z-1-001/Environment/glTF/Street_Straight_Crack1.gltf" id="43_street_crack1"]
+[ext_resource type="PackedScene" uid="uid://cy02j3so2td5f" path="res://environment/Environment-20260813T081453Z-1-001/Environment/glTF/Street_Straight_Crack2.gltf" id="44_street_crack2"]
+[ext_resource type="PackedScene" uid="uid://c8eh2sdb1h6rt" path="res://environment/Environment-20260813T081453Z-1-001/Environment/glTF/Street_T.gltf" id="45_street_t"]
+[ext_resource type="PackedScene" uid="uid://bamppmvecnejk" path="res://environment/Environment-20260813T081453Z-1-001/Environment/glTF/Street_Turn.gltf" id="46_street_turn"]
+[ext_resource type="PackedScene" uid="uid://tbosew0pkpou" path="res://environment/Environment-20260813T081453Z-1-001/Environment/glTF/Street_4Way.gltf" id="47_street_4way"]
+[ext_resource type="PackedScene" uid="uid://eon4j77mvucq" path="res://environment/Vehicles-20260813T081450Z-1-001/Vehicles/glTF/Vehicle_Pickup.gltf" id="48_pickup"]
+[ext_resource type="PackedScene" uid="uid://cs7kvaltwaccs" path="res://environment/Vehicles-20260813T081450Z-1-001/Vehicles/glTF/Vehicle_Pickup_Armored.gltf" id="49_pickup_armored"]
+[ext_resource type="PackedScene" uid="uid://ba6wrm2gvngn" path="res://environment/Vehicles-20260813T081450Z-1-001/Vehicles/glTF/Vehicle_Truck.gltf" id="50_truck"]
+[ext_resource type="PackedScene" uid="uid://ckk27i1w3vwu7" path="res://environment/Vehicles-20260813T081450Z-1-001/Vehicles/glTF/Vehicle_Truck_Armored.gltf" id="51_truck_armored"]
+[ext_resource type="PackedScene" uid="uid://krqewghpx753" path="res://environment/Vehicles-20260813T081450Z-1-001/Vehicles/glTF/Vehicle_Sports.gltf" id="52_sports"]
+[ext_resource type="PackedScene" uid="uid://syp4yke1y2mb" path="res://environment/Vehicles-20260813T081450Z-1-001/Vehicles/glTF/Vehicle_Sports_Armored.gltf" id="53_sports_armored"]
+[ext_resource type="PackedScene" uid="uid://6eo5vh4cahp" path="res://environment/Environment-20260813T081453Z-1-001/Environment/glTF/TrafficBarrier_1.gltf" id="54_barrier1"]
+[ext_resource type="PackedScene" uid="uid://dawfm2yfjgo3o" path="res://environment/Environment-20260813T081453Z-1-001/Environment/glTF/TrafficBarrier_2.gltf" id="55_barrier2"]
+[ext_resource type="PackedScene" uid="uid://d1uj5k03vt4ic" path="res://environment/Environment-20260813T081453Z-1-001/Environment/glTF/PlasticBarrier.gltf" id="56_plastic_barrier"]
+[ext_resource type="PackedScene" uid="uid://dvgjqntbfnhks" path="res://environment/Environment-20260813T081453Z-1-001/Environment/glTF/TrafficCone_1.gltf" id="57_cone1"]
+[ext_resource type="PackedScene" uid="uid://efo6q5d7doov" path="res://environment/Environment-20260813T081453Z-1-001/Environment/glTF/TrafficCone_2.gltf" id="58_cone2"]
+[ext_resource type="PackedScene" uid="uid://bts1s1n782kof" path="res://environment/Environment-20260813T081453Z-1-001/Environment/glTF/StreetLights.gltf" id="59_streetlight"]
+[ext_resource type="PackedScene" uid="uid://c64ktyajnjktq" path="res://environment/Environment-20260813T081453Z-1-001/Environment/glTF/TrafficLight_1.gltf" id="60_trafficlight1"]
+[ext_resource type="PackedScene" uid="uid://bdykuqo5c5u62" path="res://environment/Environment-20260813T081453Z-1-001/Environment/glTF/TrafficLight_2.gltf" id="61_trafficlight2"]
+[ext_resource type="PackedScene" uid="uid://ddqxegghmvhn3" path="res://environment/Environment-20260813T081453Z-1-001/Environment/glTF/FireHydrant.gltf" id="62_hydrant"]
+[ext_resource type="PackedScene" uid="uid://bplvso31hcv6s" path="res://environment/Environment-20260813T081453Z-1-001/Environment/glTF/TownSign.gltf" id="63_town_sign"]
+[ext_resource type="PackedScene" uid="uid://ch4ixpvm362k0" path="res://environment/Environment-20260813T081453Z-1-001/Environment/glTF/Pallet.gltf" id="64_pallet_new"]
+[ext_resource type="PackedScene" uid="uid://bv4fl8vauxan8" path="res://environment/Environment-20260813T081453Z-1-001/Environment/glTF/Pallet_Broken.gltf" id="65_pallet_broken"]
+[ext_resource type="PackedScene" uid="uid://cm0mb0owj2vyk" path="res://environment/Environment-20260813T081453Z-1-001/Environment/glTF/Barrel.gltf" id="66_barrel_new"]
+[ext_resource type="PackedScene" uid="uid://c5sg2wfnj46el" path="res://environment/Environment-20260813T081453Z-1-001/Environment/glTF/Wheel.gltf" id="67_wheel_new"]
+[ext_resource type="PackedScene" uid="uid://bfq7pt4p032ij" path="res://environment/Environment-20260813T081453Z-1-001/Environment/glTF/Wheels_Stack.gltf" id="68_wheels_stack"]
+[ext_resource type="PackedScene" uid="uid://shsgruv3nf1q" path="res://environment/Environment-20260813T081453Z-1-001/Environment/glTF/CinderBlock.gltf" id="69_cinder"]
+[ext_resource type="PackedScene" uid="uid://c0df12re70tur" path="res://environment/Environment-20260813T081453Z-1-001/Environment/glTF/TrashBag_1.gltf" id="70_trash1"]
+[ext_resource type="PackedScene" uid="uid://4782w5fqw8xm" path="res://environment/Environment-20260813T081453Z-1-001/Environment/glTF/TrashBag_2.gltf" id="71_trash2"]
+[ext_resource type="PackedScene" uid="uid://depayac6v480h" path="res://environment/Environment-20260813T081453Z-1-001/Environment/glTF/Pipes.gltf" id="72_pipes"]
+[ext_resource type="PackedScene" uid="uid://bltfuhelhyr6f" path="res://environment/Environment-20260813T081453Z-1-001/Environment/glTF/Container_Red.gltf" id="73_container_red"]
+[ext_resource type="PackedScene" uid="uid://bi4eqp4alcalj" path="res://environment/Environment-20260813T081453Z-1-001/Environment/glTF/Container_Green.gltf" id="74_container_green"]
+[ext_resource type="PackedScene" uid="uid://mck1s8k5lmwb" path="res://environment/Environment-20260813T081453Z-1-001/Environment/glTF/Couch.gltf" id="75_couch"]
+[ext_resource type="PackedScene" uid="uid://b71877glo0wsg" path="res://environment/Ultimate Nature Pack by Quaternius/FBX/Rock_1.fbx" id="76_rock1"]
+[ext_resource type="PackedScene" uid="uid://wkpop4nsuvg0" path="res://environment/Ultimate Nature Pack by Quaternius/FBX/Rock_2.fbx" id="77_rock2"]
+[ext_resource type="PackedScene" uid="uid://cabst7ofm7u1p" path="res://environment/Ultimate Nature Pack by Quaternius/FBX/Rock_3.fbx" id="78_rock3"]
+[ext_resource type="PackedScene" uid="uid://b720lf82hwkgl" path="res://environment/Ultimate Nature Pack by Quaternius/FBX/Rock_4.fbx" id="79_rock4"]
+[ext_resource type="PackedScene" uid="uid://6lsn6afeuy44" path="res://environment/Ultimate Nature Pack by Quaternius/FBX/Rock_5.fbx" id="80_rock5"]
+[ext_resource type="PackedScene" uid="uid://ctbg1xeprs3m2" path="res://environment/Ultimate Nature Pack by Quaternius/FBX/Rock_6.fbx" id="81_rock6"]
+[ext_resource type="PackedScene" uid="uid://k8i6r7t18pys" path="res://environment/Ultimate Nature Pack by Quaternius/FBX/Rock_Moss_1.fbx" id="82_moss1"]
+[ext_resource type="PackedScene" uid="uid://ck3yv62i6tan5" path="res://environment/Ultimate Nature Pack by Quaternius/FBX/Rock_Moss_2.fbx" id="83_moss2"]
+[ext_resource type="PackedScene" uid="uid://y0y1na7kxnxq" path="res://environment/Ultimate Nature Pack by Quaternius/FBX/Rock_Moss_3.fbx" id="84_moss3"]
+[ext_resource type="PackedScene" uid="uid://c1iiq30d5ituv" path="res://environment/Ultimate Nature Pack by Quaternius/FBX/Rock_Moss_4.fbx" id="85_moss4"]
+[ext_resource type="PackedScene" uid="uid://cu6ok6i81hiwa" path="res://environment/Ultimate Nature Pack by Quaternius/FBX/Rock_Moss_5.fbx" id="86_moss5"]
+[ext_resource type="PackedScene" uid="uid://be1plwjwq181v" path="res://environment/Ultimate Nature Pack by Quaternius/FBX/Rock_Moss_6.fbx" id="87_moss6"]
+[ext_resource type="PackedScene" uid="uid://bo58h1wcs64af" path="res://environment/Ultimate Nature Pack by Quaternius/FBX/Grass.fbx" id="88_grass"]
+[ext_resource type="PackedScene" uid="uid://bo275of327vg" path="res://environment/Ultimate Nature Pack by Quaternius/FBX/Grass_2.fbx" id="89_grass2"]
+[ext_resource type="PackedScene" uid="uid://dmt32ryxde7f8" path="res://environment/Ultimate Nature Pack by Quaternius/FBX/Grass_Short.fbx" id="90_grass_short"]
+[ext_resource type="PackedScene" uid="uid://vh4mfhv5shkx" path="res://environment/Ultimate Nature Pack by Quaternius/FBX/Plant_1.fbx" id="91_plant1"]
+[ext_resource type="PackedScene" uid="uid://cj6cjsfwbjisn" path="res://environment/Ultimate Nature Pack by Quaternius/FBX/Plant_2.fbx" id="92_plant2"]
+[ext_resource type="PackedScene" uid="uid://byatie1ugetlw" path="res://environment/Ultimate Nature Pack by Quaternius/FBX/Plant_3.fbx" id="93_plant3"]
+[ext_resource type="PackedScene" uid="uid://d2n30savla5et" path="res://environment/Ultimate Nature Pack by Quaternius/FBX/Bush_1.fbx" id="94_bush1_nature"]
+[ext_resource type="PackedScene" uid="uid://kxv455ulj1og" path="res://environment/Ultimate Nature Pack by Quaternius/FBX/Bush_2.fbx" id="95_bush2_nature"]
+[ext_resource type="PackedScene" uid="uid://bbsjonb4gl4qg" path="res://environment/Ultimate Nature Pack by Quaternius/FBX/WoodLog.fbx" id="96_log"]
+[ext_resource type="PackedScene" uid="uid://ddgivwgwsj2vu" path="res://environment/Ultimate Nature Pack by Quaternius/FBX/WoodLog_Moss.fbx" id="97_log_moss"]
+[ext_resource type="PackedScene" uid="uid://ehk82cdqv1pc" path="res://environment/Ultimate Nature Pack by Quaternius/FBX/Willow_Dead_1.fbx" id="98_willow1"]
+[ext_resource type="PackedScene" uid="uid://dpseccgw7wli3" path="res://environment/Ultimate Nature Pack by Quaternius/FBX/Willow_Dead_2.fbx" id="99_willow2"]
+[ext_resource type="PackedScene" uid="uid://dfu7kkwdj0kdy" path="res://scenes/player.tscn" id="100_player"]
+[ext_resource type="Script" uid="uid://c7yrlio3bo41x" path="res://scripts/environment_camera_follow.gd" id="101_camera_follow"]
+[ext_resource type="PackedScene" uid="uid://dr5wf8pywobge" path="res://scenes/enemy.tscn" id="102_enemy"]
+[ext_resource type="Script" uid="uid://x6jbbgau34ku" path="res://scripts/environment_combat_controller.gd" id="103_combat_controller"]
+[ext_resource type="PackedScene" path="res://scenes/enemy_ranged.tscn" id="104_ranged_enemy"]
+[ext_resource type="PackedScene" path="res://scenes/combat_hud.tscn" id="105_combat_hud"]
+[ext_resource type="PackedScene" path="res://scenes/enemy_boss.tscn" id="106_boss_enemy"]
+
+[sub_resource type="Environment" id="Environment_main"]
+background_mode = 1
+background_color = Color(0.035, 0.055, 0.085, 1)
+ambient_light_source = 3
+ambient_light_color = Color(0.42, 0.5, 0.62, 1)
+ambient_light_energy = 0.86
+tonemap_mode = 2
+fog_enabled = true
+fog_light_color = Color(0.11, 0.16, 0.21, 1)
+fog_light_energy = 0.7
+fog_density = 0.0052
+fog_height = -2.0
+fog_height_density = 0.06
+
+[sub_resource type="Shader" id="Shader_water"]
+code = "shader_type spatial;
+render_mode cull_disabled, depth_draw_opaque;
+
+float hash21(vec2 p) {
+ p = fract(p * vec2(123.34, 456.21));
+ p += dot(p, p + 45.32);
+ return fract(p.x * p.y);
+}
+
+float value_noise(vec2 p) {
+ vec2 cell = floor(p);
+ vec2 local = fract(p);
+ local = local * local * (3.0 - 2.0 * local);
+ float a = hash21(cell);
+ float b = hash21(cell + vec2(1.0, 0.0));
+ float c = hash21(cell + vec2(0.0, 1.0));
+ float d = hash21(cell + vec2(1.0, 1.0));
+ return mix(mix(a, b, local.x), mix(c, d, local.x), local.y);
+}
+
+float river_height(vec2 uv, float time) {
+ // Both wave scales travel downstream (+V); only a slight lateral shear remains.
+ vec2 broad_uv = uv * vec2(5.0, 13.0) + vec2(0.035, -0.22) * time;
+ vec2 ripple_uv = uv * vec2(19.0, 39.0) + vec2(-0.06, -0.48) * time;
+ float broad = value_noise(broad_uv) * 0.68;
+ broad += sin(uv.y * 42.0 - time * 0.82 + uv.x * 6.0) * 0.16;
+ float ripple = value_noise(ripple_uv) * 0.22;
+ ripple += sin(uv.y * 118.0 - time * 1.7 - uv.x * 18.0) * 0.08;
+ return broad + ripple;
+}
+
+void fragment() {
+ float h = river_height(UV, TIME);
+ float epsilon = 0.0035;
+ float hx = river_height(UV + vec2(epsilon, 0.0), TIME) - river_height(UV - vec2(epsilon, 0.0), TIME);
+ float hy = river_height(UV + vec2(0.0, epsilon), TIME) - river_height(UV - vec2(0.0, epsilon), TIME);
+
+ // Center is visually deeper; both banks become subtly greener and lighter.
+ float bank = smoothstep(0.23, 0.49, abs(UV.x - 0.5));
+ float broad_current = value_noise(vec2(UV.x * 4.0, UV.y * 17.0 - TIME * 0.24));
+ float moving_streak = sin(UV.y * 92.0 - TIME * 1.35 + value_noise(vec2(UV.x * 7.0, UV.y * 23.0 - TIME * 0.18)) * 5.0);
+ moving_streak = smoothstep(0.58, 0.94, moving_streak * 0.5 + 0.5);
+ vec3 deep_blue = vec3(0.012, 0.064, 0.105);
+ vec3 river_blue = vec3(0.025, 0.135, 0.175);
+ vec3 bank_cyan = vec3(0.055, 0.205, 0.205);
+ vec3 water_color = mix(deep_blue, river_blue, clamp(h * 0.78 + 0.18, 0.0, 1.0));
+ water_color = mix(water_color, bank_cyan, bank * 0.16);
+ water_color += (broad_current - 0.5) * vec3(0.010, 0.032, 0.044);
+ water_color += (h - 0.48) * vec3(0.018, 0.052, 0.060);
+ water_color += moving_streak * vec3(0.018, 0.045, 0.050);
+ float fine_ripple_color = smoothstep(0.48, 0.82, value_noise(UV * vec2(34.0, 74.0) + TIME * vec2(-0.10, 0.42)));
+ water_color += fine_ripple_color * vec3(0.010, 0.030, 0.034);
+
+ // Muted disturbance only around three authored river landmarks, never a white rim.
+ float outlet = exp(-pow((UV.y - 0.448) * 30.0, 2.0));
+ float collapse = exp(-pow((UV.y - 0.578) * 28.0, 2.0));
+ float abandoned = exp(-pow((UV.y - 0.722) * 27.0, 2.0));
+ float landmark_mask = max(outlet, max(collapse, abandoned));
+ float near_playable_bank = smoothstep(0.40, 0.49, UV.x);
+ float edge_breakup = near_playable_bank * landmark_mask * smoothstep(0.60, 0.88, value_noise(UV * vec2(31.0, 67.0) + TIME * vec2(0.0, 0.24)));
+ water_color = mix(water_color, vec3(0.12, 0.28, 0.28), edge_breakup * 0.30);
+
+ // Each future emergence landmark has restrained, natural-looking water behavior.
+ float drain_dark = outlet * near_playable_bank * 0.12;
+ water_color = mix(water_color, deep_blue * 0.78, drain_dark);
+ float collapse_ripple = collapse * near_playable_bank * (sin(UV.y * 155.0 - TIME * 2.1 + UV.x * 24.0) * 0.5 + 0.5);
+ water_color += collapse_ripple * vec3(0.012, 0.036, 0.042) * 0.55;
+ float access_foam = abandoned * near_playable_bank * smoothstep(0.67, 0.9, value_noise(vec2(UV.x * 38.0, UV.y * 72.0 - TIME * 0.32)));
+ water_color = mix(water_color, vec3(0.11, 0.25, 0.27), access_foam * 0.18);
+
+ ALBEDO = water_color;
+ EMISSION = water_color * 0.026;
+ NORMAL_MAP = normalize(vec3(-hx * 5.5, -hy * 3.8, 1.0));
+ NORMAL_MAP_DEPTH = 0.48;
+ METALLIC = 0.0;
+ ROUGHNESS = 0.62 + (1.0 - h) * 0.08;
+ SPECULAR = 0.28;
+}"
+
+[sub_resource type="ShaderMaterial" id="Mat_water"]
+render_priority = 0
+shader = SubResource("Shader_water")
+
+[sub_resource type="PlaneMesh" id="Mesh_water"]
+material = SubResource("Mat_water")
+size = Vector2(58, 230)
+subdivide_width = 12
+subdivide_depth = 28
+
+[sub_resource type="StandardMaterial3D" id="Mat_concrete_dark"]
+albedo_color = Color(0.22, 0.25, 0.27, 1)
+roughness = 0.9
+
+[sub_resource type="BoxMesh" id="Mesh_concrete_dark"]
+material = SubResource("Mat_concrete_dark")
+
+[sub_resource type="BoxShape3D" id="Shape_box"]
+
+[sub_resource type="StandardMaterial3D" id="Mat_playable_ground_base"]
+albedo_color = Color(0.255, 0.285, 0.31, 1)
+roughness = 0.94
+
+[sub_resource type="BoxMesh" id="Mesh_playable_ground_base"]
+material = SubResource("Mat_playable_ground_base")
+
+[sub_resource type="StandardMaterial3D" id="Mat_city_backdrop_ground"]
+albedo_color = Color(0.18, 0.205, 0.22, 1)
+roughness = 0.96
+
+[sub_resource type="BoxMesh" id="Mesh_city_backdrop_ground"]
+material = SubResource("Mat_city_backdrop_ground")
+
+[sub_resource type="StandardMaterial3D" id="Mat_concrete"]
+albedo_color = Color(0.39, 0.41, 0.41, 1)
+roughness = 0.92
+
+[sub_resource type="PrismMesh" id="Mesh_wedge"]
+material = SubResource("Mat_concrete")
+left_to_right = 0.68
+
+[sub_resource type="StandardMaterial3D" id="Mat_metal"]
+albedo_color = Color(0.1, 0.15, 0.18, 1)
+metallic = 0.72
+roughness = 0.62
+
+[sub_resource type="CylinderMesh" id="Mesh_pole"]
+material = SubResource("Mat_metal")
+top_radius = 0.12
+bottom_radius = 0.15
+height = 1.0
+radial_segments = 6
+
+[sub_resource type="CylinderShape3D" id="Shape_cylinder"]
+height = 1.0
+radius = 0.18
+
+[sub_resource type="StandardMaterial3D" id="Mat_road"]
+albedo_color = Color(0.082, 0.102, 0.125, 1)
+roughness = 0.93
+
+[sub_resource type="BoxMesh" id="Mesh_road"]
+material = SubResource("Mat_road")
+
+[sub_resource type="StandardMaterial3D" id="Mat_marking"]
+albedo_color = Color(0.48, 0.42, 0.24, 1)
+roughness = 0.8
+
+[sub_resource type="BoxMesh" id="Mesh_marking"]
+material = SubResource("Mat_marking")
+
+[sub_resource type="BoxMesh" id="Mesh_concrete"]
+material = SubResource("Mat_concrete")
+
+[sub_resource type="StandardMaterial3D" id="Mat_building_a"]
+albedo_color = Color(0.28, 0.33, 0.36, 1)
+roughness = 0.86
+
+[sub_resource type="PrismMesh" id="Mesh_roof"]
+material = SubResource("Mat_metal")
+left_to_right = 0.28
+
+[sub_resource type="StandardMaterial3D" id="Mat_window"]
+albedo_color = Color(0.055, 0.09, 0.115, 1)
+metallic = 0.25
+roughness = 0.36
+
+[sub_resource type="BoxMesh" id="Mesh_window"]
+material = SubResource("Mat_window")
+
+[sub_resource type="StandardMaterial3D" id="Mat_building_b"]
+albedo_color = Color(0.33, 0.32, 0.3, 1)
+roughness = 0.88
+
+[sub_resource type="CylinderMesh" id="Mesh_column"]
+material = SubResource("Mat_concrete")
+top_radius = 0.34
+bottom_radius = 0.42
+height = 1.0
+radial_segments = 6
+
+[sub_resource type="StandardMaterial3D" id="Mat_rust"]
+albedo_color = Color(0.33, 0.17, 0.09, 1)
+metallic = 0.32
+roughness = 0.8
+
+[sub_resource type="BoxMesh" id="Mesh_rust"]
+material = SubResource("Mat_rust")
+
+[sub_resource type="BoxMesh" id="Mesh_metal"]
+material = SubResource("Mat_metal")
+
+[sub_resource type="StandardMaterial3D" id="Mat_vegetation"]
+albedo_color = Color(0.14, 0.26, 0.17, 1)
+roughness = 0.94
+
+[sub_resource type="CylinderMesh" id="Mesh_plant"]
+material = SubResource("Mat_vegetation")
+top_radius = 0.12
+bottom_radius = 0.38
+height = 1.0
+radial_segments = 5
+
+[sub_resource type="StandardMaterial3D" id="Mat_asphalt_patch"]
+albedo_color = Color(0.075, 0.083, 0.087, 1)
+roughness = 0.98
+
+[sub_resource type="BoxMesh" id="Mesh_asphalt_patch"]
+material = SubResource("Mat_asphalt_patch")
+
+[sub_resource type="StandardMaterial3D" id="Mat_road_repair"]
+albedo_color = Color(0.145, 0.14, 0.125, 1)
+roughness = 0.96
+
+[sub_resource type="BoxMesh" id="Mesh_road_repair"]
+material = SubResource("Mat_road_repair")
+
+[sub_resource type="StandardMaterial3D" id="Mat_curb_wear"]
+albedo_color = Color(0.29, 0.285, 0.265, 1)
+roughness = 0.95
+
+[sub_resource type="BoxMesh" id="Mesh_curb_wear"]
+material = SubResource("Mat_curb_wear")
+
+[sub_resource type="StandardMaterial3D" id="Mat_wet_concrete"]
+albedo_color = Color(0.075, 0.115, 0.125, 1)
+roughness = 0.82
+
+[sub_resource type="BoxMesh" id="Mesh_wet_concrete"]
+material = SubResource("Mat_wet_concrete")
+
+[sub_resource type="StandardMaterial3D" id="Mat_dirt_stain"]
+albedo_color = Color(0.16, 0.155, 0.135, 1)
+roughness = 0.98
+
+[sub_resource type="BoxMesh" id="Mesh_dirt_stain"]
+material = SubResource("Mat_dirt_stain")
+
+[node name="RiverBoundEnvironment" type="Node3D" unique_id=567692719]
+script = ExtResource("103_combat_controller")
+enemy_scene = ExtResource("102_enemy")
+ranged_enemy_scene = ExtResource("104_ranged_enemy")
+boss_enemy_scene = ExtResource("106_boss_enemy")
+
+[node name="CombatHUD" parent="." instance=ExtResource("105_combat_hud")]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1652791094]
+environment = SubResource("Environment_main")
+
+[node name="Lighting" type="Node3D" parent="." unique_id=856600016]
+
+[node name="DuskKey" type="DirectionalLight3D" parent="Lighting" unique_id=921513275]
+transform = Transform3D(0.88294756, 0.36994863, -0.2890356, 0, 0.6156615, 0.7880107, 0.46947157, -0.6957722, 0.5435968, 0, 0, 0)
+light_color = Color(0.68, 0.77, 0.94, 1)
+light_energy = 1.02
+shadow_enabled = true
+shadow_blur = 2.2
+
+[node name="IntersectionEmergencyGlow" type="OmniLight3D" parent="Lighting" unique_id=2078268448]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10, 3.4, 37)
+light_color = Color(0.92, 0.39, 0.17, 1)
+light_energy = 0.42
+omni_range = 7.0
+
+[node name="WarehouseDoorGlow" type="OmniLight3D" parent="Lighting" unique_id=449324349]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 20, 3.2, 18)
+light_color = Color(0.95, 0.55, 0.28, 1)
+light_energy = 0.3
+omni_range = 5.5
+
+[node name="CameraRig" type="Node3D" parent="." unique_id=751910611 node_paths=PackedStringArray("target")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -35, 0, 33)
+script = ExtResource("101_camera_follow")
+target = NodePath("../Player")
+
+[node name="OverviewCamera" type="Camera3D" parent="CameraRig" unique_id=1676893892]
+transform = Transform3D(1, 0, 0, 0, 0.49999997, 0.86602545, 0, -0.86602545, 0.49999997, -3.5, 29, 15)
+current = true
+fov = 22.0
+far = 220.0
+
+[node name="River" type="Node3D" parent="." unique_id=1746451155]
+
+[node name="Water" type="MeshInstance3D" parent="River" unique_id=808330706]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -70, -0.7, 34)
+mesh = SubResource("Mesh_water")
+
+[node name="EmbankmentNorth" type="StaticBody3D" parent="River" unique_id=93586485]
+transform = Transform3D(1.6790702, 0, -1.8772137, 0, 2, 0, 0.2659386, 0, 11.852261, -42.4, 0.7, 5)
+collision_layer = 4
+
+[node name="Mesh" type="MeshInstance3D" parent="River/EmbankmentNorth" unique_id=846382477]
+mesh = SubResource("Mesh_concrete_dark")
+
+[node name="Collision" type="CollisionShape3D" parent="River/EmbankmentNorth" unique_id=1055968177]
+shape = SubResource("Shape_box")
+
+[node name="EmbankmentMiddle" type="StaticBody3D" parent="River" unique_id=255359178]
+transform = Transform3D(1.5844289, 0, 1.0437983, 0, 2.05, 0, -0.22267698, 0, 7.4270105, -43.5, 0.72, 29)
+collision_layer = 4
+
+[node name="Mesh" type="MeshInstance3D" parent="River/EmbankmentMiddle" unique_id=2092846459]
+mesh = SubResource("Mesh_concrete_dark")
+
+[node name="Collision" type="CollisionShape3D" parent="River/EmbankmentMiddle" unique_id=1374835891]
+shape = SubResource("Shape_box")
+
+[node name="EmbankmentSouth" type="StaticBody3D" parent="River" unique_id=2086921202]
+transform = Transform3D(1.7606657, 0, -1.7672495, 0, 1.9, 0, 0.37424105, 0, 8.314255, -42, 0.7, 55)
+collision_layer = 4
+
+[node name="Mesh" type="MeshInstance3D" parent="River/EmbankmentSouth" unique_id=1777380450]
+mesh = SubResource("Mesh_concrete_dark")
+
+[node name="Collision" type="CollisionShape3D" parent="River/EmbankmentSouth" unique_id=654495700]
+shape = SubResource("Shape_box")
+
+[node name="RiverRocks" type="Node3D" parent="River" unique_id=1699055870]
+
+[node name="RockA" type="MeshInstance3D" parent="River/RiverRocks" unique_id=545143632]
+transform = Transform3D(1.8874674, 0, 0.6137196, 0, 0.7, 0, -0.9205794, 0, 1.2583116, -48, -0.25, 19)
+mesh = SubResource("Mesh_wedge")
+
+[node name="RockB" type="MeshInstance3D" parent="River/RiverRocks" unique_id=383342029]
+transform = Transform3D(1.3714677, 0, -1.1330838, 0, 0.5, 0, 0.8240609, 0, 1.885768, -50, -0.32, 55)
+mesh = SubResource("Mesh_wedge")
+
+[node name="RiverfrontDetails" type="Node3D" parent="River" unique_id=608612137]
+
+[node name="EmbankmentFarSouth" type="StaticBody3D" parent="River/RiverfrontDetails" unique_id=873043837]
+transform = Transform3D(1.6906873, 0, 1.149813, 0, 1.9, 0, -0.17769839, 0, 10.939741, -42.8, 0.7, 76)
+collision_layer = 4
+
+[node name="Mesh" type="MeshInstance3D" parent="River/RiverfrontDetails/EmbankmentFarSouth" unique_id=36626462]
+mesh = SubResource("Mesh_concrete_dark")
+
+[node name="Collision" type="CollisionShape3D" parent="River/RiverfrontDetails/EmbankmentFarSouth" unique_id=939969073]
+shape = SubResource("Shape_box")
+
+[node name="AngledSlabNorth" type="StaticBody3D" parent="River/RiverfrontDetails" unique_id=587838744]
+transform = Transform3D(2.410678, 0, 1.1987411, 0, 1.1, 0, -0.9739771, 0, 2.9669883, -43.8, 0.1, 17)
+
+[node name="Mesh" type="MeshInstance3D" parent="River/RiverfrontDetails/AngledSlabNorth" unique_id=550776153]
+mesh = SubResource("Mesh_wedge")
+
+[node name="Collision" type="CollisionShape3D" parent="River/RiverfrontDetails/AngledSlabNorth" unique_id=1815333008]
+shape = SubResource("Shape_box")
+
+[node name="AngledSlabSouth" type="StaticBody3D" parent="River/RiverfrontDetails" unique_id=2085505104]
+transform = Transform3D(2.0845077, 0, -1.4791639, 0, 1, 0, 0.972022, 0, 3.1720772, -43.6, 0.1, 66)
+
+[node name="Mesh" type="MeshInstance3D" parent="River/RiverfrontDetails/AngledSlabSouth" unique_id=1085185697]
+mesh = SubResource("Mesh_wedge")
+
+[node name="Collision" type="CollisionShape3D" parent="River/RiverfrontDetails/AngledSlabSouth" unique_id=588159287]
+shape = SubResource("Shape_box")
+
+[node name="DrainOutlet" type="StaticBody3D" parent="River/RiverfrontDetails" unique_id=1680201913]
+transform = Transform3D(-7.86805e-08, -1.8, 0, 1.8, -7.86805e-08, 0, 0, 0, 1.8, -43.3, 1.35, 39)
+
+[node name="Mesh" type="MeshInstance3D" parent="River/RiverfrontDetails/DrainOutlet" unique_id=1848666526]
+mesh = SubResource("Mesh_pole")
+
+[node name="Collision" type="CollisionShape3D" parent="River/RiverfrontDetails/DrainOutlet" unique_id=1245069477]
+shape = SubResource("Shape_cylinder")
+
+[node name="RiverRockC" type="MeshInstance3D" parent="River/RiverfrontDetails" unique_id=1678334291]
+transform = Transform3D(2.2692447, 0, -0.45579538, 0, 0.62, 0, 0.78136355, 0, 1.3237259, -49, -0.3, 41)
+mesh = SubResource("Mesh_wedge")
+
+[node name="RiverRockD" type="MeshInstance3D" parent="River/RiverfrontDetails" unique_id=1761995096]
+transform = Transform3D(1.409364, 0, 1.1743051, 0, 0.5, 0, -0.9506279, 0, 1.7409788, -52, -0.34, 71)
+mesh = SubResource("Mesh_wedge")
+
+[node name="BollardD" parent="River/RiverfrontDetails" unique_id=246574717 instance=ExtResource("11_bollard")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -42, 0.35, 40)
+
+[node name="BollardE" parent="River/RiverfrontDetails" unique_id=1780894778 instance=ExtResource("11_bollard")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -42, 0.35, 70)
+
+[node name="RiverDrain" parent="River/RiverfrontDetails" unique_id=1357458908 instance=ExtResource("12_drain")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -37.4, 0.35, 65)
+
+[node name="RiverSafetyBoundary" type="StaticBody3D" parent="." unique_id=1882836750]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -42.1, 1.5, 48)
+collision_layer = 4
+
+[node name="Collision" type="CollisionShape3D" parent="RiverSafetyBoundary" unique_id=1007137258]
+transform = Transform3D(1, 0, 0, 0, 3, 0, 0, 0, 116, 0, 0, 0)
+shape = SubResource("Shape_box")
+
+[node name="ArenaBoundary" type="Node3D" parent="." unique_id=1403543330]
+
+[node name="NorthBoundary" type="StaticBody3D" parent="ArenaBoundary" unique_id=1945985117]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 38, 3, -12)
+
+[node name="Collision" type="CollisionShape3D" parent="ArenaBoundary/NorthBoundary" unique_id=1347975868]
+transform = Transform3D(164, 0, 0, 0, 6, 0, 0, 0, 1.2, 0, 0, 0)
+shape = SubResource("Shape_box")
+
+[node name="SouthBoundary" type="StaticBody3D" parent="ArenaBoundary" unique_id=1083744695]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 38, 3, 106)
+
+[node name="Collision" type="CollisionShape3D" parent="ArenaBoundary/SouthBoundary" unique_id=636361296]
+transform = Transform3D(164, 0, 0, 0, 6, 0, 0, 0, 1.2, 0, 0, 0)
+shape = SubResource("Shape_box")
+
+[node name="EastBoundary" type="StaticBody3D" parent="ArenaBoundary" unique_id=1158225309]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 118, 3, 47)
+
+[node name="Collision" type="CollisionShape3D" parent="ArenaBoundary/EastBoundary" unique_id=2020571063]
+transform = Transform3D(1.2, 0, 0, 0, 6, 0, 0, 0, 118.2, 0, 0, 0)
+shape = SubResource("Shape_box")
+
+[node name="WestBoundary" type="StaticBody3D" parent="ArenaBoundary" unique_id=1741260017]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -42.1, 3, 47)
+collision_layer = 4
+
+[node name="Collision" type="CollisionShape3D" parent="ArenaBoundary/WestBoundary" unique_id=1387122781]
+transform = Transform3D(1.2, 0, 0, 0, 6, 0, 0, 0, 118.2, 0, 0, 0)
+shape = SubResource("Shape_box")
+
+; Deliberate overlap caps reinforce the two river-side corners. They sit entirely
+; outside the playable road envelope and prevent diagonal corner squeezing.
+[node name="NorthwestCornerSeal" type="StaticBody3D" parent="ArenaBoundary"]
+position = Vector3(-42.1, 3, -12)
+
+[node name="Collision" type="CollisionShape3D" parent="ArenaBoundary/NorthwestCornerSeal"]
+scale = Vector3(4, 6, 4)
+shape = SubResource("Shape_box")
+
+[node name="SouthwestCornerSeal" type="StaticBody3D" parent="ArenaBoundary"]
+position = Vector3(-42.1, 3, 106)
+
+[node name="Collision" type="CollisionShape3D" parent="ArenaBoundary/SouthwestCornerSeal"]
+scale = Vector3(4, 6, 4)
+shape = SubResource("Shape_box")
+
+; Effective gameplay perimeter, inset from every true map edge. The older outer
+; walls remain as fail-safe collision inside the visual buffer/backdrop zone.
+[node name="InnerPlayableBoundary" type="Node3D" parent="ArenaBoundary"]
+
+[node name="NorthInnerBoundary" type="StaticBody3D" parent="ArenaBoundary/InnerPlayableBoundary"]
+position = Vector3(15, 3, 0)
+[node name="Collision" type="CollisionShape3D" parent="ArenaBoundary/InnerPlayableBoundary/NorthInnerBoundary"]
+scale = Vector3(107, 6, 1.2)
+shape = SubResource("Shape_box")
+
+[node name="SouthInnerBoundary" type="StaticBody3D" parent="ArenaBoundary/InnerPlayableBoundary"]
+position = Vector3(15, 3, 94)
+[node name="Collision" type="CollisionShape3D" parent="ArenaBoundary/InnerPlayableBoundary/SouthInnerBoundary"]
+scale = Vector3(107, 6, 1.2)
+shape = SubResource("Shape_box")
+
+[node name="EastInnerBoundary" type="StaticBody3D" parent="ArenaBoundary/InnerPlayableBoundary"]
+position = Vector3(66.5, 3, 47)
+[node name="Collision" type="CollisionShape3D" parent="ArenaBoundary/InnerPlayableBoundary/EastInnerBoundary"]
+scale = Vector3(1.2, 6, 96)
+shape = SubResource("Shape_box")
+
+[node name="WestInnerBoundary" type="StaticBody3D" parent="ArenaBoundary/InnerPlayableBoundary"]
+position = Vector3(-36.5, 3, 47)
+collision_layer = 4
+[node name="Collision" type="CollisionShape3D" parent="ArenaBoundary/InnerPlayableBoundary/WestInnerBoundary"]
+scale = Vector3(1.2, 6, 96)
+shape = SubResource("Shape_box")
+
+; The eastern frontage is a composed city edge. Its continuous blocker sits behind
+; visible low walls and barriers, keeping the skyline zone out of normal play.
+[node name="EasternFrontageBoundary" type="StaticBody3D" parent="ArenaBoundary"]
+position = Vector3(70.5, 3, 47)
+
+[node name="Collision" type="CollisionShape3D" parent="ArenaBoundary/EasternFrontageBoundary"]
+scale = Vector3(1.2, 6, 118.2)
+shape = SubResource("Shape_box")
+
+[node name="Ground" type="Node3D" parent="." unique_id=1930033261]
+
+; One continuous foundation supports the complete playable arena. Its top is at
+; Y=-0.02, safely below road/sidewalk surfaces and above any former floor seams.
+[node name="PlayableGroundBase" type="StaticBody3D" parent="Ground"]
+position = Vector3(14, -0.62, 47)
+scale = Vector3(112, 1.2, 118)
+
+[node name="Mesh" type="MeshInstance3D" parent="Ground/PlayableGroundBase"]
+mesh = SubResource("Mesh_playable_ground_base")
+
+[node name="Collision" type="CollisionShape3D" parent="Ground/PlayableGroundBase"]
+shape = SubResource("Shape_box")
+
+; Mesh-only city foundation. Its top is Y=-0.04, below the playable foundation
+; and road surfaces, while extending beneath and behind every eastern building.
+; EasternFrontageBoundary keeps this visual backdrop inaccessible to the Player.
+[node name="CityBackdropGround" type="MeshInstance3D" parent="Ground"]
+position = Vector3(103, -0.14, 47)
+scale = Vector3(66, 0.2, 132)
+mesh = SubResource("Mesh_city_backdrop_ground")
+
+; Mesh-only continuation beyond the former north/south ground limits. These
+; strips are inaccessible behind InnerPlayableBoundary and carry no collision.
+[node name="NorthVisualBufferGround" type="MeshInstance3D" parent="Ground"]
+position = Vector3(47, -0.14, -24)
+scale = Vector3(178, 0.2, 24)
+mesh = SubResource("Mesh_city_backdrop_ground")
+
+[node name="SouthVisualBufferGround" type="MeshInstance3D" parent="Ground"]
+position = Vector3(47, -0.14, 122)
+scale = Vector3(178, 0.2, 32)
+mesh = SubResource("Mesh_city_backdrop_ground")
+
+[node name="Roads" type="Node3D" parent="." unique_id=893649563]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1000, 0)
+
+[node name="CentralStreet" type="StaticBody3D" parent="Roads" unique_id=287534637]
+transform = Transform3D(80, 0, 0, 0, 0.18, 0, 0, 0, 13, 4, 0.05, 31)
+
+[node name="Mesh" type="MeshInstance3D" parent="Roads/CentralStreet" unique_id=1471858861]
+mesh = SubResource("Mesh_road")
+
+[node name="Collision" type="CollisionShape3D" parent="Roads/CentralStreet" unique_id=2003373859]
+shape = SubResource("Shape_box")
+
+[node name="RiversideRoute" type="StaticBody3D" parent="Roads" unique_id=1879334599]
+transform = Transform3D(9.975641, 0, -4.882953, 0, 0.2, 0, 0.6975647, 0, 69.82948, -31, 0.08, 35)
+
+[node name="Mesh" type="MeshInstance3D" parent="Roads/RiversideRoute" unique_id=847415570]
+mesh = SubResource("Mesh_road")
+
+[node name="Collision" type="CollisionShape3D" parent="Roads/RiversideRoute" unique_id=1261885417]
+shape = SubResource("Shape_box")
+
+[node name="ServiceRoute" type="StaticBody3D" parent="Roads" unique_id=41500063]
+transform = Transform3D(36.320206, 0, 1.526472, 0, 0.2, 0, -7.0599327, 0, 7.8530173, 23, 0.1, 58)
+
+[node name="Mesh" type="MeshInstance3D" parent="Roads/ServiceRoute" unique_id=162031598]
+mesh = SubResource("Mesh_road")
+
+[node name="Collision" type="CollisionShape3D" parent="Roads/ServiceRoute" unique_id=652860366]
+shape = SubResource("Shape_box")
+
+[node name="BrokenAsphaltA" type="MeshInstance3D" parent="Roads" unique_id=360597603]
+transform = Transform3D(7.6084523, 0, -0.6489357, 0, 0.035, 0, 2.472136, 0, 1.9972186, -8, 0.23, 26)
+mesh = SubResource("Mesh_concrete_dark")
+
+[node name="BrokenAsphaltB" type="MeshInstance3D" parent="Roads" unique_id=1656899927]
+transform = Transform3D(4.878676, 0, 0.78146225, 0, 0.04, 0, -2.070875, 0, 1.8410097, 26, 0.24, 36)
+mesh = SubResource("Mesh_concrete_dark")
+
+[node name="FadedMarking" type="MeshInstance3D" parent="Roads" unique_id=239186475]
+transform = Transform3D(18, 0, 0, 0, 0.02, 0, 0, 0, 0.12, 5, 0.25, 31)
+mesh = SubResource("Mesh_marking")
+
+[node name="SecondaryAvenue" type="StaticBody3D" parent="Roads"]
+position = Vector3(38, 0.07, 58)
+scale = Vector3(10, 0.2, 48)
+[node name="Mesh" type="MeshInstance3D" parent="Roads/SecondaryAvenue"]
+mesh = SubResource("Mesh_road")
+[node name="Collision" type="CollisionShape3D" parent="Roads/SecondaryAvenue"]
+shape = SubResource("Shape_box")
+
+[node name="SouthernBackstreet" type="StaticBody3D" parent="Roads"]
+position = Vector3(7, 0.08, 82)
+scale = Vector3(35, 0.2, 7.5)
+[node name="Mesh" type="MeshInstance3D" parent="Roads/SouthernBackstreet"]
+mesh = SubResource("Mesh_road")
+[node name="Collision" type="CollisionShape3D" parent="Roads/SouthernBackstreet"]
+shape = SubResource("Shape_box")
+
+[node name="SecondaryLaneMarking" type="MeshInstance3D" parent="Roads"]
+position = Vector3(38, 0.29, 59)
+scale = Vector3(0.12, 0.02, 35)
+mesh = SubResource("Mesh_marking")
+[node name="BackstreetFadedMarking" type="MeshInstance3D" parent="Roads"]
+position = Vector3(7, 0.3, 82)
+scale = Vector3(24, 0.02, 0.1)
+mesh = SubResource("Mesh_marking")
+
+[node name="Sidewalks" type="Node3D" parent="." unique_id=1598106052]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
+
+[node name="PromenadeWalk" type="Node3D" parent="Sidewalks" unique_id=213134565]
+transform = Transform3D(5.1928735, 0, -3.6111813, 0, 0.18, 0, 0.27214697, 0, 68.90543, -39.2, 0.16, 35)
+
+[node name="Mesh" type="MeshInstance3D" parent="Sidewalks/PromenadeWalk" unique_id=1778770791]
+mesh = SubResource("Mesh_concrete")
+
+[node name="NorthSidewalk" type="Node3D" parent="Sidewalks" unique_id=1573624984]
+transform = Transform3D(71.95614, 0, -0.10469849, 0, 0.18, 0, 2.5127637, 0, 2.9981725, 4, 0.16, 21.5)
+
+[node name="Mesh" type="MeshInstance3D" parent="Sidewalks/NorthSidewalk" unique_id=713688330]
+mesh = SubResource("Mesh_concrete")
+
+[node name="SouthSidewalk" type="Node3D" parent="Sidewalks" unique_id=123095691]
+transform = Transform3D(66.83679, 0, 0.18834247, 0, 0.18, 0, -4.6736836, 0, 2.693423, 3, 0.16, 41)
+
+[node name="Mesh" type="MeshInstance3D" parent="Sidewalks/SouthSidewalk" unique_id=1472438789]
+mesh = SubResource("Mesh_concrete")
+
+[node name="PromenadeStairs" type="StaticBody3D" parent="Sidewalks" unique_id=1499787240]
+transform = Transform3D(2.9448814, 0.10494495, 0, -0.572427, 0.53989494, 0, 0, 0, 5.2, -45, -0.05, 47)
+
+[node name="Mesh" type="MeshInstance3D" parent="Sidewalks/PromenadeStairs" unique_id=425618900]
+mesh = SubResource("Mesh_wedge")
+
+[node name="Collision" type="CollisionShape3D" parent="Sidewalks/PromenadeStairs" unique_id=138540094]
+shape = SubResource("Shape_box")
+
+[node name="CrackedSlab" type="MeshInstance3D" parent="Sidewalks" unique_id=1056705174]
+transform = Transform3D(2.2252414, 0, 0.82413447, 0, 0.14, 0, -0.89905584, 0, 2.0398045, -39, 0.58, 18)
+mesh = SubResource("Mesh_wedge")
+
+[node name="SecondaryWestSidewalk" type="Node3D" parent="Sidewalks"]
+position = Vector3(26.5, 0.16, 61)
+scale = Vector3(2.5, 0.18, 45)
+[node name="Mesh" type="MeshInstance3D" parent="Sidewalks/SecondaryWestSidewalk"]
+mesh = SubResource("Mesh_concrete")
+[node name="SecondaryEastSidewalk" type="Node3D" parent="Sidewalks"]
+position = Vector3(49.5, 0.16, 61)
+scale = Vector3(2.5, 0.18, 45)
+[node name="Mesh" type="MeshInstance3D" parent="Sidewalks/SecondaryEastSidewalk"]
+mesh = SubResource("Mesh_concrete")
+[node name="BackstreetNorthSidewalk" type="Node3D" parent="Sidewalks"]
+position = Vector3(7, 0.16, 72.5)
+scale = Vector3(35, 0.18, 2.4)
+[node name="Mesh" type="MeshInstance3D" parent="Sidewalks/BackstreetNorthSidewalk"]
+mesh = SubResource("Mesh_concrete")
+[node name="BackstreetSouthSidewalk" type="Node3D" parent="Sidewalks"]
+position = Vector3(7, 0.16, 91.5)
+scale = Vector3(35, 0.18, 2.4)
+[node name="Mesh" type="MeshInstance3D" parent="Sidewalks/BackstreetSouthSidewalk"]
+mesh = SubResource("Mesh_concrete")
+
+[node name="Buildings" type="Node3D" parent="." unique_id=756440877]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1000, 0)
+
+[node name="WarehouseShell" type="StaticBody3D" parent="Buildings" unique_id=201862658]
+transform = Transform3D(0.99254614, 0, -0.12186935, 0, 1, 0, 0.12186935, 0, 0.99254614, 27, 0, 13)
+
+[node name="Facade" type="CSGPolygon3D" parent="Buildings/WarehouseShell" unique_id=2032259383]
+polygon = PackedVector2Array(-9, 0, -9, 7, -5, 7, -3.5, 5.5, 1, 8.5, 7, 7.4, 9, 3.8, 9, 0)
+depth = 9.0
+material = SubResource("Mat_building_a")
+
+[node name="RoofCollapse" type="MeshInstance3D" parent="Buildings/WarehouseShell" unique_id=1872457092]
+transform = Transform3D(5.085725, -0.23825067, 1.0815595, 0.75153476, 1.7824825, 0, -1.6524521, 0.07741234, 3.328698, 0, 6, 2)
+mesh = SubResource("Mesh_roof")
+
+[node name="DoorVoid" type="MeshInstance3D" parent="Buildings/WarehouseShell" unique_id=1458562384]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 0.04, -1.4, 2, -4.56)
+mesh = SubResource("Mesh_window")
+
+[node name="Collision" type="CollisionShape3D" parent="Buildings/WarehouseShell" unique_id=999935878]
+transform = Transform3D(17, 0, 0, 0, 7, 0, 0, 0, 8, 0, 3.5, 0)
+shape = SubResource("Shape_box")
+
+[node name="LeaningApartments" type="StaticBody3D" parent="Buildings" unique_id=382843319]
+transform = Transform3D(0.9497531, 0.049774457, 0.309017, -0.05233596, 0.9986295, 0, -0.3085935, -0.016172701, 0.95105654, 42, 0, 47)
+
+[node name="Facade" type="CSGPolygon3D" parent="Buildings/LeaningApartments" unique_id=1537351841]
+polygon = PackedVector2Array(-7, 0, -7, 10, -3, 10, 0, 7.5, 3, 11, 7, 9, 7, 0)
+depth = 7.0
+material = SubResource("Mat_building_b")
+
+[node name="WindowBand" type="MeshInstance3D" parent="Buildings/LeaningApartments" unique_id=1397014786]
+transform = Transform3D(5.1, 0, 0, 0, 0.65, 0, 0, 0, 0.04, 0, 5, -3.52)
+mesh = SubResource("Mesh_window")
+
+[node name="CollapsedSide" type="MeshInstance3D" parent="Buildings/LeaningApartments" unique_id=1351729796]
+transform = Transform3D(2.1609354, -0.6879469, -0.5821527, 0.93775475, 1.6569088, 0, 0.459321, -0.14622763, 2.7388134, -5.8, 2, 2)
+mesh = SubResource("Mesh_wedge")
+
+[node name="Collision" type="CollisionShape3D" parent="Buildings/LeaningApartments" unique_id=151799135]
+transform = Transform3D(13, 0, 0, 0, 9, 0, 0, 0, 6, 0, 4.5, 0)
+shape = SubResource("Shape_box")
+
+[node name="RiversideCafeRuin" type="StaticBody3D" parent="Buildings" unique_id=1707025495]
+transform = Transform3D(0.9781476, 0, -0.2079117, 0, 1, 0, 0.2079117, 0, 0.9781476, -13, 0, 53)
+
+[node name="Facade" type="CSGPolygon3D" parent="Buildings/RiversideCafeRuin" unique_id=795713654]
+polygon = PackedVector2Array(-7, 0, -7, 5, -3.5, 5, -1, 3.4, 2, 6.2, 7, 5.4, 7, 0)
+depth = 6.4
+material = SubResource("Mat_building_a")
+
+[node name="Awning" type="MeshInstance3D" parent="Buildings/RiversideCafeRuin" unique_id=1947131791]
+transform = Transform3D(3.4235168, 0.07276909, 0, -0.72769094, 0.34235168, 0, 0, 0, 1.5, 1.8, 2.5, -3.3)
+mesh = SubResource("Mesh_roof")
+
+[node name="Collision" type="CollisionShape3D" parent="Buildings/RiversideCafeRuin" unique_id=716106910]
+transform = Transform3D(13, 0, 0, 0, 5, 0, 0, 0, 5.5, 0, 2.5, 0)
+shape = SubResource("Shape_box")
+
+[node name="PumpStation" type="StaticBody3D" parent="Buildings" unique_id=1923267357]
+transform = Transform3D(0.9612617, 0, 0.27563736, 0, 1, 0, -0.27563736, 0, 0.9612617, -16, 0, 8)
+
+[node name="Facade" type="CSGPolygon3D" parent="Buildings/PumpStation" unique_id=1916928266]
+polygon = PackedVector2Array(-5, 0, -5, 6.5, -2, 6.5, 1.5, 4.8, 5, 6.8, 5, 0)
+depth = 6.0
+material = SubResource("Mat_building_b")
+
+[node name="TankRoof" type="MeshInstance3D" parent="Buildings/PumpStation" unique_id=246009381]
+transform = Transform3D(4, 0, 0, 0, 0.8, 0, 0, 0, 2.6, 0, 6.7, 0.6)
+mesh = SubResource("Mesh_roof")
+
+[node name="Collision" type="CollisionShape3D" parent="Buildings/PumpStation" unique_id=1481785483]
+transform = Transform3D(9, 0, 0, 0, 6.4, 0, 0, 0, 5.2, 0, 3.2, 0)
+shape = SubResource("Shape_box")
+
+[node name="ServiceGarage" type="StaticBody3D" parent="Buildings" unique_id=1642491294]
+transform = Transform3D(0.99026805, 0, 0.1391731, 0, 1, 0, -0.1391731, 0, 0.99026805, 14, 0, 68)
+
+[node name="Facade" type="CSGPolygon3D" parent="Buildings/ServiceGarage" unique_id=283105401]
+polygon = PackedVector2Array(-8, 0, -8, 5.5, -4, 5.5, -1, 3.8, 3, 6.3, 8, 5.2, 8, 0)
+depth = 6.8
+material = SubResource("Mat_building_b")
+
+[node name="GarageDoorVoid" type="MeshInstance3D" parent="Buildings/ServiceGarage" unique_id=871621002]
+transform = Transform3D(3.6, 0, 0, 0, 2.1, 0, 0, 0, 0.04, 0, 2.1, -3.42)
+mesh = SubResource("Mesh_window")
+
+[node name="Collision" type="CollisionShape3D" parent="Buildings/ServiceGarage" unique_id=1921226817]
+transform = Transform3D(15, 0, 0, 0, 5.4, 0, 0, 0, 5.8, 0, 2.7, 0)
+shape = SubResource("Shape_box")
+
+[node name="Structures" type="Node3D" parent="." unique_id=822503342]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1000, 0)
+
+[node name="DrainPipe" type="StaticBody3D" parent="Structures" unique_id=2042222855]
+transform = Transform3D(-7.430936e-08, -1.7, 0, 1.7, -7.430936e-08, 0, 0, 0, 1.7, -43, 1.4, 27)
+
+[node name="Mesh" type="MeshInstance3D" parent="Structures/DrainPipe" unique_id=1313878314]
+mesh = SubResource("Mesh_pole")
+
+[node name="Collision" type="CollisionShape3D" parent="Structures/DrainPipe" unique_id=176703055]
+shape = SubResource("Shape_cylinder")
+
+[node name="PipeRun" type="StaticBody3D" parent="Structures" unique_id=296642649]
+transform = Transform3D(-5.6824803e-08, -12, 0, 1.3, -5.2453663e-07, 0, 0, 0, 1.3, 0, 1.3, 55)
+
+[node name="Mesh" type="MeshInstance3D" parent="Structures/PipeRun" unique_id=717092086]
+mesh = SubResource("Mesh_pole")
+
+[node name="Collision" type="CollisionShape3D" parent="Structures/PipeRun" unique_id=158733213]
+shape = SubResource("Shape_cylinder")
+
+[node name="BrokenWall" type="StaticBody3D" parent="Structures" unique_id=899137814]
+transform = Transform3D(7.6900935, 0, -0.19294615, 0, 3.4, 0, 2.2050989, 0, 0.67288315, 5, 1.7, 48)
+
+[node name="Mesh" type="MeshInstance3D" parent="Structures/BrokenWall" unique_id=2129913801]
+mesh = SubResource("Mesh_concrete")
+
+[node name="Collision" type="CollisionShape3D" parent="Structures/BrokenWall" unique_id=1050572758]
+shape = SubResource("Shape_box")
+
+[node name="ExposedBeam" type="StaticBody3D" parent="Structures" unique_id=274885459]
+transform = Transform3D(0.59261304, 0.93860686, 0, -0.09386069, 5.9261303, 0, 0, 0, 0.6, 31, 3, 54)
+
+[node name="Mesh" type="MeshInstance3D" parent="Structures/ExposedBeam" unique_id=642995118]
+mesh = SubResource("Mesh_column")
+
+[node name="Collision" type="CollisionShape3D" parent="Structures/ExposedBeam" unique_id=1016760074]
+shape = SubResource("Shape_cylinder")
+
+[node name="Props" type="Node3D" parent="." unique_id=1740927339]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1000, 0)
+
+[node name="WreckedCarA" type="StaticBody3D" parent="Props" unique_id=96494770]
+transform = Transform3D(0.9384708, -0.11522973, -0.32556814, 0.12186935, 0.99254614, 0, 0.3231414, -0.039676778, 0.94551855, 8, 0.8, 30)
+
+[node name="Chassis" type="MeshInstance3D" parent="Props/WreckedCarA" unique_id=363519859]
+transform = Transform3D(3.2, 0, 0, 0, 0.65, 0, 0, 0, 1.45, 0, 0, 0)
+mesh = SubResource("Mesh_rust")
+
+[node name="Cabin" type="MeshInstance3D" parent="Props/WreckedCarA" unique_id=236068060]
+transform = Transform3D(1.55, 0, 0, 0, 0.72, 0, 0, 0, 1.12, -0.3, 0.6, 0)
+mesh = SubResource("Mesh_window")
+
+[node name="Collision" type="CollisionShape3D" parent="Props/WreckedCarA" unique_id=1045015691]
+transform = Transform3D(3.2, 0, 0, 0, 1.3, 0, 0, 0, 1.45, 0, 0, 0)
+shape = SubResource("Shape_box")
+
+[node name="WreckedCarB" type="StaticBody3D" parent="Props" unique_id=221849082]
+transform = Transform3D(0.83979493, 0.11802549, 0.52991927, -0.1391731, 0.99026805, 0, -0.5247621, -0.07375051, 0.8480481, 29, 0.7, 35)
+
+[node name="Chassis" type="MeshInstance3D" parent="Props/WreckedCarB" unique_id=1188445301]
+transform = Transform3D(2.8, 0, 0, 0, 0.6, 0, 0, 0, 1.35, 0, 0, 0)
+mesh = SubResource("Mesh_metal")
+
+[node name="Cabin" type="MeshInstance3D" parent="Props/WreckedCarB" unique_id=1336272079]
+transform = Transform3D(1.25, 0, 0, 0, 0.65, 0, 0, 0, 1, 0.2, 0.55, 0)
+mesh = SubResource("Mesh_window")
+
+[node name="Collision" type="CollisionShape3D" parent="Props/WreckedCarB" unique_id=20227629]
+transform = Transform3D(2.8, 0, 0, 0, 1.2, 0, 0, 0, 1.35, 0, 0, 0)
+shape = SubResource("Shape_box")
+
+[node name="ConcreteBarrier" type="StaticBody3D" parent="Props" unique_id=1212535250]
+transform = Transform3D(3.0601754, 0, 0.21927877, 0, 1.6, 0, -0.93558943, 0, 0.7172286, -2, 0.8, 37)
+
+[node name="Mesh" type="MeshInstance3D" parent="Props/ConcreteBarrier" unique_id=1880257244]
+mesh = SubResource("Mesh_wedge")
+
+[node name="Collision" type="CollisionShape3D" parent="Props/ConcreteBarrier" unique_id=145341776]
+shape = SubResource("Shape_box")
+
+[node name="Dumpster" type="StaticBody3D" parent="Props" unique_id=1400427620]
+transform = Transform3D(2.3287098, 0, -0.32659456, 0, 2, 0, 0.5806126, 0, 1.3098992, 20, 1, 56)
+
+[node name="Mesh" type="MeshInstance3D" parent="Props/Dumpster" unique_id=1740389084]
+mesh = SubResource("Mesh_metal")
+
+[node name="Lid" type="MeshInstance3D" parent="Props/Dumpster" unique_id=311250137]
+transform = Transform3D(2.4942763, -0.037424106, 0, 0.53017485, 0.17606658, 0, 0, 0, 1.48, 0, 1.05, 0)
+mesh = SubResource("Mesh_rust")
+
+[node name="Collision" type="CollisionShape3D" parent="Props/Dumpster" unique_id=423224460]
+shape = SubResource("Shape_box")
+
+[node name="BrokenStreetlight" type="StaticBody3D" parent="Props" unique_id=1851134123]
+transform = Transform3D(0.35836798, -6.535063, 0, 0.9335804, 2.508576, 0, 0, 0, 1, -19, 1, 23)
+
+[node name="Mesh" type="MeshInstance3D" parent="Props/BrokenStreetlight" unique_id=1352779583]
+mesh = SubResource("Mesh_pole")
+
+[node name="Collision" type="CollisionShape3D" parent="Props/BrokenStreetlight" unique_id=1578935675]
+shape = SubResource("Shape_cylinder")
+
+[node name="RoadSign" type="StaticBody3D" parent="Props" unique_id=160380361]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -25, 1.7, 37)
+
+[node name="Post" type="MeshInstance3D" parent="Props/RoadSign" unique_id=2136957721]
+transform = Transform3D(1, 0, 0, 0, 3.4, 0, 0, 0, 1, 0, 0, 0)
+mesh = SubResource("Mesh_pole")
+
+[node name="Sign" type="MeshInstance3D" parent="Props/RoadSign" unique_id=673827709]
+transform = Transform3D(1.35, 0, 0, 0, 0.75, 0, 0, 0, 0.12, 0, 2, 0)
+mesh = SubResource("Mesh_marking")
+
+[node name="Collision" type="CollisionShape3D" parent="Props/RoadSign" unique_id=812400271]
+transform = Transform3D(0.4, 0, 0, 0, 3.4, 0, 0, 0, 0.4, 0, 0, 0)
+shape = SubResource("Shape_box")
+
+[node name="FenceSegment" type="StaticBody3D" parent="Props" unique_id=899235976]
+transform = Transform3D(5.9416084, 0, 0.016700773, 0, 2.4, 0, -0.83503866, 0, 0.11883216, 30, 1.2, 61)
+
+[node name="Mesh" type="MeshInstance3D" parent="Props/FenceSegment" unique_id=292094625]
+mesh = SubResource("Mesh_metal")
+
+[node name="Collision" type="CollisionShape3D" parent="Props/FenceSegment" unique_id=433445425]
+shape = SubResource("Shape_box")
+
+[node name="Debris" type="Node3D" parent="." unique_id=1155502146]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1000, 0)
+
+[node name="RubbleA" type="MeshInstance3D" parent="Debris" unique_id=1879111174]
+transform = Transform3D(2.472253, 0, 0.93894315, 0, 1, 0, -1.3145204, 0, 1.7658951, -33, 0.45, 51)
+mesh = SubResource("Mesh_wedge")
+
+[node name="RubbleB" type="MeshInstance3D" parent="Debris" unique_id=756752272]
+transform = Transform3D(1.8450752, 0, -0.87142247, 0, 0.8, 0, 1.198206, 0, 1.3418729, 36, 0.4, 23)
+mesh = SubResource("Mesh_wedge")
+
+[node name="BrokenSlab" type="MeshInstance3D" parent="Debris" unique_id=254428513]
+transform = Transform3D(3.1263523, 0.00021897163, 0.5844439, 0.24177161, 0.24696396, -0.18092503, -1.5548208, 0.038842715, 1.1470358, -11, 0.36, 40)
+mesh = SubResource("Mesh_concrete")
+
+[node name="UtilityBox" type="StaticBody3D" parent="Debris" unique_id=1662029613]
+transform = Transform3D(1.0400704, 0, 0.2604545, 0, 1.6, 0, -0.35812497, 0, 0.75641483, 34, 0.8, 49)
+
+[node name="Mesh" type="MeshInstance3D" parent="Debris/UtilityBox" unique_id=516191590]
+mesh = SubResource("Mesh_metal")
+
+[node name="Collision" type="CollisionShape3D" parent="Debris/UtilityBox" unique_id=792025680]
+shape = SubResource("Shape_box")
+
+[node name="Vegetation" type="Node3D" parent="." unique_id=1602205320]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1000, 0)
+
+[node name="ReedsA" type="MeshInstance3D" parent="Vegetation" unique_id=139613924]
+transform = Transform3D(1.8, 0, 0, 0, 2.2, 0, 0, 0, 1.4, -46, 0.45, 15)
+mesh = SubResource("Mesh_plant")
+
+[node name="ReedsB" type="MeshInstance3D" parent="Vegetation" unique_id=14201608]
+transform = Transform3D(1.5, 0, 0, 0, 1.8, 0, 0, 0, 1.2, -46, 0.4, 59)
+mesh = SubResource("Mesh_plant")
+
+[node name="WeedsA" type="MeshInstance3D" parent="Vegetation" unique_id=188418433]
+transform = Transform3D(1.2, 0, 0, 0, 1.4, 0, 0, 0, 1, -34, 0.45, 43)
+mesh = SubResource("Mesh_plant")
+
+[node name="WeedsB" type="MeshInstance3D" parent="Vegetation" unique_id=157761236]
+transform = Transform3D(1, 0, 0, 0, 1.2, 0, 0, 0, 0.9, 8, 0.4, 44)
+mesh = SubResource("Mesh_plant")
+
+[node name="LevelDesignMarkers" type="Node3D" parent="." unique_id=2117474506]
+
+[node name="PlayerStart" type="Marker3D" parent="LevelDesignMarkers" unique_id=2063611550]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -35, 1, 33)
+
+[node name="EscapePoint" type="Marker3D" parent="LevelDesignMarkers" unique_id=369659937]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 37, 1, 58)
+
+[node name="CheckpointLocation" type="Marker3D" parent="LevelDesignMarkers" unique_id=1375945724]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 1, 47)
+
+[node name="RequiredItemLocation" type="Marker3D" parent="LevelDesignMarkers" unique_id=1236520422]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -16, 1, 60)
+
+[node name="ProgressionGate" type="Marker3D" parent="LevelDesignMarkers" unique_id=1129424521]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 22, 1, 62)
+
+[node name="RiverEntrance_A" type="Marker3D" parent="LevelDesignMarkers" unique_id=516081575]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -40.5, 0.5, 19)
+
+[node name="RiverEntrance_B" type="Marker3D" parent="LevelDesignMarkers" unique_id=700737338]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -40.5, 0.5, 43)
+
+[node name="RiverEntrance_C" type="Marker3D" parent="LevelDesignMarkers" unique_id=1899975126]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -40.5, 0.5, 68)
+
+[node name="StartArea" type="Node3D" parent="." unique_id=708064630]
+
+[node name="Player" parent="." instance=ExtResource("100_player")]
+position = Vector3(-35, 0.1, 33)
+
+[node name="EscapeArea" type="Node3D" parent="." unique_id=1660034548]
+
+[node name="AssetCity" type="Node3D" parent="." unique_id=696588717]
+
+[node name="RoadNetwork" type="Node3D" parent="AssetCity" unique_id=873059588]
+position = Vector3(0, -1000, 0)
+
+[node name="CentralFourWay" parent="AssetCity/RoadNetwork" unique_id=1431589745 instance=ExtResource("6_intersection")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0.24, 31)
+
+[node name="CentralWestStreet" parent="AssetCity/RoadNetwork" unique_id=1083565661 instance=ExtResource("4_street")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -15, 0.25, 31)
+
+[node name="CentralEastStreet" parent="AssetCity/RoadNetwork" unique_id=1651226110 instance=ExtResource("4_street")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 17, 0.25, 31)
+
+[node name="EastTIntersection" parent="AssetCity/RoadNetwork" unique_id=1298393256 instance=ExtResource("7_tintersection")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 32, 0.25, 31)
+
+[node name="RiversideStreet" parent="AssetCity/RoadNetwork" unique_id=919738625 instance=ExtResource("5_street_nosidewalk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -33, 0.25, 35)
+
+[node name="ServiceStreetWest" parent="AssetCity/RoadNetwork" unique_id=453350577 instance=ExtResource("5_street_nosidewalk")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 4, 0.25, 58)
+
+[node name="ServiceStreetEast" parent="AssetCity/RoadNetwork" unique_id=1346401587 instance=ExtResource("5_street_nosidewalk")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 22, 0.25, 58)
+
+[node name="YellowCenterLine" parent="AssetCity/RoadNetwork" unique_id=275714961 instance=ExtResource("16_yellow")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 0, 0.32, 31)
+
+[node name="Crosswalk" parent="AssetCity/RoadNetwork" unique_id=692381088 instance=ExtResource("17_crosswalk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0.33, 25)
+
+; Connected east-west main street extension toward the composed building frontage.
+[node name="MainStreetFarWest" parent="AssetCity/RoadNetwork" instance=ExtResource("4_street")]
+position = Vector3(-31, 0.25, 31)
+rotation_degrees = Vector3(0, 90, 0)
+
+[node name="MainStreetEastA" parent="AssetCity/RoadNetwork" instance=ExtResource("4_street")]
+position = Vector3(47, 0.25, 31)
+rotation_degrees = Vector3(0, 90, 0)
+
+[node name="MainStreetEastB" parent="AssetCity/RoadNetwork" instance=ExtResource("4_street")]
+position = Vector3(62, 0.25, 31)
+rotation_degrees = Vector3(0, 90, 0)
+
+[node name="FrontageJunction" parent="AssetCity/RoadNetwork" instance=ExtResource("7_tintersection")]
+position = Vector3(61, 0.26, 31)
+rotation_degrees = Vector3(0, -90, 0)
+
+; North-south secondary route ties the main street to service and progression areas.
+[node name="SecondaryStreetNorth" parent="AssetCity/RoadNetwork" instance=ExtResource("5_street_nosidewalk")]
+position = Vector3(43, 0.25, 16)
+
+[node name="SecondaryStreetCenter" parent="AssetCity/RoadNetwork" instance=ExtResource("5_street_nosidewalk")]
+position = Vector3(43, 0.25, 47)
+
+[node name="SecondaryTJunction" parent="AssetCity/RoadNetwork" instance=ExtResource("7_tintersection")]
+position = Vector3(43, 0.26, 58)
+
+[node name="SecondaryStreetSouth" parent="AssetCity/RoadNetwork" instance=ExtResource("5_street_nosidewalk")]
+position = Vector3(43, 0.25, 76)
+
+[node name="SecondaryStreetFarSouth" parent="AssetCity/RoadNetwork" instance=ExtResource("5_street_nosidewalk")]
+position = Vector3(43, 0.25, 94)
+
+; Continuous riverside lane parallels the promenade from the north to south extension.
+[node name="RiversideStreetNorth" parent="AssetCity/RoadNetwork" instance=ExtResource("5_street_nosidewalk")]
+position = Vector3(-31, 0.25, 16)
+
+[node name="RiversideStreetSouthA" parent="AssetCity/RoadNetwork" instance=ExtResource("5_street_nosidewalk")]
+position = Vector3(-31, 0.25, 53)
+
+[node name="RiversideStreetSouthB" parent="AssetCity/RoadNetwork" instance=ExtResource("5_street_nosidewalk")]
+position = Vector3(-31, 0.25, 71)
+
+[node name="RiversideStreetSouthC" parent="AssetCity/RoadNetwork" instance=ExtResource("5_street_nosidewalk")]
+position = Vector3(-31, 0.25, 89)
+
+[node name="RiversideTConnection" parent="AssetCity/RoadNetwork" instance=ExtResource("7_tintersection")]
+position = Vector3(-31, 0.26, 58)
+rotation_degrees = Vector3(0, 90, 0)
+
+[node name="MainCrosswalkEast" parent="AssetCity/RoadNetwork" instance=ExtResource("17_crosswalk")]
+position = Vector3(42, 0.33, 31)
+rotation_degrees = Vector3(0, 90, 0)
+
+[node name="ServiceCrosswalk" parent="AssetCity/RoadNetwork" instance=ExtResource("17_crosswalk")]
+position = Vector3(43, 0.33, 58)
+
+[node name="MainLaneMarkingEast" parent="AssetCity/RoadNetwork" instance=ExtResource("16_yellow")]
+position = Vector3(49, 0.32, 31)
+rotation_degrees = Vector3(0, 90, 0)
+
+[node name="RiversideLaneMarking" parent="AssetCity/RoadNetwork" instance=ExtResource("16_yellow")]
+position = Vector3(-31, 0.32, 70)
+
+[node name="ExpandedRoadSidewalks" type="Node3D" parent="AssetCity/RoadNetwork"]
+
+[node name="MainNorthWalkWest" parent="AssetCity/RoadNetwork/ExpandedRoadSidewalks" instance=ExtResource("8_sidewalk")]
+position = Vector3(-20, 0.34, 22)
+rotation_degrees = Vector3(0, 90, 0)
+[node name="MainNorthWalkCenter" parent="AssetCity/RoadNetwork/ExpandedRoadSidewalks" instance=ExtResource("8_sidewalk")]
+position = Vector3(12, 0.34, 22)
+rotation_degrees = Vector3(0, 90, 0)
+[node name="MainNorthWalkEast" parent="AssetCity/RoadNetwork/ExpandedRoadSidewalks" instance=ExtResource("8_sidewalk")]
+position = Vector3(48, 0.34, 22)
+rotation_degrees = Vector3(0, 90, 0)
+[node name="MainSouthWalkWest" parent="AssetCity/RoadNetwork/ExpandedRoadSidewalks" instance=ExtResource("8_sidewalk")]
+position = Vector3(-18, 0.34, 40)
+rotation_degrees = Vector3(0, 90, 0)
+[node name="MainSouthWalkCenter" parent="AssetCity/RoadNetwork/ExpandedRoadSidewalks" instance=ExtResource("8_sidewalk")]
+position = Vector3(14, 0.34, 40)
+rotation_degrees = Vector3(0, 90, 0)
+[node name="MainSouthWalkEast" parent="AssetCity/RoadNetwork/ExpandedRoadSidewalks" instance=ExtResource("8_sidewalk")]
+position = Vector3(53, 0.34, 40)
+rotation_degrees = Vector3(0, 90, 0)
+[node name="FrontageWalkNorth" parent="AssetCity/RoadNetwork/ExpandedRoadSidewalks" instance=ExtResource("8_sidewalk")]
+position = Vector3(65, 0.34, 18)
+[node name="FrontageWalkCenter" parent="AssetCity/RoadNetwork/ExpandedRoadSidewalks" instance=ExtResource("8_sidewalk")]
+position = Vector3(65, 0.34, 52)
+[node name="FrontageWalkSouth" parent="AssetCity/RoadNetwork/ExpandedRoadSidewalks" instance=ExtResource("8_sidewalk")]
+position = Vector3(65, 0.34, 84)
+
+; Only three imported junction caps remain visible, each at a true road connection.
+[node name="LogicalRoadJunctions" type="Node3D" parent="AssetCity"]
+position = Vector3(0, -1000, 0)
+
+[node name="MainFourWay" parent="AssetCity/LogicalRoadJunctions" instance=ExtResource("6_intersection")]
+position = Vector3(1, 0.24, 31)
+
+[node name="MainSecondaryJunction" parent="AssetCity/LogicalRoadJunctions" instance=ExtResource("7_tintersection")]
+position = Vector3(38, 0.25, 31)
+rotation_degrees = Vector3(0, 90, 0)
+
+[node name="BackstreetJunction" parent="AssetCity/LogicalRoadJunctions" instance=ExtResource("7_tintersection")]
+position = Vector3(38, 0.25, 82)
+rotation_degrees = Vector3(0, 180, 0)
+
+[node name="MainJunctionCrosswalk" parent="AssetCity/LogicalRoadJunctions" instance=ExtResource("17_crosswalk")]
+position = Vector3(1, 0.33, 25)
+
+[node name="SecondaryJunctionCrosswalk" parent="AssetCity/LogicalRoadJunctions" instance=ExtResource("17_crosswalk")]
+position = Vector3(38, 0.33, 31)
+rotation_degrees = Vector3(0, 90, 0)
+
+[node name="RiversideAssets" type="Node3D" parent="AssetCity" unique_id=31812741]
+
+[node name="PromenadeWalkA" parent="AssetCity/RiversideAssets" unique_id=1135707907 instance=ExtResource("8_sidewalk")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -39, 0.34, 16)
+
+[node name="PromenadeWalkB" parent="AssetCity/RiversideAssets" unique_id=938055958 instance=ExtResource("8_sidewalk")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -39, 0.34, 34)
+
+[node name="PromenadeWalkC" parent="AssetCity/RiversideAssets" unique_id=746799581 instance=ExtResource("8_sidewalk")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -39, 0.34, 59)
+
+[node name="PromenadeWalkD" parent="AssetCity/RiversideAssets" instance=ExtResource("8_sidewalk")]
+position = Vector3(-39, 0.34, 73)
+rotation_degrees = Vector3(0, 90, 0)
+
+[node name="PromenadeRoadBarrier" parent="AssetCity/RiversideAssets" instance=ExtResource("27_barrier")]
+position = Vector3(-38.5, 0.35, 68)
+rotation_degrees = Vector3(0, 88, 0)
+
+[node name="PromenadeDrainSouth" parent="AssetCity/RiversideAssets" instance=ExtResource("12_drain")]
+position = Vector3(-37.5, 0.35, 79)
+rotation_degrees = Vector3(0, 90, 0)
+
+[node name="PromenadeRubbleSouth" parent="AssetCity/RiversideAssets" instance=ExtResource("40_bent_metal")]
+position = Vector3(-36.2, 0.38, 82)
+rotation_degrees = Vector3(8, 73, -6)
+
+[node name="PromenadeCorner" parent="AssetCity/RiversideAssets" unique_id=974663070 instance=ExtResource("9_corner")]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, -39, 0.34, 45)
+
+[node name="BrokenRiverAccessSlab" parent="AssetCity/RiversideAssets" instance=ExtResource("32_concrete_wall")]
+position = Vector3(-42.4, 0.05, 47)
+rotation_degrees = Vector3(9, 88, -7)
+
+[node name="BollardA" parent="AssetCity/RiversideAssets" unique_id=188488958 instance=ExtResource("11_bollard")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -42, 0.35, 18)
+
+[node name="BollardB" parent="AssetCity/RiversideAssets" unique_id=1783130877 instance=ExtResource("11_bollard")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -42, 0.35, 31)
+
+[node name="BollardC" parent="AssetCity/RiversideAssets" unique_id=966104230 instance=ExtResource("11_bollard")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -42, 0.35, 57)
+
+[node name="PromenadeDrain" parent="AssetCity/RiversideAssets" unique_id=707464043 instance=ExtResource("12_drain")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -37.5, 0.35, 42)
+
+[node name="ImportedBuildings" type="Node3D" parent="AssetCity" unique_id=649622751]
+
+[node name="LargeWarehouse" parent="AssetCity/ImportedBuildings" unique_id=566023493 instance=ExtResource("1_large")]
+transform = Transform3D(0.9781476, 0, -0.2079117, 0, 1, 0, 0.2079117, 0, 0.9781476, 86, 0.2, 3)
+
+[node name="ExteriorWalls" type="Node3D" parent="AssetCity/ImportedBuildings/LargeWarehouse" unique_id=1050655889]
+
+[node name="NorthWall" type="StaticBody3D" parent="AssetCity/ImportedBuildings/LargeWarehouse/ExteriorWalls" unique_id=1525531]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 14.2, -16.42)
+
+[node name="Collision" type="CollisionShape3D" parent="AssetCity/ImportedBuildings/LargeWarehouse/ExteriorWalls/NorthWall" unique_id=2041614383]
+transform = Transform3D(21.44, 0, 0, 0, 28.4, 0, 0, 0, 0.8, 0, 0, 0)
+shape = SubResource("Shape_box")
+
+[node name="SouthWall" type="StaticBody3D" parent="AssetCity/ImportedBuildings/LargeWarehouse/ExteriorWalls" unique_id=1632647774]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 14.2, 0.42)
+
+[node name="Collision" type="CollisionShape3D" parent="AssetCity/ImportedBuildings/LargeWarehouse/ExteriorWalls/SouthWall" unique_id=1837635124]
+transform = Transform3D(21.44, 0, 0, 0, 28.4, 0, 0, 0, 0.8, 0, 0, 0)
+shape = SubResource("Shape_box")
+
+[node name="EastWall" type="StaticBody3D" parent="AssetCity/ImportedBuildings/LargeWarehouse/ExteriorWalls" unique_id=500949931]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11.42, 14.2, -8)
+
+[node name="Collision" type="CollisionShape3D" parent="AssetCity/ImportedBuildings/LargeWarehouse/ExteriorWalls/EastWall" unique_id=20036848]
+transform = Transform3D(0.8, 0, 0, 0, 28.4, 0, 0, 0, 17.64, 0, 0, 0)
+shape = SubResource("Shape_box")
+
+[node name="WestWall" type="StaticBody3D" parent="AssetCity/ImportedBuildings/LargeWarehouse/ExteriorWalls" unique_id=2146382399]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.42, 14.2, -8)
+
+[node name="Collision" type="CollisionShape3D" parent="AssetCity/ImportedBuildings/LargeWarehouse/ExteriorWalls/WestWall" unique_id=1859601927]
+transform = Transform3D(0.8, 0, 0, 0, 28.4, 0, 0, 0, 17.64, 0, 0, 0)
+shape = SubResource("Shape_box")
+
+[node name="MediumApartment" parent="AssetCity/ImportedBuildings" unique_id=190286155 instance=ExtResource("2_medium")]
+transform = Transform3D(0.95105654, 0, 0.309017, 0, 1, 0, -0.309017, 0, 0.95105654, 87, 0.2, 30)
+
+[node name="ExteriorWalls" type="Node3D" parent="AssetCity/ImportedBuildings/MediumApartment" unique_id=481249746]
+
+[node name="NorthWall" type="StaticBody3D" parent="AssetCity/ImportedBuildings/MediumApartment/ExteriorWalls" unique_id=1040494625]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 12.7, -12.59)
+
+[node name="Collision" type="CollisionShape3D" parent="AssetCity/ImportedBuildings/MediumApartment/ExteriorWalls/NorthWall" unique_id=1339101088]
+transform = Transform3D(15.86, 0, 0, 0, 25.4, 0, 0, 0, 0.8, 0, 0, 0)
+shape = SubResource("Shape_box")
+
+[node name="SouthWall" type="StaticBody3D" parent="AssetCity/ImportedBuildings/MediumApartment/ExteriorWalls" unique_id=1744725052]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 12.7, 0.67)
+
+[node name="Collision" type="CollisionShape3D" parent="AssetCity/ImportedBuildings/MediumApartment/ExteriorWalls/SouthWall" unique_id=1708786976]
+transform = Transform3D(15.86, 0, 0, 0, 25.4, 0, 0, 0, 0.8, 0, 0, 0)
+shape = SubResource("Shape_box")
+
+[node name="EastWall" type="StaticBody3D" parent="AssetCity/ImportedBuildings/MediumApartment/ExteriorWalls" unique_id=1049142689]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.63, 12.7, -5.96)
+
+[node name="Collision" type="CollisionShape3D" parent="AssetCity/ImportedBuildings/MediumApartment/ExteriorWalls/EastWall" unique_id=1199098344]
+transform = Transform3D(0.8, 0, 0, 0, 25.4, 0, 0, 0, 13.86, 0, 0, 0)
+shape = SubResource("Shape_box")
+
+[node name="WestWall" type="StaticBody3D" parent="AssetCity/ImportedBuildings/MediumApartment/ExteriorWalls" unique_id=977237774]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.63, 12.7, -5.96)
+
+[node name="Collision" type="CollisionShape3D" parent="AssetCity/ImportedBuildings/MediumApartment/ExteriorWalls/WestWall" unique_id=1792086111]
+transform = Transform3D(0.8, 0, 0, 0, 25.4, 0, 0, 0, 13.86, 0, 0, 0)
+shape = SubResource("Shape_box")
+
+[node name="RiversideShop" parent="AssetCity/ImportedBuildings" unique_id=2076326014 instance=ExtResource("3_small")]
+transform = Transform3D(0.95105654, 0, -0.309017, 0, 1, 0, 0.309017, 0, 0.95105654, 84, 0.2, 49)
+
+[node name="ExteriorWalls" type="Node3D" parent="AssetCity/ImportedBuildings/RiversideShop" unique_id=1015077669]
+
+[node name="NorthWall" type="StaticBody3D" parent="AssetCity/ImportedBuildings/RiversideShop/ExteriorWalls" unique_id=996773521]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 8.7, -12.33)
+
+[node name="Collision" type="CollisionShape3D" parent="AssetCity/ImportedBuildings/RiversideShop/ExteriorWalls/NorthWall" unique_id=1077682974]
+transform = Transform3D(13.26, 0, 0, 0, 17.4, 0, 0, 0, 0.8, 0, 0, 0)
+shape = SubResource("Shape_box")
+
+[node name="SouthWall" type="StaticBody3D" parent="AssetCity/ImportedBuildings/RiversideShop/ExteriorWalls" unique_id=708633978]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 8.7, 2.41)
+
+[node name="Collision" type="CollisionShape3D" parent="AssetCity/ImportedBuildings/RiversideShop/ExteriorWalls/SouthWall" unique_id=1673265557]
+transform = Transform3D(13.26, 0, 0, 0, 17.4, 0, 0, 0, 0.8, 0, 0, 0)
+shape = SubResource("Shape_box")
+
+[node name="EastWall" type="StaticBody3D" parent="AssetCity/ImportedBuildings/RiversideShop/ExteriorWalls" unique_id=1110070317]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.33, 8.7, -4.96)
+
+[node name="Collision" type="CollisionShape3D" parent="AssetCity/ImportedBuildings/RiversideShop/ExteriorWalls/EastWall" unique_id=1869444310]
+transform = Transform3D(0.8, 0, 0, 0, 17.4, 0, 0, 0, 15.54, 0, 0, 0)
+shape = SubResource("Shape_box")
+
+[node name="WestWall" type="StaticBody3D" parent="AssetCity/ImportedBuildings/RiversideShop/ExteriorWalls" unique_id=1193215269]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.33, 8.7, -4.96)
+
+[node name="Collision" type="CollisionShape3D" parent="AssetCity/ImportedBuildings/RiversideShop/ExteriorWalls/WestWall" unique_id=205882563]
+transform = Transform3D(0.8, 0, 0, 0, 17.4, 0, 0, 0, 15.54, 0, 0, 0)
+shape = SubResource("Shape_box")
+
+[node name="ServiceBlock" parent="AssetCity/ImportedBuildings" unique_id=15102161 instance=ExtResource("2_medium")]
+transform = Transform3D(0.99254614, 0, 0.12186935, 0, 1, 0, -0.12186935, 0, 0.99254614, 88, 0.2, 70)
+
+[node name="ExteriorWalls" type="Node3D" parent="AssetCity/ImportedBuildings/ServiceBlock" unique_id=323276374]
+
+[node name="NorthWall" type="StaticBody3D" parent="AssetCity/ImportedBuildings/ServiceBlock/ExteriorWalls" unique_id=528717792]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 12.7, -12.59)
+
+[node name="Collision" type="CollisionShape3D" parent="AssetCity/ImportedBuildings/ServiceBlock/ExteriorWalls/NorthWall" unique_id=287457932]
+transform = Transform3D(15.86, 0, 0, 0, 25.4, 0, 0, 0, 0.8, 0, 0, 0)
+shape = SubResource("Shape_box")
+
+[node name="SouthWall" type="StaticBody3D" parent="AssetCity/ImportedBuildings/ServiceBlock/ExteriorWalls" unique_id=779563756]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 12.7, 0.67)
+
+[node name="Collision" type="CollisionShape3D" parent="AssetCity/ImportedBuildings/ServiceBlock/ExteriorWalls/SouthWall" unique_id=767722679]
+transform = Transform3D(15.86, 0, 0, 0, 25.4, 0, 0, 0, 0.8, 0, 0, 0)
+shape = SubResource("Shape_box")
+
+[node name="EastWall" type="StaticBody3D" parent="AssetCity/ImportedBuildings/ServiceBlock/ExteriorWalls" unique_id=1935479686]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7.63, 12.7, -5.96)
+
+[node name="Collision" type="CollisionShape3D" parent="AssetCity/ImportedBuildings/ServiceBlock/ExteriorWalls/EastWall" unique_id=331446772]
+transform = Transform3D(0.8, 0, 0, 0, 25.4, 0, 0, 0, 13.86, 0, 0, 0)
+shape = SubResource("Shape_box")
+
+[node name="WestWall" type="StaticBody3D" parent="AssetCity/ImportedBuildings/ServiceBlock/ExteriorWalls" unique_id=818438280]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.63, 12.7, -5.96)
+
+[node name="Collision" type="CollisionShape3D" parent="AssetCity/ImportedBuildings/ServiceBlock/ExteriorWalls/WestWall" unique_id=1924914377]
+transform = Transform3D(0.8, 0, 0, 0, 25.4, 0, 0, 0, 13.86, 0, 0, 0)
+shape = SubResource("Shape_box")
+
+[node name="PumpBuilding" parent="AssetCity/ImportedBuildings" unique_id=1099239151 instance=ExtResource("3_small")]
+transform = Transform3D(0.9335804, 0, 0.35836795, 0, 1, 0, -0.35836795, 0, 0.9335804, 85, 0.2, 94)
+
+[node name="ExteriorWalls" type="Node3D" parent="AssetCity/ImportedBuildings/PumpBuilding" unique_id=1219970049]
+
+[node name="NorthWall" type="StaticBody3D" parent="AssetCity/ImportedBuildings/PumpBuilding/ExteriorWalls" unique_id=1644820068]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 8.7, -12.33)
+
+[node name="Collision" type="CollisionShape3D" parent="AssetCity/ImportedBuildings/PumpBuilding/ExteriorWalls/NorthWall" unique_id=996339644]
+transform = Transform3D(13.26, 0, 0, 0, 17.4, 0, 0, 0, 0.8, 0, 0, 0)
+shape = SubResource("Shape_box")
+
+[node name="SouthWall" type="StaticBody3D" parent="AssetCity/ImportedBuildings/PumpBuilding/ExteriorWalls" unique_id=1301628087]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 8.7, 2.41)
+
+[node name="Collision" type="CollisionShape3D" parent="AssetCity/ImportedBuildings/PumpBuilding/ExteriorWalls/SouthWall" unique_id=1439674106]
+transform = Transform3D(13.26, 0, 0, 0, 17.4, 0, 0, 0, 0.8, 0, 0, 0)
+shape = SubResource("Shape_box")
+
+[node name="EastWall" type="StaticBody3D" parent="AssetCity/ImportedBuildings/PumpBuilding/ExteriorWalls" unique_id=1335424268]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.33, 8.7, -4.96)
+
+[node name="Collision" type="CollisionShape3D" parent="AssetCity/ImportedBuildings/PumpBuilding/ExteriorWalls/EastWall" unique_id=1257065884]
+transform = Transform3D(0.8, 0, 0, 0, 17.4, 0, 0, 0, 15.54, 0, 0, 0)
+shape = SubResource("Shape_box")
+
+[node name="WestWall" type="StaticBody3D" parent="AssetCity/ImportedBuildings/PumpBuilding/ExteriorWalls" unique_id=176619036]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.33, 8.7, -4.96)
+
+[node name="Collision" type="CollisionShape3D" parent="AssetCity/ImportedBuildings/PumpBuilding/ExteriorWalls/WestWall" unique_id=351785186]
+transform = Transform3D(0.8, 0, 0, 0, 17.4, 0, 0, 0, 15.54, 0, 0, 0)
+shape = SubResource("Shape_box")
+
+[node name="WarehouseWindowAccent" parent="AssetCity/ImportedBuildings" unique_id=181270094 instance=ExtResource("18_brick_window")]
+transform = Transform3D(0.9659258, 0, 0.25881904, 0, 1, 0, -0.25881904, 0, 0.9659258, 79, 4, -3)
+
+[node name="ApartmentMetalAccent" parent="AssetCity/ImportedBuildings" unique_id=1879670737 instance=ExtResource("19_metal_window")]
+transform = Transform3D(0.9781476, 0, -0.2079117, 0, 1, 0, 0.2079117, 0, 0.9781476, 82, 4, 25)
+
+[node name="ServiceRoofBreak" parent="AssetCity/ImportedBuildings" unique_id=964879268 instance=ExtResource("20_roof_corner")]
+transform = Transform3D(0.79863554, 0, 0.601815, 0, 1, 0, -0.601815, 0, 0.79863554, 91, 7, 67)
+
+[node name="BuildingCollision" type="Node3D" parent="AssetCity" unique_id=978853124]
+
+[node name="GameplayObstacleCollision" type="Node3D" parent="AssetCity" unique_id=1901972293]
+
+[node name="PlanterACollision" type="StaticBody3D" parent="AssetCity/GameplayObstacleCollision" unique_id=141463974]
+transform = Transform3D(0.9659258, 0, 0.25881904, 0, 1, 0, -0.25881904, 0, 0.9659258, -24, 0.7, 39)
+
+[node name="Collision" type="CollisionShape3D" parent="AssetCity/GameplayObstacleCollision/PlanterACollision" unique_id=1163951220]
+transform = Transform3D(2, 0, 0, 0, 1.4, 0, 0, 0, 1.2, 0, 0, 0)
+shape = SubResource("Shape_box")
+
+[node name="PlanterBCollision" type="StaticBody3D" parent="AssetCity/GameplayObstacleCollision" unique_id=55498765]
+transform = Transform3D(0.95105654, 0, -0.309017, 0, 1, 0, 0.309017, 0, 0.95105654, 23, 0.7, 42)
+
+[node name="Collision" type="CollisionShape3D" parent="AssetCity/GameplayObstacleCollision/PlanterBCollision" unique_id=602265765]
+transform = Transform3D(2, 0, 0, 0, 1.4, 0, 0, 0, 1.2, 0, 0, 0)
+shape = SubResource("Shape_box")
+
+[node name="WarehouseSupplyCollision" type="StaticBody3D" parent="AssetCity/GameplayObstacleCollision" unique_id=167090565]
+transform = Transform3D(0.9335804, 0, 0.35836795, 0, 1, 0, -0.35836795, 0, 0.9335804, 19, 1, 20.6)
+
+[node name="Collision" type="CollisionShape3D" parent="AssetCity/GameplayObstacleCollision/WarehouseSupplyCollision" unique_id=773582443]
+transform = Transform3D(4.2, 0, 0, 0, 2, 0, 0, 0, 2.8, 0, 0, 0)
+shape = SubResource("Shape_box")
+
+[node name="CafeSupplyCollision" type="StaticBody3D" parent="AssetCity/GameplayObstacleCollision" unique_id=1042654254]
+transform = Transform3D(0.89879405, 0, -0.43837115, 0, 1, 0, 0.43837115, 0, 0.89879405, -18.5, 1, 58.8)
+
+[node name="Collision" type="CollisionShape3D" parent="AssetCity/GameplayObstacleCollision/CafeSupplyCollision" unique_id=1138659430]
+transform = Transform3D(4.2, 0, 0, 0, 2, 0, 0, 0, 2.8, 0, 0, 0)
+shape = SubResource("Shape_box")
+
+[node name="BushACollision" type="StaticBody3D" parent="AssetCity/GameplayObstacleCollision" unique_id=20024443]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -34, 0.65, 15)
+
+[node name="Collision" type="CollisionShape3D" parent="AssetCity/GameplayObstacleCollision/BushACollision" unique_id=1500999998]
+transform = Transform3D(1.1, 0, 0, 0, 1.3, 0, 0, 0, 1.1, 0, 0, 0)
+shape = SubResource("Shape_box")
+
+[node name="BushBCollision" type="StaticBody3D" parent="AssetCity/GameplayObstacleCollision" unique_id=1563953888]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -35, 0.65, 62)
+
+[node name="Collision" type="CollisionShape3D" parent="AssetCity/GameplayObstacleCollision/BushBCollision" unique_id=1066502470]
+transform = Transform3D(1.1, 0, 0, 0, 1.3, 0, 0, 0, 1.1, 0, 0, 0)
+shape = SubResource("Shape_box")
+
+[node name="BushCCollision" type="StaticBody3D" parent="AssetCity/GameplayObstacleCollision" unique_id=1752246148]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21, 0.65, 52)
+
+[node name="Collision" type="CollisionShape3D" parent="AssetCity/GameplayObstacleCollision/BushCCollision" unique_id=1965072094]
+transform = Transform3D(1.1, 0, 0, 0, 1.3, 0, 0, 0, 1.1, 0, 0, 0)
+shape = SubResource("Shape_box")
+
+[node name="BushDCollision" type="StaticBody3D" parent="AssetCity/GameplayObstacleCollision" unique_id=605815461]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27, 0.65, 52)
+
+[node name="Collision" type="CollisionShape3D" parent="AssetCity/GameplayObstacleCollision/BushDCollision" unique_id=2014359216]
+transform = Transform3D(1.1, 0, 0, 0, 1.3, 0, 0, 0, 1.1, 0, 0, 0)
+shape = SubResource("Shape_box")
+
+[node name="BushECollision" type="StaticBody3D" parent="AssetCity/GameplayObstacleCollision" unique_id=1637056876]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9, 0.65, 69)
+
+[node name="Collision" type="CollisionShape3D" parent="AssetCity/GameplayObstacleCollision/BushECollision" unique_id=807529990]
+transform = Transform3D(1.1, 0, 0, 0, 1.3, 0, 0, 0, 1.1, 0, 0, 0)
+shape = SubResource("Shape_box")
+
+[node name="BushFCollision" type="StaticBody3D" parent="AssetCity/GameplayObstacleCollision" unique_id=882728689]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -37, 0.65, 42)
+
+[node name="Collision" type="CollisionShape3D" parent="AssetCity/GameplayObstacleCollision/BushFCollision" unique_id=705144711]
+transform = Transform3D(1.1, 0, 0, 0, 1.3, 0, 0, 0, 1.1, 0, 0, 0)
+shape = SubResource("Shape_box")
+
+[node name="CityProps" type="Node3D" parent="AssetCity" unique_id=759152734]
+
+[node name="CentralManhole" parent="AssetCity/CityProps" unique_id=1728190454 instance=ExtResource("13_manhole")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 7, 0.34, 30)
+
+[node name="PlanterA" parent="AssetCity/CityProps" unique_id=148922695 instance=ExtResource("14_planter")]
+transform = Transform3D(0.9659258, 0, 0.25881904, 0, 1, 0, -0.25881904, 0, 0.9659258, -24, 0.35, 39)
+
+[node name="PlanterB" parent="AssetCity/CityProps" unique_id=259054942 instance=ExtResource("14_planter")]
+transform = Transform3D(0.95105654, 0, -0.309017, 0, 1, 0, 0.309017, 0, 0.95105654, 23, 0.35, 42)
+
+[node name="WarehouseAC" parent="AssetCity/CityProps" unique_id=1813631283 instance=ExtResource("15_ac")]
+transform = Transform3D(0.90630776, 0, 0.42261827, 0, 1, 0, -0.42261827, 0, 0.90630776, 20, 1, 15)
+
+[node name="GarageAC" parent="AssetCity/CityProps" unique_id=1670235318 instance=ExtResource("15_ac")]
+transform = Transform3D(0.9612617, 0, -0.27563736, 0, 1, 0, 0.27563736, 0, 0.9612617, 20, 1, 66)
+
+[node name="PostApocalypticDetail" type="Node3D" parent="AssetCity" unique_id=205307781]
+
+[node name="DamagedArchitecture" type="Node3D" parent="AssetCity/PostApocalypticDetail" unique_id=1071482501]
+
+[node name="WarehouseHoleWall" parent="AssetCity/PostApocalypticDetail/DamagedArchitecture" unique_id=277515676 instance=ExtResource("31_hole_wall")]
+transform = Transform3D(0.9781476, 0, -0.2079117, 0, 1, 0, 0.2079117, 0, 0.9781476, 21, 0.3, 17)
+
+[node name="CafeBrickPatch" parent="AssetCity/PostApocalypticDetail/DamagedArchitecture" unique_id=514470005 instance=ExtResource("29_brick_wall")]
+transform = Transform3D(0.95105654, 0, -0.309017, 0, 1, 0, 0.309017, 0, 0.95105654, -7, 0.3, 57)
+
+[node name="BoardedServiceOpening" parent="AssetCity/PostApocalypticDetail/DamagedArchitecture" unique_id=1130454759 instance=ExtResource("30_boarded_wall")]
+transform = Transform3D(0.95105654, 0, 0.309017, 0, 1, 0, -0.309017, 0, 0.95105654, 35, 0.3, 42)
+
+[node name="BackstreetMetalPatch" parent="AssetCity/PostApocalypticDetail/DamagedArchitecture" unique_id=2088251566 instance=ExtResource("33_metal_wall")]
+transform = Transform3D(0.99026805, 0, 0.1391731, 0, 1, 0, -0.1391731, 0, 0.99026805, 4, 0.3, 64)
+
+[node name="RiversideConcretePatch" parent="AssetCity/PostApocalypticDetail/DamagedArchitecture" unique_id=2078902371 instance=ExtResource("32_concrete_wall")]
+transform = Transform3D(0.9848077, 0, -0.17364818, 0, 1, 0, 0.17364818, 0, 0.9848077, -36, 0.3, 68)
+
+[node name="RouteShaping" type="Node3D" parent="AssetCity/PostApocalypticDetail" unique_id=2127857552]
+
+[node name="CentralBarrier" parent="AssetCity/PostApocalypticDetail/RouteShaping" unique_id=378500698 instance=ExtResource("27_barrier")]
+transform = Transform3D(0.9563048, 0, 0.2923717, 0, 1, 0, -0.2923717, 0, 0.9563048, -10, 0.35, 37)
+
+[node name="EastBarrier" parent="AssetCity/PostApocalypticDetail/RouteShaping" unique_id=2018173964 instance=ExtResource("27_barrier")]
+transform = Transform3D(0.9135454, 0, -0.40673664, 0, 1, 0, 0.40673664, 0, 0.9135454, 34, 0.35, 26)
+
+[node name="RiversideBarrier" parent="AssetCity/PostApocalypticDetail/RouteShaping" unique_id=1444095037 instance=ExtResource("27_barrier")]
+transform = Transform3D(0.9781476, 0, 0.2079117, 0, 1, 0, -0.2079117, 0, 0.9781476, -34, 0.35, 51)
+
+[node name="BackstreetWoodBarricade" parent="AssetCity/PostApocalypticDetail/RouteShaping" unique_id=2037198580 instance=ExtResource("34_wood_barricade")]
+transform = Transform3D(0.8571673, 0, 0.5150381, 0, 1, 0, -0.5150381, 0, 0.8571673, 22, 0.3, 62)
+
+[node name="StreetClusters" type="Node3D" parent="AssetCity/PostApocalypticDetail" unique_id=23559947]
+
+[node name="WarehousePallet" parent="AssetCity/PostApocalypticDetail/StreetClusters" unique_id=68646784 instance=ExtResource("26_pallet")]
+transform = Transform3D(0.9335804, 0, 0.35836795, 0, 1, 0, -0.35836795, 0, 0.9335804, 19, 0.25, 20)
+
+[node name="WarehouseBarrel" parent="AssetCity/PostApocalypticDetail/StreetClusters" unique_id=1972978941 instance=ExtResource("21_barrel")]
+transform = Transform3D(0.97437006, 0, -0.22495104, 0, 1, 0, 0.22495104, 0, 0.97437006, 17.5, 0.25, 20.8)
+
+[node name="WarehouseBox" parent="AssetCity/PostApocalypticDetail/StreetClusters" unique_id=1923534306 instance=ExtResource("22_box")]
+transform = Transform3D(0.95105654, 0, 0.309017, 0, 1, 0, -0.309017, 0, 0.95105654, 20.8, 0.25, 21.2)
+
+[node name="CafePallet" parent="AssetCity/PostApocalypticDetail/StreetClusters" unique_id=1144530090 instance=ExtResource("26_pallet")]
+transform = Transform3D(0.89879405, 0, -0.43837115, 0, 1, 0, 0.43837115, 0, 0.89879405, -18, 0.25, 58)
+
+[node name="CafeBarrel" parent="AssetCity/PostApocalypticDetail/StreetClusters" unique_id=1524516339 instance=ExtResource("21_barrel")]
+transform = Transform3D(0.9702957, 0, 0.2419219, 0, 1, 0, -0.2419219, 0, 0.9702957, -20, 0.25, 58.7)
+
+[node name="CafeBox" parent="AssetCity/PostApocalypticDetail/StreetClusters" unique_id=1978143037 instance=ExtResource("22_box")]
+transform = Transform3D(0.9563048, 0, -0.2923717, 0, 1, 0, 0.2923717, 0, 0.9563048, -17, 0.25, 59.6)
+
+[node name="TireClusterA" parent="AssetCity/PostApocalypticDetail/StreetClusters" unique_id=693850413 instance=ExtResource("28_tire")]
+transform = Transform3D(0.9893338, -0.1317561, 0.06212133, 0.10060609, 0.3096337, -0.94551855, 0.10534297, 0.94168323, 0.31958652, 33, 0.28, 47)
+
+[node name="TireClusterB" parent="AssetCity/PostApocalypticDetail/StreetClusters" unique_id=606877618 instance=ExtResource("28_tire")]
+transform = Transform3D(0.9733012, -0.22066405, -0.06318326, -0.03366902, 0.13503908, -0.99026805, 0.2270488, 0.96595645, 0.12400415, 34, 0.28, 48)
+
+[node name="RiversideBoard" parent="AssetCity/PostApocalypticDetail/StreetClusters" unique_id=893760168 instance=ExtResource("25_board")]
+transform = Transform3D(0.86015284, -0.003300354, 0.51002574, 0.08630754, 0.9864998, -0.1391731, -0.502681, 0.1637292, 0.8488254, -38, 0.45, 58)
+
+[node name="BackstreetBoard" parent="AssetCity/PostApocalypticDetail/StreetClusters" unique_id=1072254082 instance=ExtResource("25_board")]
+transform = Transform3D(0.9105719, 0.08503915, -0.4045085, -0.1384107, 0.98484325, -0.104528464, 0.38948846, 0.15116899, 0.90854096, 10, 0.45, 63)
+
+[node name="UtilityPoles" type="Node3D" parent="AssetCity/PostApocalypticDetail" unique_id=318806745]
+
+[node name="PoleNorth" parent="AssetCity/PostApocalypticDetail/UtilityPoles" unique_id=1565453347 instance=ExtResource("24_pole")]
+transform = Transform3D(0.9975641, 0.06975647, 0, -0.06975647, 0.9975641, 0, 0, 0, 1, -24, 0.3, 24)
+
+[node name="PoleCenter" parent="AssetCity/PostApocalypticDetail/UtilityPoles" unique_id=1596376276 instance=ExtResource("24_pole")]
+transform = Transform3D(0.9986295, -0.05233596, 0, 0.05233596, 0.9986295, 0, 0, 0, 1, 24, 0.3, 39)
+
+[node name="PoleService" parent="AssetCity/PostApocalypticDetail/UtilityPoles" unique_id=1664433138 instance=ExtResource("24_pole")]
+transform = Transform3D(0.99254614, 0.12186935, 0, -0.12186935, 0.99254614, 0, 0, 0, 1, 30, 0.3, 62)
+
+[node name="Bushes" type="Node3D" parent="AssetCity/PostApocalypticDetail" unique_id=1065424701]
+
+[node name="BushA" parent="AssetCity/PostApocalypticDetail/Bushes" unique_id=1135437046 instance=ExtResource("23_bush")]
+transform = Transform3D(0.95105654, 0, 0.309017, 0, 1, 0, -0.309017, 0, 0.95105654, -34, 0.25, 15)
+
+[node name="BushB" parent="AssetCity/PostApocalypticDetail/Bushes" unique_id=531769111 instance=ExtResource("23_bush")]
+transform = Transform3D(0.92718387, 0, -0.37460658, 0, 1, 0, 0.37460658, 0, 0.92718387, -35, 0.25, 62)
+
+[node name="BushC" parent="AssetCity/PostApocalypticDetail/Bushes" unique_id=1526579987 instance=ExtResource("23_bush")]
+transform = Transform3D(0.8571673, 0, 0.5150381, 0, 1, 0, -0.5150381, 0, 0.8571673, -21, 0.25, 52)
+
+[node name="BushD" parent="AssetCity/PostApocalypticDetail/Bushes" unique_id=736106200 instance=ExtResource("23_bush")]
+transform = Transform3D(0.9612617, 0, -0.27563736, 0, 1, 0, 0.27563736, 0, 0.9612617, 27, 0.25, 52)
+
+[node name="BushE" parent="AssetCity/PostApocalypticDetail/Bushes" unique_id=1731522051 instance=ExtResource("23_bush")]
+transform = Transform3D(0.97437006, 0, 0.22495104, 0, 1, 0, -0.22495104, 0, 0.97437006, 9, 0.25, 69)
+
+[node name="BushF" parent="AssetCity/PostApocalypticDetail/Bushes" unique_id=2094518410 instance=ExtResource("23_bush")]
+transform = Transform3D(0.98768836, 0, -0.15643448, 0, 1, 0, 0.15643448, 0, 0.98768836, -37, 0.25, 42)
+
+[node name="PostApocalypticCollision" type="Node3D" parent="AssetCity" unique_id=1827081501]
+
+[node name="WarehouseWallCollision" type="StaticBody3D" parent="AssetCity/PostApocalypticCollision" unique_id=474037495]
+transform = Transform3D(0.9781476, 0, -0.2079117, 0, 1, 0, 0.2079117, 0, 0.9781476, 21, 1.5, 17)
+
+[node name="Collision" type="CollisionShape3D" parent="AssetCity/PostApocalypticCollision/WarehouseWallCollision" unique_id=589239498]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 0.5, 0, 0, 0)
+shape = SubResource("Shape_box")
+
+[node name="CafeWallCollision" type="StaticBody3D" parent="AssetCity/PostApocalypticCollision" unique_id=1202352709]
+transform = Transform3D(0.95105654, 0, -0.309017, 0, 1, 0, 0.309017, 0, 0.95105654, -7, 1.5, 57)
+
+[node name="Collision" type="CollisionShape3D" parent="AssetCity/PostApocalypticCollision/CafeWallCollision" unique_id=96670342]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 0.5, 0, 0, 0)
+shape = SubResource("Shape_box")
+
+[node name="BoardedWallCollision" type="StaticBody3D" parent="AssetCity/PostApocalypticCollision" unique_id=501882507]
+transform = Transform3D(0.95105654, 0, 0.309017, 0, 1, 0, -0.309017, 0, 0.95105654, 35, 1.5, 42)
+
+[node name="Collision" type="CollisionShape3D" parent="AssetCity/PostApocalypticCollision/BoardedWallCollision" unique_id=283404163]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 0.5, 0, 0, 0)
+shape = SubResource("Shape_box")
+
+[node name="BackstreetWallCollision" type="StaticBody3D" parent="AssetCity/PostApocalypticCollision" unique_id=220195165]
+transform = Transform3D(0.99026805, 0, 0.1391731, 0, 1, 0, -0.1391731, 0, 0.99026805, 4, 1.5, 64)
+
+[node name="Collision" type="CollisionShape3D" parent="AssetCity/PostApocalypticCollision/BackstreetWallCollision" unique_id=1467593]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 0.5, 0, 0, 0)
+shape = SubResource("Shape_box")
+
+[node name="RiverPatchCollision" type="StaticBody3D" parent="AssetCity/PostApocalypticCollision" unique_id=13078227]
+transform = Transform3D(0.9848077, 0, -0.17364818, 0, 1, 0, 0.17364818, 0, 0.9848077, -36, 1.5, 68)
+
+[node name="Collision" type="CollisionShape3D" parent="AssetCity/PostApocalypticCollision/RiverPatchCollision" unique_id=968823627]
+transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 0.5, 0, 0, 0)
+shape = SubResource("Shape_box")
+
+[node name="CentralBarrierCollision" type="StaticBody3D" parent="AssetCity/PostApocalypticCollision" unique_id=1114684394]
+transform = Transform3D(0.9563048, 0, 0.2923717, 0, 1, 0, -0.2923717, 0, 0.9563048, -10, 0.75, 37)
+
+[node name="Collision" type="CollisionShape3D" parent="AssetCity/PostApocalypticCollision/CentralBarrierCollision" unique_id=1683704741]
+transform = Transform3D(2.2, 0, 0, 0, 1.5, 0, 0, 0, 0.65, 0, 0, 0)
+shape = SubResource("Shape_box")
+
+[node name="EastBarrierCollision" type="StaticBody3D" parent="AssetCity/PostApocalypticCollision" unique_id=1158029832]
+transform = Transform3D(0.9135454, 0, -0.40673664, 0, 1, 0, 0.40673664, 0, 0.9135454, 34, 0.75, 26)
+
+[node name="Collision" type="CollisionShape3D" parent="AssetCity/PostApocalypticCollision/EastBarrierCollision" unique_id=865724867]
+transform = Transform3D(2.2, 0, 0, 0, 1.5, 0, 0, 0, 0.65, 0, 0, 0)
+shape = SubResource("Shape_box")
+
+[node name="RiversideBarrierCollision" type="StaticBody3D" parent="AssetCity/PostApocalypticCollision" unique_id=1685939536]
+transform = Transform3D(0.9781476, 0, 0.2079117, 0, 1, 0, -0.2079117, 0, 0.9781476, -34, 0.75, 51)
+
+[node name="Collision" type="CollisionShape3D" parent="AssetCity/PostApocalypticCollision/RiversideBarrierCollision" unique_id=1123121271]
+transform = Transform3D(2.2, 0, 0, 0, 1.5, 0, 0, 0, 0.65, 0, 0, 0)
+shape = SubResource("Shape_box")
+
+[node name="WoodBarricadeCollision" type="StaticBody3D" parent="AssetCity/PostApocalypticCollision" unique_id=1272707590]
+transform = Transform3D(0.8571673, 0, 0.5150381, 0, 1, 0, -0.5150381, 0, 0.8571673, 22, 0.9, 62)
+
+[node name="Collision" type="CollisionShape3D" parent="AssetCity/PostApocalypticCollision/WoodBarricadeCollision" unique_id=1293333483]
+transform = Transform3D(2, 0, 0, 0, 1.8, 0, 0, 0, 0.65, 0, 0, 0)
+shape = SubResource("Shape_box")
+
+[node name="PoleNorthCollision" type="StaticBody3D" parent="AssetCity/PostApocalypticCollision" unique_id=1102292987]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -24, 2, 24)
+
+[node name="Collision" type="CollisionShape3D" parent="AssetCity/PostApocalypticCollision/PoleNorthCollision" unique_id=1375671384]
+transform = Transform3D(1, 0, 0, 0, 4, 0, 0, 0, 1, 0, 0, 0)
+shape = SubResource("Shape_cylinder")
+
+[node name="PoleCenterCollision" type="StaticBody3D" parent="AssetCity/PostApocalypticCollision" unique_id=2035964716]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 24, 2, 39)
+
+[node name="Collision" type="CollisionShape3D" parent="AssetCity/PostApocalypticCollision/PoleCenterCollision" unique_id=1405145580]
+transform = Transform3D(1, 0, 0, 0, 4, 0, 0, 0, 1, 0, 0, 0)
+shape = SubResource("Shape_cylinder")
+
+[node name="PoleServiceCollision" type="StaticBody3D" parent="AssetCity/PostApocalypticCollision" unique_id=492430113]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 30, 2, 62)
+
+[node name="Collision" type="CollisionShape3D" parent="AssetCity/PostApocalypticCollision/PoleServiceCollision" unique_id=1045926561]
+transform = Transform3D(1, 0, 0, 0, 4, 0, 0, 0, 1, 0, 0, 0)
+shape = SubResource("Shape_cylinder")
+
+[node name="SurfacePolish" type="Node3D" parent="AssetCity" unique_id=1019328645]
+
+[node name="CentralAsphaltPatch" type="MeshInstance3D" parent="AssetCity/SurfacePolish" unique_id=746201290]
+transform = Transform3D(4.2693014, 0, -0.37497893, 0, 0.025, 0, 1.0644563, 0, 1.5039583, -14, 0.34, 28)
+mesh = SubResource("Mesh_asphalt_patch")
+
+[node name="IntersectionRepairPatch" type="MeshInstance3D" parent="AssetCity/SurfacePolish" unique_id=1209053783]
+transform = Transform3D(2.948275, 0, 0.6798374, 0, 0.026, 0, -0.9579527, 0, 2.0923245, 13, 0.345, 35)
+mesh = SubResource("Mesh_road_repair")
+
+[node name="ServiceAsphaltPatch" type="MeshInstance3D" parent="AssetCity/SurfacePolish" unique_id=146691681]
+transform = Transform3D(3.6320205, 0, -0.21943034, 0, 0.025, 0, 0.7059933, 0, 1.1288712, 6, 0.34, 57)
+mesh = SubResource("Mesh_asphalt_patch")
+
+[node name="RiversideRoadWear" type="MeshInstance3D" parent="AssetCity/SurfacePolish" unique_id=756425480]
+transform = Transform3D(1.6834557, 0, 0.41751933, 0, 0.024, 0, -0.23659429, 0, 2.9708042, -31.5, 0.34, 65)
+mesh = SubResource("Mesh_road_repair")
+
+[node name="CurbWearNorth" type="MeshInstance3D" parent="AssetCity/SurfacePolish" unique_id=299300191]
+transform = Transform3D(1.8543677, 0, -0.15733476, 0, 0.07, 0, 0.74921316, 0, 0.3894172, -26, 0.43, 40.8)
+mesh = SubResource("Mesh_curb_wear")
+
+[node name="CurbWearService" type="MeshInstance3D" parent="AssetCity/SurfacePolish" unique_id=1431925648]
+transform = Transform3D(1.5779029, 0, 0.11110124, 0, 0.07, 0, -0.4824133, 0, 0.3633958, 25, 0.43, 52)
+mesh = SubResource("Mesh_curb_wear")
+
+; Limited surface overlays break up long flat runs without cluttering circulation.
+[node name="NorthRoadStain" type="MeshInstance3D" parent="AssetCity/SurfacePolish"]
+position = Vector3(6, 0.235, 14)
+rotation_degrees = Vector3(0, 11, 0)
+scale = Vector3(2.8, 0.018, 1.1)
+mesh = SubResource("Mesh_dirt_stain")
+[node name="MainRoadDarkPatch" type="MeshInstance3D" parent="AssetCity/SurfacePolish"]
+position = Vector3(39, 0.235, 31)
+rotation_degrees = Vector3(0, -7, 0)
+scale = Vector3(3.6, 0.018, 1.4)
+mesh = SubResource("Mesh_asphalt_patch")
+[node name="SouthRoadRepair" type="MeshInstance3D" parent="AssetCity/SurfacePolish"]
+position = Vector3(21, 0.235, 79)
+rotation_degrees = Vector3(0, 14, 0)
+scale = Vector3(3.2, 0.018, 1.25)
+mesh = SubResource("Mesh_road_repair")
+[node name="RiversideSiltStain" type="MeshInstance3D" parent="AssetCity/SurfacePolish"]
+position = Vector3(-31.5, 0.235, 38)
+rotation_degrees = Vector3(0, -5, 0)
+scale = Vector3(1.5, 0.018, 3.8)
+mesh = SubResource("Mesh_dirt_stain")
+[node name="SidewalkWearWest" type="MeshInstance3D" parent="AssetCity/SurfacePolish"]
+position = Vector3(-37.7, 0.355, 29)
+rotation_degrees = Vector3(0, 3, 0)
+scale = Vector3(0.65, 0.018, 3.1)
+mesh = SubResource("Mesh_curb_wear")
+[node name="SidewalkWearSouth" type="MeshInstance3D" parent="AssetCity/SurfacePolish"]
+position = Vector3(-37.6, 0.355, 74)
+rotation_degrees = Vector3(0, -4, 0)
+scale = Vector3(0.58, 0.018, 2.7)
+mesh = SubResource("Mesh_curb_wear")
+
+; Segmented dark wet bands connect concrete to water without outlining the river.
+[node name="RiverWetBandNorth" type="MeshInstance3D" parent="AssetCity/SurfacePolish"]
+position = Vector3(-41.4, 0.03, 17)
+rotation_degrees = Vector3(0, 2, -5)
+scale = Vector3(0.55, 0.035, 10)
+mesh = SubResource("Mesh_wet_concrete")
+[node name="RiverWetBandDrain" type="MeshInstance3D" parent="AssetCity/SurfacePolish"]
+position = Vector3(-41.7, 0.01, 39)
+rotation_degrees = Vector3(0, -3, 4)
+scale = Vector3(0.65, 0.035, 6.5)
+mesh = SubResource("Mesh_wet_concrete")
+[node name="RiverWetBandCollapse" type="MeshInstance3D" parent="AssetCity/SurfacePolish"]
+position = Vector3(-41.6, -0.01, 55)
+rotation_degrees = Vector3(0, 5, -6)
+scale = Vector3(0.72, 0.035, 7)
+mesh = SubResource("Mesh_wet_concrete")
+[node name="RiverWetBandAccess" type="MeshInstance3D" parent="AssetCity/SurfacePolish"]
+position = Vector3(-41.5, 0.0, 86)
+rotation_degrees = Vector3(0, -4, 5)
+scale = Vector3(0.68, 0.035, 8)
+mesh = SubResource("Mesh_wet_concrete")
+
+[node name="Expansion" type="Node3D" parent="AssetCity" unique_id=2070344061]
+
+[node name="CommercialStreet" type="Node3D" parent="AssetCity/Expansion" unique_id=1246707077]
+position = Vector3(0, -1000, 0)
+
+[node name="CommercialConnector" parent="AssetCity/Expansion/CommercialStreet" unique_id=2096855066 instance=ExtResource("4_street")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 45, 0.25, 58)
+
+[node name="CommercialMain" parent="AssetCity/Expansion/CommercialStreet" unique_id=903572975 instance=ExtResource("4_street")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 63, 0.25, 58)
+
+[node name="EscapeApproachRoad" parent="AssetCity/Expansion/CommercialStreet" unique_id=54663727 instance=ExtResource("4_street")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 85, 0.25, 72)
+
+[node name="CourtyardSpur" parent="AssetCity/Expansion/CommercialStreet" unique_id=588564166 instance=ExtResource("5_street_nosidewalk")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 62, 0.25, 78)
+
+[node name="CommercialSidewalkA" parent="AssetCity/Expansion/CommercialStreet" unique_id=1043353078 instance=ExtResource("8_sidewalk")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 55, 0.34, 52)
+
+[node name="CommercialSidewalkB" parent="AssetCity/Expansion/CommercialStreet" unique_id=2093135682 instance=ExtResource("8_sidewalk")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 77, 0.34, 52)
+
+[node name="CourtyardCorner" parent="AssetCity/Expansion/CommercialStreet" unique_id=843054881 instance=ExtResource("9_corner")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 55, 0.34, 76)
+
+[node name="ExpansionBuildings" type="Node3D" parent="AssetCity/Expansion" unique_id=2092184954]
+
+[node name="CommercialWarehouse" parent="AssetCity/Expansion/ExpansionBuildings" unique_id=712052475 instance=ExtResource("1_large")]
+transform = Transform3D(0.9945219, 0, 0.104528464, 0, 1, 0, -0.104528464, 0, 0.9945219, 108, 0.2, 15)
+
+[node name="CourtyardStorefront" parent="AssetCity/Expansion/ExpansionBuildings" unique_id=271005830 instance=ExtResource("3_small")]
+transform = Transform3D(0.99026805, 0, -0.1391731, 0, 1, 0, 0.1391731, 0, 0.99026805, 107, 0.2, 53)
+
+[node name="EvacuationBlock" parent="AssetCity/Expansion/ExpansionBuildings" unique_id=1051557035 instance=ExtResource("2_medium")]
+transform = Transform3D(0.9781476, 0, 0.2079117, 0, 1, 0, -0.2079117, 0, 0.9781476, 109, 0.2, 88)
+
+[node name="CheckpointCourtyard" type="Node3D" parent="AssetCity/Expansion" unique_id=1787089527]
+
+[node name="NorthLowWall" parent="AssetCity/Expansion/CheckpointCourtyard" unique_id=695284171 instance=ExtResource("32_concrete_wall")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 57, 0.3, 72)
+
+[node name="WestLowWall" parent="AssetCity/Expansion/CheckpointCourtyard" unique_id=1015185342 instance=ExtResource("33_metal_wall")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 49, 0.3, 80)
+
+[node name="SupplyPallet" parent="AssetCity/Expansion/CheckpointCourtyard" unique_id=1964467165 instance=ExtResource("26_pallet")]
+transform = Transform3D(0.9612617, 0, 0.27563736, 0, 1, 0, -0.27563736, 0, 0.9612617, 57, 0.25, 78)
+
+[node name="SupplyBarrel" parent="AssetCity/Expansion/CheckpointCourtyard" unique_id=1644173296 instance=ExtResource("21_barrel")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 60, 0.25, 79)
+
+[node name="SupplyBox" parent="AssetCity/Expansion/CheckpointCourtyard" unique_id=1218074593 instance=ExtResource("22_box")]
+transform = Transform3D(0.95105654, 0, -0.309017, 0, 1, 0, 0.309017, 0, 0.95105654, 58.5, 0.25, 81)
+
+[node name="CheckpointBarrierA" parent="AssetCity/Expansion/CheckpointCourtyard" unique_id=1613058967 instance=ExtResource("27_barrier")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 51, 0.35, 75)
+
+[node name="CheckpointBarrierB" parent="AssetCity/Expansion/CheckpointCourtyard" unique_id=50396573 instance=ExtResource("27_barrier")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 66, 0.35, 75)
+
+[node name="DamagedRiversideSouth" type="Node3D" parent="AssetCity/Expansion" unique_id=641798641]
+
+[node name="PromenadeExtensionA" parent="AssetCity/Expansion/DamagedRiversideSouth" unique_id=641687727 instance=ExtResource("8_sidewalk")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -39, 0.34, 87)
+
+[node name="PromenadeExtensionB" parent="AssetCity/Expansion/DamagedRiversideSouth" unique_id=680212766 instance=ExtResource("8_sidewalk")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -39, 0.34, 101)
+
+[node name="BrokenRailingA" parent="AssetCity/Expansion/DamagedRiversideSouth" unique_id=721298399 instance=ExtResource("27_barrier")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -39, 0.35, 88)
+
+[node name="BrokenRailingB" parent="AssetCity/Expansion/DamagedRiversideSouth" unique_id=2084419397 instance=ExtResource("27_barrier")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -39, 0.35, 99)
+
+[node name="SouthCollapsedAccess" parent="AssetCity/Expansion/DamagedRiversideSouth" instance=ExtResource("31_hole_wall")]
+position = Vector3(-42.2, 0.08, 94)
+rotation_degrees = Vector3(7, 92, 6)
+
+[node name="SouthRiverDrain" parent="AssetCity/Expansion/DamagedRiversideSouth" unique_id=47320739 instance=ExtResource("12_drain")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -37.5, 0.35, 95)
+
+[node name="SouthRiverBush" parent="AssetCity/Expansion/DamagedRiversideSouth" unique_id=1074860149 instance=ExtResource("23_bush")]
+transform = Transform3D(0.95105654, 0, 0.309017, 0, 1, 0, -0.309017, 0, 0.95105654, -35, 0.25, 103)
+
+[node name="SouthRiverRubble" parent="AssetCity/Expansion/DamagedRiversideSouth" unique_id=1229209108 instance=ExtResource("25_board")]
+transform = Transform3D(0.8964301, 0.19526815, 0.3978485, -0.11920621, 0.97085667, -0.2079117, -0.42685235, 0.1389523, 0.8935823, -36, 0.45, 90)
+
+[node name="ProgressionGateEnvironment" type="Node3D" parent="AssetCity/Expansion" unique_id=800936829]
+
+[node name="GateVehicle" type="StaticBody3D" parent="AssetCity/Expansion/ProgressionGateEnvironment" unique_id=1467290206]
+transform = Transform3D(0.96488756, -0.13560611, -0.22495104, 0.1391731, 0.99026805, 0, 0.22276182, -0.031307135, 0.97437006, 78, 0.8, 61)
+
+[node name="Chassis" type="MeshInstance3D" parent="AssetCity/Expansion/ProgressionGateEnvironment/GateVehicle" unique_id=259545516]
+transform = Transform3D(3.2, 0, 0, 0, 0.65, 0, 0, 0, 1.45, 0, 0, 0)
+mesh = SubResource("Mesh_rust")
+
+[node name="Cabin" type="MeshInstance3D" parent="AssetCity/Expansion/ProgressionGateEnvironment/GateVehicle" unique_id=1306574962]
+transform = Transform3D(1.55, 0, 0, 0, 0.72, 0, 0, 0, 1.12, -0.3, 0.6, 0)
+mesh = SubResource("Mesh_window")
+
+[node name="Collision" type="CollisionShape3D" parent="AssetCity/Expansion/ProgressionGateEnvironment/GateVehicle" unique_id=241525111]
+transform = Transform3D(3.2, 0, 0, 0, 1.7, 0, 0, 0, 1.5, 0, 0, 0)
+shape = SubResource("Shape_box")
+
+[node name="GateConcreteA" parent="AssetCity/Expansion/ProgressionGateEnvironment" unique_id=1002601320 instance=ExtResource("27_barrier")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 82, 0.35, 61)
+
+[node name="GateConcreteB" parent="AssetCity/Expansion/ProgressionGateEnvironment" unique_id=1249315593 instance=ExtResource("27_barrier")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 87, 0.35, 61)
+
+[node name="GateWoodBarricade" parent="AssetCity/Expansion/ProgressionGateEnvironment" unique_id=1296998838 instance=ExtResource("34_wood_barricade")]
+transform = Transform3D(0.99026805, 0, -0.1391731, 0, 1, 0, 0.1391731, 0, 0.99026805, 84, 0.3, 63)
+
+[node name="GateMetalDebris" parent="AssetCity/Expansion/ProgressionGateEnvironment" unique_id=1635584634 instance=ExtResource("25_board")]
+transform = Transform3D(0.88210917, 0.14059916, 0.44957227, -0.08630754, 0.9864998, -0.1391731, -0.4630706, 0.08396441, 0.8823353, 80, 0.4, 64)
+
+[node name="EscapeSide" type="Node3D" parent="AssetCity/Expansion" unique_id=1585326502]
+
+[node name="EscapeBarrierA" parent="AssetCity/Expansion/EscapeSide" unique_id=18124760 instance=ExtResource("27_barrier")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 96, 0.35, 76)
+
+[node name="EscapeBarrierB" parent="AssetCity/Expansion/EscapeSide" unique_id=186126405 instance=ExtResource("27_barrier")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 99, 0.35, 80)
+
+[node name="EvacuationWall" parent="AssetCity/Expansion/EscapeSide" unique_id=571119380 instance=ExtResource("30_boarded_wall")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 98, 0.3, 67)
+
+[node name="EscapePole" parent="AssetCity/Expansion/EscapeSide" unique_id=1728480432 instance=ExtResource("24_pole")]
+transform = Transform3D(0.99254614, 0.12186935, 0, -0.12186935, 0.99254614, 0, 0, 0, 1, 94, 0.3, 72)
+
+[node name="EvacuationBeacon" type="OmniLight3D" parent="AssetCity/Expansion/EscapeSide" unique_id=1539235219]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 96, 4, 74)
+light_color = Color(0.96, 0.2, 0.12, 1)
+light_energy = 1.1
+omni_range = 9.0
+
+[node name="ExpansionCollision" type="Node3D" parent="AssetCity/Expansion" unique_id=2139443498]
+
+[node name="CommercialWarehouseCollision" type="StaticBody3D" parent="AssetCity/Expansion/ExpansionCollision" unique_id=858296840]
+transform = Transform3D(0.9945219, 0, 0.104528464, 0, 1, 0, -0.104528464, 0, 0.9945219, 109, 14.2, 7)
+
+[node name="Collision" type="CollisionShape3D" parent="AssetCity/Expansion/ExpansionCollision/CommercialWarehouseCollision" unique_id=1912599614]
+transform = Transform3D(22, 0, 0, 0, 28, 0, 0, 0, 18, 0, 0, 0)
+shape = SubResource("Shape_box")
+
+[node name="CourtyardStorefrontCollision" type="StaticBody3D" parent="AssetCity/Expansion/ExpansionCollision" unique_id=462481999]
+transform = Transform3D(0.99026805, 0, -0.1391731, 0, 1, 0, 0.1391731, 0, 0.99026805, 106, 8.7, 48)
+
+[node name="Collision" type="CollisionShape3D" parent="AssetCity/Expansion/ExpansionCollision/CourtyardStorefrontCollision" unique_id=1971202430]
+transform = Transform3D(14, 0, 0, 0, 17, 0, 0, 0, 16, 0, 0, 0)
+shape = SubResource("Shape_box")
+
+[node name="EvacuationBlockCollision" type="StaticBody3D" parent="AssetCity/Expansion/ExpansionCollision" unique_id=1665049488]
+transform = Transform3D(0.9781476, 0, 0.2079117, 0, 1, 0, -0.2079117, 0, 0.9781476, 110, 12.7, 82)
+
+[node name="Collision" type="CollisionShape3D" parent="AssetCity/Expansion/ExpansionCollision/EvacuationBlockCollision" unique_id=568223776]
+transform = Transform3D(16, 0, 0, 0, 25, 0, 0, 0, 14, 0, 0, 0)
+shape = SubResource("Shape_box")
+
+[node name="CheckpointWallCollision" type="StaticBody3D" parent="AssetCity/Expansion/ExpansionCollision" unique_id=24234072]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 57, 1.5, 72)
+
+[node name="Collision" type="CollisionShape3D" parent="AssetCity/Expansion/ExpansionCollision/CheckpointWallCollision" unique_id=1160525893]
+transform = Transform3D(3.5, 0, 0, 0, 3, 0, 0, 0, 0.6, 0, 0, 0)
+shape = SubResource("Shape_box")
+
+[node name="GateBarrierCollision" type="StaticBody3D" parent="AssetCity/Expansion/ExpansionCollision" unique_id=325459778]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 84, 1, 61)
+
+[node name="Collision" type="CollisionShape3D" parent="AssetCity/Expansion/ExpansionCollision/GateBarrierCollision" unique_id=1199279177]
+transform = Transform3D(9, 0, 0, 0, 2, 0, 0, 0, 1.2, 0, 0, 0)
+shape = SubResource("Shape_box")
+
+[node name="EscapeBarrierCollision" type="StaticBody3D" parent="AssetCity/Expansion/ExpansionCollision" unique_id=468195055]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 97, 1, 78)
+
+[node name="Collision" type="CollisionShape3D" parent="AssetCity/Expansion/ExpansionCollision/EscapeBarrierCollision" unique_id=1265017291]
+transform = Transform3D(2.5, 0, 0, 0, 2, 0, 0, 0, 1.2, 0, 0, 0)
+shape = SubResource("Shape_box")
+
+[node name="AbandonedDetailPass" type="Node3D" parent="AssetCity" unique_id=592734463]
+
+[node name="BuildingEdgeClusters" type="Node3D" parent="AssetCity/AbandonedDetailPass" unique_id=1604250750]
+
+[node name="PumpPallet" parent="AssetCity/AbandonedDetailPass/BuildingEdgeClusters" unique_id=1278990831 instance=ExtResource("26_pallet")]
+transform = Transform3D(0.9781476, 0, -0.2079117, 0, 1, 0, 0.2079117, 0, 0.9781476, -4.5, 0.25, 13.5)
+
+[node name="PumpBarrel" parent="AssetCity/AbandonedDetailPass/BuildingEdgeClusters" unique_id=132807086 instance=ExtResource("21_barrel")]
+transform = Transform3D(0.9335804, 0, 0.35836795, 0, 1, 0, -0.35836795, 0, 0.9335804, -2.8, 0.25, 14.2)
+
+[node name="PumpBox" parent="AssetCity/AbandonedDetailPass/BuildingEdgeClusters" unique_id=1753153513 instance=ExtResource("22_box")]
+transform = Transform3D(0.8480481, 0, 0.52991927, 0, 1, 0, -0.52991927, 0, 0.8480481, -5.1, 0.25, 15)
+
+[node name="ApartmentUtility" parent="AssetCity/AbandonedDetailPass/BuildingEdgeClusters" unique_id=1876538672 instance=ExtResource("15_ac")]
+transform = Transform3D(0.95105654, 0, 0.309017, 0, 1, 0, -0.309017, 0, 0.95105654, 31.5, 0.8, 49)
+
+[node name="ApartmentBoard" parent="AssetCity/AbandonedDetailPass/BuildingEdgeClusters" unique_id=482976818 instance=ExtResource("25_board")]
+transform = Transform3D(0.9507198, 0.045373637, -0.30671364, -0.08650609, 0.98876923, -0.12186935, 0.29773933, 0.1423962, 0.9439675, 31, 0.42, 51.2)
+
+[node name="ServicePallet" parent="AssetCity/AbandonedDetailPass/BuildingEdgeClusters" unique_id=1679945420 instance=ExtResource("26_pallet")]
+transform = Transform3D(0.98768836, 0, 0.15643448, 0, 1, 0, -0.15643448, 0, 0.98768836, 5.5, 0.25, 73)
+
+[node name="ServiceBarrelA" parent="AssetCity/AbandonedDetailPass/BuildingEdgeClusters" unique_id=1638363401 instance=ExtResource("21_barrel")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.8, 0.25, 73.7)
+
+[node name="ServiceBarrelB" parent="AssetCity/AbandonedDetailPass/BuildingEdgeClusters" unique_id=27820044 instance=ExtResource("21_barrel")]
+transform = Transform3D(0.8571673, 0, 0.5150381, 0, 1, 0, -0.5150381, 0, 0.8571673, 4.7, 0.25, 75)
+
+[node name="StorefrontBoardedPiece" parent="AssetCity/AbandonedDetailPass/BuildingEdgeClusters" unique_id=1446443866 instance=ExtResource("30_boarded_wall")]
+transform = Transform3D(0.99026805, 0, -0.1391731, 0, 1, 0, 0.1391731, 0, 0.99026805, 48.5, 0.3, 86.5)
+
+[node name="WarehouseBrokenWall" parent="AssetCity/AbandonedDetailPass/BuildingEdgeClusters" unique_id=860398908 instance=ExtResource("31_hole_wall")]
+transform = Transform3D(0.9945219, 0, 0.104528464, 0, 1, 0, -0.104528464, 0, 0.9945219, 68.5, 0.3, 45)
+
+[node name="RoadsideDamage" type="Node3D" parent="AssetCity/AbandonedDetailPass" unique_id=588237403]
+
+[node name="EastCurbWreck" type="StaticBody3D" parent="AssetCity/AbandonedDetailPass/RoadsideDamage" unique_id=1323836538]
+transform = Transform3D(0.9510661, -0.09996107, -0.2923717, 0.104528464, 0.9945219, 0, 0.29077005, -0.030561164, 0.9563048, 43, -1000, 34.8)
+
+[node name="Chassis" type="MeshInstance3D" parent="AssetCity/AbandonedDetailPass/RoadsideDamage/EastCurbWreck" unique_id=59938153]
+transform = Transform3D(3, 0, 0, 0, 0.62, 0, 0, 0, 1.4, 0, 0, 0)
+mesh = SubResource("Mesh_rust")
+
+[node name="Cabin" type="MeshInstance3D" parent="AssetCity/AbandonedDetailPass/RoadsideDamage/EastCurbWreck" unique_id=2090699733]
+transform = Transform3D(1.45, 0, 0, 0, 0.68, 0, 0, 0, 1.05, -0.25, 0.58, 0)
+mesh = SubResource("Mesh_window")
+
+[node name="Collision" type="CollisionShape3D" parent="AssetCity/AbandonedDetailPass/RoadsideDamage/EastCurbWreck" unique_id=1016379371]
+transform = Transform3D(3, 0, 0, 0, 1.6, 0, 0, 0, 1.4, 0, 0, 0)
+shape = SubResource("Shape_box")
+
+[node name="WreckTireA" parent="AssetCity/AbandonedDetailPass/RoadsideDamage" unique_id=1996703254 instance=ExtResource("28_tire")]
+transform = Transform3D(0.92791957, 0.36937147, 0.05029838, -0.02893571, 0.20588827, -0.9781476, -0.37165567, 0.90618694, 0.2017358, 46, 0.28, 35.8)
+
+[node name="WreckTireB" parent="AssetCity/AbandonedDetailPass/RoadsideDamage" unique_id=1067505517 instance=ExtResource("28_tire")]
+transform = Transform3D(0.8045926, -0.58104, -0.12256906, 0.09427353, 0.32877088, -0.9396926, 0.58629614, 0.7445147, 0.3193033, 46.8, 0.28, 34.8)
+
+[node name="NorthCurbBarrier" parent="AssetCity/AbandonedDetailPass/RoadsideDamage" unique_id=1654192710 instance=ExtResource("27_barrier")]
+transform = Transform3D(0.121869326, 0, 0.99254614, 0, 1, 0, -0.99254614, 0, 0.121869326, -2, 0.35, 21.5)
+
+[node name="CommercialBentBarrier" parent="AssetCity/AbandonedDetailPass/RoadsideDamage" unique_id=2023643965 instance=ExtResource("27_barrier")]
+transform = Transform3D(0.91708815, -0.13893175, -0.37369406, 0.12157249, 0.9901284, -0.06975647, 0.37969646, 0.018541917, 0.9249253, 61, 0.35, 65)
+
+[node name="CentralMetalScrap" parent="AssetCity/AbandonedDetailPass/RoadsideDamage" unique_id=1252228156 instance=ExtResource("25_board")]
+transform = Transform3D(0.7844198, 0.17710903, 0.59440565, -0.10324155, 0.98227775, -0.15643448, -0.6115774, 0.061342932, 0.78880304, 18, 0.4, 26)
+
+[node name="CommercialTire" parent="AssetCity/AbandonedDetailPass/RoadsideDamage" unique_id=1577027560 instance=ExtResource("28_tire")]
+transform = Transform3D(0.99012697, 0.13715467, 0.028935717, 0.009708225, 0.13883409, -0.99026805, -0.13983715, 0.980772, 0.13613184, 68, 0.28, 64)
+
+[node name="ServiceAndSigns" type="Node3D" parent="AssetCity/AbandonedDetailPass" unique_id=1382400618]
+
+[node name="PoleBackstreet" parent="AssetCity/AbandonedDetailPass/ServiceAndSigns" unique_id=2082250643 instance=ExtResource("24_pole")]
+transform = Transform3D(0.9961947, -0.08715574, 0, 0.08715574, 0.9961947, 0, 0, 0, 1, 41, 0.3, 53)
+
+[node name="PoleCommercial" parent="AssetCity/AbandonedDetailPass/ServiceAndSigns" unique_id=304163832 instance=ExtResource("24_pole")]
+transform = Transform3D(0.9975641, 0.06975647, 0, -0.06975647, 0.9975641, 0, 0, 0, 1, 70, 0.3, 51)
+
+[node name="CommercialSign" type="StaticBody3D" parent="AssetCity/AbandonedDetailPass/ServiceAndSigns" unique_id=1928191798]
+transform = Transform3D(0.9864998, 0.08630754, 0.1391731, -0.08715574, 0.9961947, 0, -0.13864352, -0.012129734, 0.99026805, 52, 1.7, 51.5)
+
+[node name="Post" type="MeshInstance3D" parent="AssetCity/AbandonedDetailPass/ServiceAndSigns/CommercialSign" unique_id=1530080202]
+transform = Transform3D(1, 0, 0, 0, 3.4, 0, 0, 0, 1, 0, 0, 0)
+mesh = SubResource("Mesh_pole")
+
+[node name="Sign" type="MeshInstance3D" parent="AssetCity/AbandonedDetailPass/ServiceAndSigns/CommercialSign" unique_id=1334365777]
+transform = Transform3D(1.2, 0, 0, 0, 0.68, 0, 0, 0, 0.12, 0, 2, 0)
+mesh = SubResource("Mesh_marking")
+
+[node name="Collision" type="CollisionShape3D" parent="AssetCity/AbandonedDetailPass/ServiceAndSigns/CommercialSign" unique_id=1335814603]
+transform = Transform3D(0.35, 0, 0, 0, 3.4, 0, 0, 0, 0.35, 0, 0, 0)
+shape = SubResource("Shape_box")
+
+[node name="EscapeUtilityBox" parent="AssetCity/AbandonedDetailPass/ServiceAndSigns" unique_id=877239418 instance=ExtResource("15_ac")]
+transform = Transform3D(0.9781476, 0, -0.2079117, 0, 1, 0, 0.2079117, 0, 0.9781476, 100, 0.8, 69)
+
+[node name="RiversideWear" type="Node3D" parent="AssetCity/AbandonedDetailPass" unique_id=852998185]
+
+[node name="RiverBarrierNorth" parent="AssetCity/AbandonedDetailPass/RiversideWear" unique_id=741457836 instance=ExtResource("27_barrier")]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -38.2, 0.35, 27)
+
+[node name="RiverBarrierSouth" parent="AssetCity/AbandonedDetailPass/RiversideWear" unique_id=1285684661 instance=ExtResource("27_barrier")]
+transform = Transform3D(0.06975651, 0, 0.9975641, 0, 1, 0, -0.9975641, 0, 0.06975651, -38.2, 0.35, 78)
+
+[node name="RiverTireA" parent="AssetCity/AbandonedDetailPass/RiversideWear" unique_id=1501739048 instance=ExtResource("28_tire")]
+transform = Transform3D(0.94024104, -0.3385576, -0.036408085, 0.029849114, 0.18845989, -0.98162717, 0.33919883, 0.92187935, 0.18730335, -37, 0.28, 73)
+
+[node name="RiverTireB" parent="AssetCity/AbandonedDetailPass/RiversideWear" unique_id=1805901750 instance=ExtResource("28_tire")]
+transform = Transform3D(0.8572604, 0.5139743, 0.030579241, -0.00607968, 0.069491066, -0.9975641, -0.5148473, 0.85498625, 0.06269673, -36.2, 0.28, 74)
+
+[node name="RiverPallet" parent="AssetCity/AbandonedDetailPass/RiversideWear" unique_id=282633994 instance=ExtResource("26_pallet")]
+transform = Transform3D(0.94551855, 0, -0.32556814, 0, 1, 0, 0.32556814, 0, 0.94551855, -34.5, 0.25, 84)
+
+[node name="RiverBarrel" parent="AssetCity/AbandonedDetailPass/RiversideWear" unique_id=1392044448 instance=ExtResource("21_barrel")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -36, 0.25, 84.7)
+
+[node name="RiverBushNorth" parent="AssetCity/AbandonedDetailPass/RiversideWear" unique_id=2071144600 instance=ExtResource("23_bush")]
+transform = Transform3D(0.92718387, 0, 0.37460658, 0, 1, 0, -0.37460658, 0, 0.92718387, -36, 0.25, 10)
+
+[node name="RiverBushSouth" parent="AssetCity/AbandonedDetailPass/RiversideWear" unique_id=1903794585 instance=ExtResource("23_bush")]
+transform = Transform3D(0.9563048, 0, -0.2923717, 0, 1, 0, 0.2923717, 0, 0.9563048, -34, -1000, 92)
+
+[node name="AdditionalSurfaceWear" type="Node3D" parent="AssetCity/AbandonedDetailPass" unique_id=1413967878]
+
+[node name="EastRoadPatch" type="MeshInstance3D" parent="AssetCity/AbandonedDetailPass/AdditionalSurfaceWear" unique_id=593718240]
+transform = Transform3D(3.0322576, 0, -0.25988963, 0, 0.025, 0, 0.64452624, 0, 1.2226845, 38, 0.34, 29)
+mesh = SubResource("Mesh_asphalt_patch")
+
+[node name="CommercialRoadPatch" type="MeshInstance3D" parent="AssetCity/AbandonedDetailPass/AdditionalSurfaceWear" unique_id=1144341239]
+transform = Transform3D(3.9507535, 0, 0.2033648, 0, 0.025, 0, -0.6257379, 0, 1.2839948, 57, 0.34, 58)
+mesh = SubResource("Mesh_road_repair")
+
+[node name="EscapeRoadPatch" type="MeshInstance3D" parent="AssetCity/AbandonedDetailPass/AdditionalSurfaceWear" unique_id=1104413765]
+transform = Transform3D(3.465938, 0, -0.22267698, 0, 0.025, 0, 0.48710588, 0, 1.5844289, 90, 0.34, 72)
+mesh = SubResource("Mesh_asphalt_patch")
+
+[node name="RiversideCrack" type="MeshInstance3D" parent="AssetCity/AbandonedDetailPass/AdditionalSurfaceWear" unique_id=318374862]
+transform = Transform3D(1.3742781, 0, 0.49610338, 0, 0.024, 0, -0.26713258, 0, 2.5522306, -31, 0.34, 88)
+mesh = SubResource("Mesh_road_repair")
+
+; The formerly unarticulated dark ground is now a deliberate, collidable service lot.
+[node name="AbandonedServiceLot" type="Node3D" parent="AssetCity"]
+
+[node name="LotSurface" type="StaticBody3D" parent="AssetCity/AbandonedServiceLot"]
+position = Vector3(12, 0.12, 82)
+[node name="Mesh" type="MeshInstance3D" parent="AssetCity/AbandonedServiceLot/LotSurface"]
+scale = Vector3(24, 0.16, 15)
+mesh = SubResource("Mesh_road")
+[node name="Collision" type="CollisionShape3D" parent="AssetCity/AbandonedServiceLot/LotSurface"]
+scale = Vector3(24, 0.16, 15)
+shape = SubResource("Shape_box")
+
+[node name="ParkingStripeA" type="MeshInstance3D" parent="AssetCity/AbandonedServiceLot"]
+position = Vector3(2, 0.31, 79)
+scale = Vector3(0.12, 0.02, 4.8)
+mesh = SubResource("Mesh_marking")
+[node name="ParkingStripeB" type="MeshInstance3D" parent="AssetCity/AbandonedServiceLot"]
+position = Vector3(10, 0.31, 79)
+scale = Vector3(0.12, 0.02, 4.8)
+mesh = SubResource("Mesh_marking")
+[node name="ParkingStripeC" type="MeshInstance3D" parent="AssetCity/AbandonedServiceLot"]
+position = Vector3(18, 0.31, 79)
+scale = Vector3(0.12, 0.02, 4.8)
+mesh = SubResource("Mesh_marking")
+[node name="ParkingStripeD" type="MeshInstance3D" parent="AssetCity/AbandonedServiceLot"]
+position = Vector3(26, 0.31, 79)
+scale = Vector3(0.12, 0.02, 4.8)
+mesh = SubResource("Mesh_marking")
+
+[node name="LotWreckA" type="StaticBody3D" parent="AssetCity/AbandonedServiceLot"]
+position = Vector3(5, -1000, 79)
+rotation_degrees = Vector3(0, 5, -3)
+[node name="Chassis" type="MeshInstance3D" parent="AssetCity/AbandonedServiceLot/LotWreckA"]
+scale = Vector3(2.8, 0.58, 1.3)
+mesh = SubResource("Mesh_rust")
+[node name="Cabin" type="MeshInstance3D" parent="AssetCity/AbandonedServiceLot/LotWreckA"]
+position = Vector3(-0.2, 0.54, 0)
+scale = Vector3(1.3, 0.63, 0.96)
+mesh = SubResource("Mesh_window")
+[node name="Collision" type="CollisionShape3D" parent="AssetCity/AbandonedServiceLot/LotWreckA"]
+scale = Vector3(2.8, 1.5, 1.3)
+shape = SubResource("Shape_box")
+
+[node name="LotWreckB" type="StaticBody3D" parent="AssetCity/AbandonedServiceLot"]
+position = Vector3(22, -1000, 87)
+rotation_degrees = Vector3(0, -9, 4)
+[node name="Chassis" type="MeshInstance3D" parent="AssetCity/AbandonedServiceLot/LotWreckB"]
+scale = Vector3(3.0, 0.61, 1.38)
+mesh = SubResource("Mesh_rust")
+[node name="Cabin" type="MeshInstance3D" parent="AssetCity/AbandonedServiceLot/LotWreckB"]
+position = Vector3(0.2, 0.57, 0)
+scale = Vector3(1.42, 0.67, 1.03)
+mesh = SubResource("Mesh_window")
+[node name="Collision" type="CollisionShape3D" parent="AssetCity/AbandonedServiceLot/LotWreckB"]
+scale = Vector3(3.0, 1.58, 1.38)
+shape = SubResource("Shape_box")
+
+[node name="LoadingPallet" parent="AssetCity/AbandonedServiceLot" instance=ExtResource("26_pallet")]
+position = Vector3(29, 0.25, 91)
+rotation_degrees = Vector3(0, -18, 0)
+[node name="LoadingBarrelA" parent="AssetCity/AbandonedServiceLot" instance=ExtResource("21_barrel")]
+position = Vector3(27.5, 0.25, 92)
+[node name="LoadingBarrelB" parent="AssetCity/AbandonedServiceLot" instance=ExtResource("21_barrel")]
+position = Vector3(29, 0.25, 93)
+rotation_degrees = Vector3(0, 31, 0)
+[node name="LoadingUtility" parent="AssetCity/AbandonedServiceLot" instance=ExtResource("15_ac")]
+position = Vector3(31, 0.8, 89)
+rotation_degrees = Vector3(0, -22, 0)
+[node name="LotBarrier" parent="AssetCity/AbandonedServiceLot" instance=ExtResource("27_barrier")]
+position = Vector3(-8, 0.35, 93)
+rotation_degrees = Vector3(0, 12, 0)
+[node name="LotTireA" parent="AssetCity/AbandonedServiceLot" instance=ExtResource("28_tire")]
+position = Vector3(-5, 0.28, 92)
+rotation_degrees = Vector3(82, 13, -5)
+[node name="LotTireB" parent="AssetCity/AbandonedServiceLot" instance=ExtResource("41_wheel")]
+position = Vector3(-4, 0.3, 93)
+rotation_degrees = Vector3(75, -19, 9)
+[node name="LotBushA" parent="AssetCity/AbandonedServiceLot" instance=ExtResource("23_bush")]
+position = Vector3(-10, 0.24, 70)
+rotation_degrees = Vector3(0, 24, 0)
+scale = Vector3(0.7, 0.7, 0.7)
+[node name="LotBushB" parent="AssetCity/AbandonedServiceLot" instance=ExtResource("23_bush")]
+position = Vector3(32, 0.24, 72)
+rotation_degrees = Vector3(0, -31, 0)
+scale = Vector3(0.65, 0.65, 0.65)
+
+[node name="LotAsphaltDamageA" type="MeshInstance3D" parent="AssetCity/AbandonedServiceLot"]
+position = Vector3(0, 0.32, 88)
+scale = Vector3(3.2, 0.025, 1.4)
+rotation_degrees = Vector3(0, 14, 0)
+mesh = SubResource("Mesh_asphalt_patch")
+[node name="LotAsphaltDamageB" type="MeshInstance3D" parent="AssetCity/AbandonedServiceLot"]
+position = Vector3(16, 0.32, 75)
+scale = Vector3(3.8, 0.025, 1.2)
+rotation_degrees = Vector3(0, -11, 0)
+mesh = SubResource("Mesh_road_repair")
+
+; Small authored vignettes deepen the abandoned-city story while preserving road centers.
+[node name="StorytellingClusters" type="Node3D" parent="AssetCity/AbandonedDetailPass"]
+
+[node name="CurbsideBreakdown" type="Node3D" parent="AssetCity/AbandonedDetailPass/StorytellingClusters"]
+
+[node name="FuelCan" parent="AssetCity/AbandonedDetailPass/StorytellingClusters/CurbsideBreakdown" instance=ExtResource("38_jerry_can")]
+position = Vector3(47.4, 0.26, 33.7)
+rotation_degrees = Vector3(0, -31, 4)
+
+[node name="LooseWheel" parent="AssetCity/AbandonedDetailPass/StorytellingClusters/CurbsideBreakdown" instance=ExtResource("41_wheel")]
+position = Vector3(45.6, 0.3, 33.1)
+rotation_degrees = Vector3(76, 18, -11)
+
+[node name="DroppedCrate" parent="AssetCity/AbandonedDetailPass/StorytellingClusters/CurbsideBreakdown" instance=ExtResource("22_box")]
+position = Vector3(48.3, 0.25, 35.2)
+rotation_degrees = Vector3(0, 24, 0)
+
+[node name="BentPanel" parent="AssetCity/AbandonedDetailPass/StorytellingClusters/CurbsideBreakdown" instance=ExtResource("40_bent_metal")]
+position = Vector3(47.7, 0.38, 36.1)
+rotation_degrees = Vector3(8, -19, 7)
+
+[node name="CollapsedServiceArea" type="Node3D" parent="AssetCity/AbandonedDetailPass/StorytellingClusters"]
+
+[node name="ServiceUtility" parent="AssetCity/AbandonedDetailPass/StorytellingClusters/CollapsedServiceArea" instance=ExtResource("15_ac")]
+position = Vector3(12.5, 0.8, 75.5)
+rotation_degrees = Vector3(0, -8, -4)
+
+[node name="ServicePallet" parent="AssetCity/AbandonedDetailPass/StorytellingClusters/CollapsedServiceArea" instance=ExtResource("26_pallet")]
+position = Vector3(14.2, 0.25, 76.2)
+rotation_degrees = Vector3(0, 28, 0)
+
+[node name="ServiceCan" parent="AssetCity/AbandonedDetailPass/StorytellingClusters/CollapsedServiceArea" instance=ExtResource("38_jerry_can")]
+position = Vector3(13.1, 0.26, 73.9)
+rotation_degrees = Vector3(0, 43, 0)
+
+[node name="ServiceScrap" parent="AssetCity/AbandonedDetailPass/StorytellingClusters/CollapsedServiceArea" instance=ExtResource("39_metal_scrap")]
+position = Vector3(15.3, 0.36, 74.6)
+rotation_degrees = Vector3(6, 64, -8)
+
+[node name="ServiceBush" parent="AssetCity/AbandonedDetailPass/StorytellingClusters/CollapsedServiceArea" instance=ExtResource("23_bush")]
+position = Vector3(10.8, 0.24, 76.8)
+rotation_degrees = Vector3(0, -22, 0)
+scale = Vector3(0.78, 0.78, 0.78)
+
+[node name="BarricadedCorner" type="Node3D" parent="AssetCity/AbandonedDetailPass/StorytellingClusters"]
+
+[node name="CornerBarrier" parent="AssetCity/AbandonedDetailPass/StorytellingClusters/BarricadedCorner" instance=ExtResource("27_barrier")]
+position = Vector3(73.2, 0.35, 57.1)
+rotation_degrees = Vector3(0, 34, 0)
+
+[node name="CornerBarrierDebris" parent="AssetCity/AbandonedDetailPass/StorytellingClusters/BarricadedCorner" instance=ExtResource("40_bent_metal")]
+position = Vector3(75.1, 0.38, 56.3)
+rotation_degrees = Vector3(-5, -17, 10)
+
+[node name="CornerBarrel" parent="AssetCity/AbandonedDetailPass/StorytellingClusters/BarricadedCorner" instance=ExtResource("21_barrel")]
+position = Vector3(71.8, 0.25, 55.8)
+rotation_degrees = Vector3(0, 12, 0)
+
+[node name="CornerTire" parent="AssetCity/AbandonedDetailPass/StorytellingClusters/BarricadedCorner" instance=ExtResource("28_tire")]
+position = Vector3(74.4, 0.28, 58.3)
+rotation_degrees = Vector3(83, -26, 5)
+
+[node name="CheckpointRemains" type="Node3D" parent="AssetCity/AbandonedDetailPass/StorytellingClusters"]
+
+[node name="CheckpointPallet" parent="AssetCity/AbandonedDetailPass/StorytellingClusters/CheckpointRemains" instance=ExtResource("26_pallet")]
+position = Vector3(60.8, 0.25, 77.8)
+rotation_degrees = Vector3(0, -14, 0)
+
+[node name="CheckpointCan" parent="AssetCity/AbandonedDetailPass/StorytellingClusters/CheckpointRemains" instance=ExtResource("38_jerry_can")]
+position = Vector3(62.4, 0.26, 78.6)
+rotation_degrees = Vector3(0, 37, 0)
+
+[node name="CheckpointCrate" parent="AssetCity/AbandonedDetailPass/StorytellingClusters/CheckpointRemains" instance=ExtResource("22_box")]
+position = Vector3(59.5, 0.25, 79.2)
+rotation_degrees = Vector3(0, -29, 0)
+
+[node name="CheckpointScrap" parent="AssetCity/AbandonedDetailPass/StorytellingClusters/CheckpointRemains" instance=ExtResource("39_metal_scrap")]
+position = Vector3(63.3, 0.37, 76.9)
+rotation_degrees = Vector3(7, 48, -4)
+
+[node name="RiversideDrainPile" type="Node3D" parent="AssetCity/AbandonedDetailPass/StorytellingClusters"]
+
+[node name="Drain" parent="AssetCity/AbandonedDetailPass/StorytellingClusters/RiversideDrainPile" instance=ExtResource("12_drain")]
+position = Vector3(-37.3, 0.28, 52.5)
+rotation_degrees = Vector3(0, 90, 0)
+
+[node name="DrainMetal" parent="AssetCity/AbandonedDetailPass/StorytellingClusters/RiversideDrainPile" instance=ExtResource("40_bent_metal")]
+position = Vector3(-35.8, 0.36, 54.1)
+rotation_degrees = Vector3(9, 72, -6)
+
+[node name="DrainTire" parent="AssetCity/AbandonedDetailPass/StorytellingClusters/RiversideDrainPile" instance=ExtResource("41_wheel")]
+position = Vector3(-36.1, 0.3, 50.8)
+rotation_degrees = Vector3(80, -8, 13)
+
+[node name="DrainBarrel" parent="AssetCity/AbandonedDetailPass/StorytellingClusters/RiversideDrainPile" instance=ExtResource("21_barrel")]
+position = Vector3(-34.7, 0.25, 52.2)
+rotation_degrees = Vector3(0, -18, 0)
+
+[node name="DrainBush" parent="AssetCity/AbandonedDetailPass/StorytellingClusters/RiversideDrainPile" instance=ExtResource("23_bush")]
+position = Vector3(-35.2, 0.24, 55.5)
+rotation_degrees = Vector3(0, 31, 0)
+scale = Vector3(0.72, 0.72, 0.72)
+
+[node name="FacadeMicroDetail" type="Node3D" parent="AssetCity/AbandonedDetailPass"]
+
+[node name="WarehouseCan" parent="AssetCity/AbandonedDetailPass/FacadeMicroDetail" instance=ExtResource("38_jerry_can")]
+position = Vector3(25.8, 0.26, 13.1)
+rotation_degrees = Vector3(0, 21, 0)
+
+[node name="WarehouseScrap" parent="AssetCity/AbandonedDetailPass/FacadeMicroDetail" instance=ExtResource("39_metal_scrap")]
+position = Vector3(27.4, 0.36, 14.0)
+rotation_degrees = Vector3(5, -33, 8)
+
+[node name="ApartmentCrate" parent="AssetCity/AbandonedDetailPass/FacadeMicroDetail" instance=ExtResource("22_box")]
+position = Vector3(33.0, 0.25, 47.6)
+rotation_degrees = Vector3(0, -17, 0)
+
+[node name="StorefrontBarrel" parent="AssetCity/AbandonedDetailPass/FacadeMicroDetail" instance=ExtResource("21_barrel")]
+position = Vector3(45.8, 0.25, 88.0)
+rotation_degrees = Vector3(0, 26, 0)
+
+[node name="StorefrontBush" parent="AssetCity/AbandonedDetailPass/FacadeMicroDetail" instance=ExtResource("23_bush")]
+position = Vector3(43.9, 0.24, 88.8)
+rotation_degrees = Vector3(0, -38, 0)
+scale = Vector3(0.68, 0.68, 0.68)
+
+; Low frontage elements visually explain the inaccessible skyline strip.
+[node name="EasternBuildingFrontage" type="Node3D" parent="AssetCity"]
+
+[node name="FrontageWallA" parent="AssetCity/EasternBuildingFrontage" instance=ExtResource("32_concrete_wall")]
+position = Vector3(69.4, 0.3, 4)
+rotation_degrees = Vector3(0, 90, 0)
+
+[node name="FrontageBarrierA" parent="AssetCity/EasternBuildingFrontage" instance=ExtResource("27_barrier")]
+position = Vector3(68.8, 0.35, 14)
+rotation_degrees = Vector3(0, 90, 0)
+
+[node name="FrontageMetalA" parent="AssetCity/EasternBuildingFrontage" instance=ExtResource("33_metal_wall")]
+position = Vector3(69.4, 0.3, 23)
+rotation_degrees = Vector3(0, 90, 0)
+
+[node name="FrontageWallB" parent="AssetCity/EasternBuildingFrontage" instance=ExtResource("32_concrete_wall")]
+position = Vector3(69.4, 0.3, 34)
+rotation_degrees = Vector3(0, 90, 0)
+
+[node name="FrontageBarrierB" parent="AssetCity/EasternBuildingFrontage" instance=ExtResource("27_barrier")]
+position = Vector3(68.8, 0.35, 44)
+rotation_degrees = Vector3(0, 86, 0)
+
+[node name="FrontageMetalB" parent="AssetCity/EasternBuildingFrontage" instance=ExtResource("33_metal_wall")]
+position = Vector3(69.4, 0.3, 54)
+rotation_degrees = Vector3(0, 90, 0)
+
+[node name="FrontageWallC" parent="AssetCity/EasternBuildingFrontage" instance=ExtResource("32_concrete_wall")]
+position = Vector3(69.4, 0.3, 65)
+rotation_degrees = Vector3(0, 90, 0)
+
+[node name="FrontageBarrierC" parent="AssetCity/EasternBuildingFrontage" instance=ExtResource("27_barrier")]
+position = Vector3(68.8, 0.35, 75)
+rotation_degrees = Vector3(0, 94, 0)
+
+[node name="FrontageMetalC" parent="AssetCity/EasternBuildingFrontage" instance=ExtResource("33_metal_wall")]
+position = Vector3(69.4, 0.3, 85)
+rotation_degrees = Vector3(0, 90, 0)
+
+[node name="FrontageWallD" parent="AssetCity/EasternBuildingFrontage" instance=ExtResource("32_concrete_wall")]
+position = Vector3(69.4, 0.3, 96)
+rotation_degrees = Vector3(0, 90, 0)
+
+[node name="FrontageBushA" parent="AssetCity/EasternBuildingFrontage" instance=ExtResource("23_bush")]
+position = Vector3(67.8, 0.24, 9)
+rotation_degrees = Vector3(0, 17, 0)
+
+[node name="FrontageBushB" parent="AssetCity/EasternBuildingFrontage" instance=ExtResource("23_bush")]
+position = Vector3(68.1, 0.24, 29)
+rotation_degrees = Vector3(0, -26, 0)
+scale = Vector3(0.8, 0.8, 0.8)
+
+[node name="FrontageBushC" parent="AssetCity/EasternBuildingFrontage" instance=ExtResource("23_bush")]
+position = Vector3(67.9, 0.24, 60)
+rotation_degrees = Vector3(0, 39, 0)
+
+[node name="FrontageBushD" parent="AssetCity/EasternBuildingFrontage" instance=ExtResource("23_bush")]
+position = Vector3(68.2, 0.24, 90)
+rotation_degrees = Vector3(0, -11, 0)
+scale = Vector3(0.75, 0.75, 0.75)
+
+; Five curb-biased wrecks create route choices without sealing either road lane.
+[node name="PlayableRoadWrecks" type="Node3D" parent="AssetCity"]
+position = Vector3(0, -1000, 0)
+
+[node name="WreckWest" type="StaticBody3D" parent="AssetCity/PlayableRoadWrecks"]
+position = Vector3(-13, 0.8, 27)
+rotation_degrees = Vector3(0, 13, -4)
+[node name="Chassis" type="MeshInstance3D" parent="AssetCity/PlayableRoadWrecks/WreckWest"]
+scale = Vector3(3.1, 0.62, 1.4)
+mesh = SubResource("Mesh_rust")
+[node name="Cabin" type="MeshInstance3D" parent="AssetCity/PlayableRoadWrecks/WreckWest"]
+position = Vector3(-0.25, 0.58, 0)
+scale = Vector3(1.5, 0.68, 1.05)
+mesh = SubResource("Mesh_window")
+[node name="Collision" type="CollisionShape3D" parent="AssetCity/PlayableRoadWrecks/WreckWest"]
+scale = Vector3(3.1, 1.6, 1.4)
+shape = SubResource("Shape_box")
+
+[node name="WreckIntersection" type="StaticBody3D" parent="AssetCity/PlayableRoadWrecks"]
+position = Vector3(14, 0.8, 35)
+rotation_degrees = Vector3(0, -24, 5)
+[node name="Chassis" type="MeshInstance3D" parent="AssetCity/PlayableRoadWrecks/WreckIntersection"]
+scale = Vector3(2.9, 0.6, 1.35)
+mesh = SubResource("Mesh_rust")
+[node name="Cabin" type="MeshInstance3D" parent="AssetCity/PlayableRoadWrecks/WreckIntersection"]
+position = Vector3(0.2, 0.56, 0)
+scale = Vector3(1.35, 0.66, 1.0)
+mesh = SubResource("Mesh_window")
+[node name="Collision" type="CollisionShape3D" parent="AssetCity/PlayableRoadWrecks/WreckIntersection"]
+scale = Vector3(2.9, 1.55, 1.35)
+shape = SubResource("Shape_box")
+
+[node name="WreckService" type="StaticBody3D" parent="AssetCity/PlayableRoadWrecks"]
+position = Vector3(28, 0.8, 54)
+rotation_degrees = Vector3(0, 67, -3)
+[node name="Chassis" type="MeshInstance3D" parent="AssetCity/PlayableRoadWrecks/WreckService"]
+scale = Vector3(3.0, 0.61, 1.38)
+mesh = SubResource("Mesh_rust")
+[node name="Cabin" type="MeshInstance3D" parent="AssetCity/PlayableRoadWrecks/WreckService"]
+position = Vector3(-0.2, 0.57, 0)
+scale = Vector3(1.42, 0.67, 1.02)
+mesh = SubResource("Mesh_window")
+[node name="Collision" type="CollisionShape3D" parent="AssetCity/PlayableRoadWrecks/WreckService"]
+scale = Vector3(3.0, 1.58, 1.38)
+shape = SubResource("Shape_box")
+
+[node name="WreckCommercial" type="StaticBody3D" parent="AssetCity/PlayableRoadWrecks"]
+position = Vector3(50, 0.8, 62)
+rotation_degrees = Vector3(0, -18, 4)
+[node name="Chassis" type="MeshInstance3D" parent="AssetCity/PlayableRoadWrecks/WreckCommercial"]
+scale = Vector3(3.2, 0.64, 1.45)
+mesh = SubResource("Mesh_rust")
+[node name="Cabin" type="MeshInstance3D" parent="AssetCity/PlayableRoadWrecks/WreckCommercial"]
+position = Vector3(0.25, 0.59, 0)
+scale = Vector3(1.52, 0.7, 1.08)
+mesh = SubResource("Mesh_window")
+[node name="Collision" type="CollisionShape3D" parent="AssetCity/PlayableRoadWrecks/WreckCommercial"]
+scale = Vector3(3.2, 1.62, 1.45)
+shape = SubResource("Shape_box")
+
+[node name="WreckSouth" type="StaticBody3D" parent="AssetCity/PlayableRoadWrecks"]
+position = Vector3(36, 0.8, 88)
+rotation_degrees = Vector3(0, 31, -5)
+[node name="Chassis" type="MeshInstance3D" parent="AssetCity/PlayableRoadWrecks/WreckSouth"]
+scale = Vector3(2.8, 0.58, 1.32)
+mesh = SubResource("Mesh_rust")
+[node name="Cabin" type="MeshInstance3D" parent="AssetCity/PlayableRoadWrecks/WreckSouth"]
+position = Vector3(-0.2, 0.55, 0)
+scale = Vector3(1.32, 0.64, 0.98)
+mesh = SubResource("Mesh_window")
+[node name="Collision" type="CollisionShape3D" parent="AssetCity/PlayableRoadWrecks/WreckSouth"]
+scale = Vector3(2.8, 1.5, 1.32)
+shape = SubResource("Shape_box")
+
+[node name="RecompositionVegetation" type="Node3D" parent="AssetCity"]
+[node name="RiverWeedA" parent="AssetCity/RecompositionVegetation" instance=ExtResource("23_bush")]
+position = Vector3(-36, 0.24, 23)
+rotation_degrees = Vector3(0, 27, 0)
+scale = Vector3(0.65, 0.65, 0.65)
+[node name="RiverWeedB" parent="AssetCity/RecompositionVegetation" instance=ExtResource("23_bush")]
+position = Vector3(-35, 0.24, 64)
+rotation_degrees = Vector3(0, -32, 0)
+scale = Vector3(0.72, 0.72, 0.72)
+[node name="RiverWeedC" parent="AssetCity/RecompositionVegetation" instance=ExtResource("23_bush")]
+position = Vector3(-36.5, 0.24, 96)
+rotation_degrees = Vector3(0, 11, 0)
+scale = Vector3(0.7, 0.7, 0.7)
+[node name="CurbWeedA" parent="AssetCity/RecompositionVegetation" instance=ExtResource("23_bush")]
+position = Vector3(-4, 0.24, 20)
+rotation_degrees = Vector3(0, 43, 0)
+scale = Vector3(0.62, 0.62, 0.62)
+[node name="CurbWeedB" parent="AssetCity/RecompositionVegetation" instance=ExtResource("23_bush")]
+position = Vector3(24, 0.24, 43)
+rotation_degrees = Vector3(0, -16, 0)
+scale = Vector3(0.58, 0.58, 0.58)
+[node name="CurbWeedC" parent="AssetCity/RecompositionVegetation" instance=ExtResource("23_bush")]
+position = Vector3(53, 0.24, 52)
+rotation_degrees = Vector3(0, 35, 0)
+scale = Vector3(0.68, 0.68, 0.68)
+
+; Native 8 m road modules: three continuous streets and only two true junctions.
+[node name="NewCityRoads" type="Node3D" parent="AssetCity"]
+
+[node name="MainStreet" type="Node3D" parent="AssetCity/NewCityRoads"]
+[node name="M00" parent="AssetCity/NewCityRoads/MainStreet" instance=ExtResource("42_street_straight")]
+position = Vector3(-34, 0.22, 31)
+rotation_degrees = Vector3(0, 90, 0)
+[node name="M01" parent="AssetCity/NewCityRoads/MainStreet" instance=ExtResource("43_street_crack1")]
+position = Vector3(-26, 0.22, 31)
+rotation_degrees = Vector3(0, 90, 0)
+[node name="M02" parent="AssetCity/NewCityRoads/MainStreet" instance=ExtResource("42_street_straight")]
+position = Vector3(-18, 0.22, 31)
+rotation_degrees = Vector3(0, 90, 0)
+[node name="M03" parent="AssetCity/NewCityRoads/MainStreet" instance=ExtResource("44_street_crack2")]
+position = Vector3(-10, 0.22, 31)
+rotation_degrees = Vector3(0, 90, 0)
+[node name="M04" parent="AssetCity/NewCityRoads/MainStreet" instance=ExtResource("42_street_straight")]
+position = Vector3(-2, 0.22, 31)
+rotation_degrees = Vector3(0, 90, 0)
+[node name="MainFourWay" parent="AssetCity/NewCityRoads/MainStreet" instance=ExtResource("47_street_4way")]
+position = Vector3(6, 0.22, 31)
+[node name="M06" parent="AssetCity/NewCityRoads/MainStreet" instance=ExtResource("43_street_crack1")]
+position = Vector3(14, 0.22, 31)
+rotation_degrees = Vector3(0, 90, 0)
+[node name="M07" parent="AssetCity/NewCityRoads/MainStreet" instance=ExtResource("42_street_straight")]
+position = Vector3(22, 0.22, 31)
+rotation_degrees = Vector3(0, 90, 0)
+[node name="M08" parent="AssetCity/NewCityRoads/MainStreet" instance=ExtResource("44_street_crack2")]
+position = Vector3(30, 0.22, 31)
+rotation_degrees = Vector3(0, 90, 0)
+[node name="FrontageT" parent="AssetCity/NewCityRoads/MainStreet" instance=ExtResource("45_street_t")]
+position = Vector3(38, 0.22, 31)
+rotation_degrees = Vector3(0, 90, 0)
+[node name="M10" parent="AssetCity/NewCityRoads/MainStreet" instance=ExtResource("42_street_straight")]
+position = Vector3(46, 0.22, 31)
+rotation_degrees = Vector3(0, 90, 0)
+[node name="M11" parent="AssetCity/NewCityRoads/MainStreet" instance=ExtResource("43_street_crack1")]
+position = Vector3(54, 0.22, 31)
+rotation_degrees = Vector3(0, 90, 0)
+[node name="M12" parent="AssetCity/NewCityRoads/MainStreet" instance=ExtResource("42_street_straight")]
+position = Vector3(62, 0.22, 31)
+rotation_degrees = Vector3(0, 90, 0)
+
+[node name="SecondaryStreet" type="Node3D" parent="AssetCity/NewCityRoads"]
+[node name="S00" parent="AssetCity/NewCityRoads/SecondaryStreet" instance=ExtResource("44_street_crack2")]
+position = Vector3(6, 0.22, 7)
+[node name="S01" parent="AssetCity/NewCityRoads/SecondaryStreet" instance=ExtResource("42_street_straight")]
+position = Vector3(6, 0.22, 15)
+[node name="S02" parent="AssetCity/NewCityRoads/SecondaryStreet" instance=ExtResource("43_street_crack1")]
+position = Vector3(6, 0.22, 23)
+[node name="S04" parent="AssetCity/NewCityRoads/SecondaryStreet" instance=ExtResource("42_street_straight")]
+position = Vector3(6, 0.22, 39)
+[node name="S05" parent="AssetCity/NewCityRoads/SecondaryStreet" instance=ExtResource("44_street_crack2")]
+position = Vector3(6, 0.22, 47)
+[node name="S06" parent="AssetCity/NewCityRoads/SecondaryStreet" instance=ExtResource("42_street_straight")]
+position = Vector3(6, 0.22, 55)
+[node name="S07" parent="AssetCity/NewCityRoads/SecondaryStreet" instance=ExtResource("43_street_crack1")]
+position = Vector3(6, 0.22, 63)
+[node name="S08" parent="AssetCity/NewCityRoads/SecondaryStreet" instance=ExtResource("42_street_straight")]
+position = Vector3(6, 0.22, 71)
+[node name="SouthTurn" parent="AssetCity/NewCityRoads/SecondaryStreet" instance=ExtResource("46_street_turn")]
+position = Vector3(6, 0.22, 79)
+rotation_degrees = Vector3(0, 90, 0)
+[node name="BackstreetA" parent="AssetCity/NewCityRoads/SecondaryStreet" instance=ExtResource("43_street_crack1")]
+position = Vector3(14, 0.22, 79)
+rotation_degrees = Vector3(0, 90, 0)
+[node name="BackstreetB" parent="AssetCity/NewCityRoads/SecondaryStreet" instance=ExtResource("42_street_straight")]
+position = Vector3(22, 0.22, 79)
+rotation_degrees = Vector3(0, 90, 0)
+[node name="BackstreetC" parent="AssetCity/NewCityRoads/SecondaryStreet" instance=ExtResource("44_street_crack2")]
+position = Vector3(30, 0.22, 79)
+rotation_degrees = Vector3(0, 90, 0)
+
+[node name="RiversideStreet" type="Node3D" parent="AssetCity/NewCityRoads"]
+[node name="R00" parent="AssetCity/NewCityRoads/RiversideStreet" instance=ExtResource("42_street_straight")]
+position = Vector3(-31, 0.22, 7)
+[node name="R01" parent="AssetCity/NewCityRoads/RiversideStreet" instance=ExtResource("43_street_crack1")]
+position = Vector3(-31, 0.22, 15)
+[node name="R02" parent="AssetCity/NewCityRoads/RiversideStreet" instance=ExtResource("42_street_straight")]
+position = Vector3(-31, 0.22, 23)
+[node name="R03" parent="AssetCity/NewCityRoads/RiversideStreet" instance=ExtResource("44_street_crack2")]
+position = Vector3(-31, 0.22, 39)
+[node name="R04" parent="AssetCity/NewCityRoads/RiversideStreet" instance=ExtResource("42_street_straight")]
+position = Vector3(-31, 0.22, 47)
+[node name="R05" parent="AssetCity/NewCityRoads/RiversideStreet" instance=ExtResource("43_street_crack1")]
+position = Vector3(-31, 0.22, 55)
+[node name="R06" parent="AssetCity/NewCityRoads/RiversideStreet" instance=ExtResource("42_street_straight")]
+position = Vector3(-31, 0.22, 63)
+[node name="R07" parent="AssetCity/NewCityRoads/RiversideStreet" instance=ExtResource("44_street_crack2")]
+position = Vector3(-31, 0.22, 71)
+[node name="R08" parent="AssetCity/NewCityRoads/RiversideStreet" instance=ExtResource("42_street_straight")]
+position = Vector3(-31, 0.22, 79)
+[node name="R09" parent="AssetCity/NewCityRoads/RiversideStreet" instance=ExtResource("43_street_crack1")]
+position = Vector3(-31, 0.22, 87)
+[node name="R10" parent="AssetCity/NewCityRoads/RiversideStreet" instance=ExtResource("42_street_straight")]
+position = Vector3(-31, 0.22, 95)
+
+; Eight distinct vehicles replace repeated primitive wrecks.
+[node name="NewVehicleSet" type="Node3D" parent="AssetCity"]
+[node name="PickupCurb" type="StaticBody3D" parent="AssetCity/NewVehicleSet"]
+position = Vector3(-17, 0.3, 26)
+rotation_degrees = Vector3(0, 76, -3)
+[node name="Visual" parent="AssetCity/NewVehicleSet/PickupCurb" instance=ExtResource("48_pickup")]
+[node name="Collision" type="CollisionShape3D" parent="AssetCity/NewVehicleSet/PickupCurb"]
+position = Vector3(0, 0.95, 0.1)
+scale = Vector3(2.2, 1.75, 5.0)
+shape = SubResource("Shape_box")
+[node name="ArmoredPickup" type="StaticBody3D" parent="AssetCity/NewVehicleSet"]
+position = Vector3(57, 0.3, 36)
+rotation_degrees = Vector3(0, -68, 2)
+[node name="Visual" parent="AssetCity/NewVehicleSet/ArmoredPickup" instance=ExtResource("49_pickup_armored")]
+[node name="Collision" type="CollisionShape3D" parent="AssetCity/NewVehicleSet/ArmoredPickup"]
+position = Vector3(0, 1.0, 0.1)
+scale = Vector3(2.5, 1.9, 5.3)
+shape = SubResource("Shape_box")
+[node name="ServiceTruck" type="StaticBody3D" parent="AssetCity/NewVehicleSet"]
+position = Vector3(25, 0.3, 86)
+rotation_degrees = Vector3(0, 87, 0)
+[node name="Visual" parent="AssetCity/NewVehicleSet/ServiceTruck" instance=ExtResource("50_truck")]
+[node name="Collision" type="CollisionShape3D" parent="AssetCity/NewVehicleSet/ServiceTruck"]
+position = Vector3(0, 1.4, 0)
+scale = Vector3(2.55, 2.7, 5.1)
+shape = SubResource("Shape_box")
+[node name="ArmoredTruck" type="StaticBody3D" parent="AssetCity/NewVehicleSet"]
+position = Vector3(55, 0.3, 67)
+rotation_degrees = Vector3(0, 12, -2)
+[node name="Visual" parent="AssetCity/NewVehicleSet/ArmoredTruck" instance=ExtResource("51_truck_armored")]
+[node name="Collision" type="CollisionShape3D" parent="AssetCity/NewVehicleSet/ArmoredTruck"]
+position = Vector3(0, 1.5, 0)
+scale = Vector3(2.8, 2.8, 5.4)
+shape = SubResource("Shape_box")
+[node name="SportsCrash" type="StaticBody3D" parent="AssetCity/NewVehicleSet"]
+position = Vector3(18, 0.3, 35)
+rotation_degrees = Vector3(0, -61, 5)
+[node name="Visual" parent="AssetCity/NewVehicleSet/SportsCrash" instance=ExtResource("52_sports")]
+[node name="Collision" type="CollisionShape3D" parent="AssetCity/NewVehicleSet/SportsCrash"]
+position = Vector3(0, 0.92, 0.1)
+scale = Vector3(2.5, 1.75, 5.4)
+shape = SubResource("Shape_box")
+[node name="ArmoredSports" type="StaticBody3D" parent="AssetCity/NewVehicleSet"]
+position = Vector3(-26, 0.3, 58)
+rotation_degrees = Vector3(0, 9, -3)
+[node name="Visual" parent="AssetCity/NewVehicleSet/ArmoredSports" instance=ExtResource("53_sports_armored")]
+[node name="Collision" type="CollisionShape3D" parent="AssetCity/NewVehicleSet/ArmoredSports"]
+position = Vector3(0, 0.92, 0.1)
+scale = Vector3(2.8, 1.75, 5.4)
+shape = SubResource("Shape_box")
+[node name="PickupCheckpoint" type="StaticBody3D" parent="AssetCity/NewVehicleSet"]
+position = Vector3(46, 0.3, 75)
+rotation_degrees = Vector3(0, -42, 1)
+[node name="Visual" parent="AssetCity/NewVehicleSet/PickupCheckpoint" instance=ExtResource("48_pickup")]
+[node name="Collision" type="CollisionShape3D" parent="AssetCity/NewVehicleSet/PickupCheckpoint"]
+position = Vector3(0, 0.95, 0.1)
+scale = Vector3(2.2, 1.75, 5.0)
+shape = SubResource("Shape_box")
+[node name="SportsRiverside" type="StaticBody3D" parent="AssetCity/NewVehicleSet"]
+position = Vector3(-25, 0.3, 88)
+rotation_degrees = Vector3(0, 18, 4)
+[node name="Visual" parent="AssetCity/NewVehicleSet/SportsRiverside" instance=ExtResource("52_sports")]
+[node name="Collision" type="CollisionShape3D" parent="AssetCity/NewVehicleSet/SportsRiverside"]
+position = Vector3(0, 0.92, 0.1)
+scale = Vector3(2.5, 1.75, 5.4)
+shape = SubResource("Shape_box")
+
+[node name="NewAssetZones" type="Node3D" parent="AssetCity"]
+[node name="Riverside" type="Node3D" parent="AssetCity/NewAssetZones"]
+[node name="Light" parent="AssetCity/NewAssetZones/Riverside" instance=ExtResource("59_streetlight")]
+position = Vector3(-37, 0.3, 48)
+[node name="Pipes" parent="AssetCity/NewAssetZones/Riverside" instance=ExtResource("72_pipes")]
+position = Vector3(-36, 0.3, 72)
+rotation_degrees = Vector3(0, 17, 0)
+[node name="WheelStack" parent="AssetCity/NewAssetZones/Riverside" instance=ExtResource("68_wheels_stack")]
+position = Vector3(-36, 0.3, 82)
+rotation_degrees = Vector3(0, -24, 0)
+[node name="Trash" parent="AssetCity/NewAssetZones/Riverside" instance=ExtResource("70_trash1")]
+position = Vector3(-35, 0.3, 67)
+[node name="MainRoad" type="Node3D" parent="AssetCity/NewAssetZones"]
+[node name="Barrier1" type="StaticBody3D" parent="AssetCity/NewAssetZones/MainRoad"]
+position = Vector3(29, 0.3, 36)
+rotation_degrees = Vector3(0, -12, 0)
+[node name="Visual" parent="AssetCity/NewAssetZones/MainRoad/Barrier1" instance=ExtResource("54_barrier1")]
+[node name="Collision" type="CollisionShape3D" parent="AssetCity/NewAssetZones/MainRoad/Barrier1"]
+position = Vector3(0, 0.56, 0)
+scale = Vector3(1.5, 1.05, 0.82)
+shape = SubResource("Shape_box")
+[node name="Barrier2" type="StaticBody3D" parent="AssetCity/NewAssetZones/MainRoad"]
+position = Vector3(48, 0.3, 26)
+rotation_degrees = Vector3(0, 18, 0)
+[node name="Visual" parent="AssetCity/NewAssetZones/MainRoad/Barrier2" instance=ExtResource("55_barrier2")]
+[node name="Collision" type="CollisionShape3D" parent="AssetCity/NewAssetZones/MainRoad/Barrier2"]
+position = Vector3(0, 0.4, 0)
+scale = Vector3(1.5, 0.76, 0.72)
+shape = SubResource("Shape_box")
+[node name="Cone1" parent="AssetCity/NewAssetZones/MainRoad" instance=ExtResource("57_cone1")]
+position = Vector3(26, 0.3, 36)
+[node name="Cone2" parent="AssetCity/NewAssetZones/MainRoad" instance=ExtResource("58_cone2")]
+position = Vector3(51, 0.3, 27)
+[node name="TrafficLight" parent="AssetCity/NewAssetZones/MainRoad" instance=ExtResource("60_trafficlight1")]
+position = Vector3(10, 0.3, 36)
+rotation_degrees = Vector3(0, 90, 0)
+[node name="Service" type="Node3D" parent="AssetCity/NewAssetZones"]
+[node name="RedContainer" type="StaticBody3D" parent="AssetCity/NewAssetZones/Service"]
+position = Vector3(31, 0.3, 94)
+rotation_degrees = Vector3(0, 90, 0)
+[node name="Visual" parent="AssetCity/NewAssetZones/Service/RedContainer" instance=ExtResource("73_container_red")]
+[node name="Collision" type="CollisionShape3D" parent="AssetCity/NewAssetZones/Service/RedContainer"]
+position = Vector3(0, 1.3, 0)
+scale = Vector3(5.5, 2.5, 2.45)
+shape = SubResource("Shape_box")
+[node name="Pallet" parent="AssetCity/NewAssetZones/Service" instance=ExtResource("64_pallet_new")]
+position = Vector3(27, 0.3, 93)
+rotation_degrees = Vector3(0, -17, 0)
+[node name="BrokenPallet" parent="AssetCity/NewAssetZones/Service" instance=ExtResource("65_pallet_broken")]
+position = Vector3(23, 0.3, 94)
+rotation_degrees = Vector3(0, 31, 0)
+[node name="Barrel" parent="AssetCity/NewAssetZones/Service" instance=ExtResource("66_barrel_new")]
+position = Vector3(28, 0.3, 90)
+[node name="Cinder" parent="AssetCity/NewAssetZones/Service" instance=ExtResource("69_cinder")]
+position = Vector3(21, 0.3, 92)
+[node name="Frontage" type="Node3D" parent="AssetCity/NewAssetZones"]
+[node name="Hydrant" parent="AssetCity/NewAssetZones/Frontage" instance=ExtResource("62_hydrant")]
+position = Vector3(64, 0.3, 47)
+[node name="TownSign" parent="AssetCity/NewAssetZones/Frontage" instance=ExtResource("63_town_sign")]
+position = Vector3(63, 0.3, 18)
+rotation_degrees = Vector3(0, -90, 0)
+[node name="Trash2" parent="AssetCity/NewAssetZones/Frontage" instance=ExtResource("71_trash2")]
+position = Vector3(65, 0.3, 58)
+[node name="PlasticBarrier" type="StaticBody3D" parent="AssetCity/NewAssetZones/Frontage"]
+position = Vector3(64, 0.3, 72)
+rotation_degrees = Vector3(0, 90, 0)
+[node name="Visual" parent="AssetCity/NewAssetZones/Frontage/PlasticBarrier" instance=ExtResource("56_plastic_barrier")]
+[node name="Collision" type="CollisionShape3D" parent="AssetCity/NewAssetZones/Frontage/PlasticBarrier"]
+position = Vector3(0, 0.65, 0)
+scale = Vector3(1.8, 0.8, 0.5)
+shape = SubResource("Shape_box")
+
+; Local FOV-22 detail scenes: edge-weighted and separated from primary lane centers.
+[node name="GameplayViewDetailClusters" type="Node3D" parent="AssetCity"]
+
+; 1. North maintenance lay-by beside the secondary street.
+[node name="NorthMaintenance" type="Node3D" parent="AssetCity/GameplayViewDetailClusters"]
+[node name="GreenContainer" type="StaticBody3D" parent="AssetCity/GameplayViewDetailClusters/NorthMaintenance"]
+position = Vector3(17, 0.3, 10)
+rotation_degrees = Vector3(0, 90, 0)
+[node name="Visual" parent="AssetCity/GameplayViewDetailClusters/NorthMaintenance/GreenContainer" instance=ExtResource("74_container_green")]
+[node name="Collision" type="CollisionShape3D" parent="AssetCity/GameplayViewDetailClusters/NorthMaintenance/GreenContainer"]
+position = Vector3(0, 1.34, 0)
+scale = Vector3(5.5, 2.5, 2.45)
+shape = SubResource("Shape_box")
+[node name="BrokenPallet" parent="AssetCity/GameplayViewDetailClusters/NorthMaintenance" instance=ExtResource("65_pallet_broken")]
+position = Vector3(13, 0.3, 10)
+rotation_degrees = Vector3(0, -18, 0)
+[node name="Barrel" parent="AssetCity/GameplayViewDetailClusters/NorthMaintenance" instance=ExtResource("66_barrel_new")]
+position = Vector3(13, 0.3, 13)
+[node name="Cinder" parent="AssetCity/GameplayViewDetailClusters/NorthMaintenance" instance=ExtResource("69_cinder")]
+position = Vector3(20, 0.3, 13)
+rotation_degrees = Vector3(0, 28, 0)
+[node name="Streetlight" parent="AssetCity/GameplayViewDetailClusters/NorthMaintenance" instance=ExtResource("59_streetlight")]
+position = Vector3(22, 0.3, 9)
+rotation_degrees = Vector3(0, 15, 0)
+
+; 2. West main-road crash remains at the curb, leaving both center lanes open.
+[node name="WestRoadsideCrash" type="Node3D" parent="AssetCity/GameplayViewDetailClusters"]
+[node name="ArmoredSports" type="StaticBody3D" parent="AssetCity/GameplayViewDetailClusters/WestRoadsideCrash"]
+position = Vector3(-5, 0.3, 44)
+rotation_degrees = Vector3(0, 73, -4)
+[node name="Visual" parent="AssetCity/GameplayViewDetailClusters/WestRoadsideCrash/ArmoredSports" instance=ExtResource("53_sports_armored")]
+[node name="Collision" type="CollisionShape3D" parent="AssetCity/GameplayViewDetailClusters/WestRoadsideCrash/ArmoredSports"]
+position = Vector3(0, 0.92, 0.1)
+scale = Vector3(2.8, 1.75, 5.4)
+shape = SubResource("Shape_box")
+[node name="LooseWheel" parent="AssetCity/GameplayViewDetailClusters/WestRoadsideCrash" instance=ExtResource("67_wheel_new")]
+position = Vector3(-1.5, 0.3, 46)
+rotation_degrees = Vector3(78, 16, -9)
+[node name="Cone" parent="AssetCity/GameplayViewDetailClusters/WestRoadsideCrash" instance=ExtResource("58_cone2")]
+position = Vector3(-9, 0.3, 46)
+[node name="Barrier" type="StaticBody3D" parent="AssetCity/GameplayViewDetailClusters/WestRoadsideCrash"]
+position = Vector3(-11, 0.3, 47)
+rotation_degrees = Vector3(0, -12, 0)
+[node name="Visual" parent="AssetCity/GameplayViewDetailClusters/WestRoadsideCrash/Barrier" instance=ExtResource("55_barrier2")]
+[node name="Collision" type="CollisionShape3D" parent="AssetCity/GameplayViewDetailClusters/WestRoadsideCrash/Barrier"]
+position = Vector3(0, 0.4, 0)
+scale = Vector3(1.5, 0.76, 0.72)
+shape = SubResource("Shape_box")
+[node name="AsphaltDamage" type="MeshInstance3D" parent="AssetCity/GameplayViewDetailClusters/WestRoadsideCrash"]
+position = Vector3(-6, 0.24, 46)
+scale = Vector3(2.4, 0.02, 1.2)
+rotation_degrees = Vector3(0, 19, 0)
+mesh = SubResource("Mesh_asphalt_patch")
+
+; 3. North riverside cleanup point.
+[node name="RiversideCleanupNorth" type="Node3D" parent="AssetCity/GameplayViewDetailClusters"]
+[node name="PlasticBarrier" type="StaticBody3D" parent="AssetCity/GameplayViewDetailClusters/RiversideCleanupNorth"]
+position = Vector3(-37, 0.3, 11)
+rotation_degrees = Vector3(0, 90, 0)
+[node name="Visual" parent="AssetCity/GameplayViewDetailClusters/RiversideCleanupNorth/PlasticBarrier" instance=ExtResource("56_plastic_barrier")]
+[node name="Collision" type="CollisionShape3D" parent="AssetCity/GameplayViewDetailClusters/RiversideCleanupNorth/PlasticBarrier"]
+position = Vector3(0, 0.3, 0)
+scale = Vector3(1.0, 0.56, 0.3)
+shape = SubResource("Shape_box")
+[node name="Pipes" parent="AssetCity/GameplayViewDetailClusters/RiversideCleanupNorth" instance=ExtResource("72_pipes")]
+position = Vector3(-36, 0.3, 15)
+rotation_degrees = Vector3(0, 24, 0)
+[node name="TrashA" parent="AssetCity/GameplayViewDetailClusters/RiversideCleanupNorth" instance=ExtResource("70_trash1")]
+position = Vector3(-35, 0.3, 18)
+[node name="Wheel" parent="AssetCity/GameplayViewDetailClusters/RiversideCleanupNorth" instance=ExtResource("67_wheel_new")]
+position = Vector3(-37, 0.3, 20)
+rotation_degrees = Vector3(82, -12, 8)
+
+; 4. South riverside abandoned rest point uses a different prop silhouette.
+[node name="RiversideRestSouth" type="Node3D" parent="AssetCity/GameplayViewDetailClusters"]
+[node name="Couch" parent="AssetCity/GameplayViewDetailClusters/RiversideRestSouth" instance=ExtResource("75_couch")]
+position = Vector3(-36, 0.3, 92)
+rotation_degrees = Vector3(0, 72, 0)
+[node name="WheelStack" parent="AssetCity/GameplayViewDetailClusters/RiversideRestSouth" instance=ExtResource("68_wheels_stack")]
+position = Vector3(-35, 0.3, 97)
+rotation_degrees = Vector3(0, -17, 0)
+[node name="TrashB" parent="AssetCity/GameplayViewDetailClusters/RiversideRestSouth" instance=ExtResource("71_trash2")]
+position = Vector3(-37, 0.3, 99)
+[node name="TrafficBarrier" type="StaticBody3D" parent="AssetCity/GameplayViewDetailClusters/RiversideRestSouth"]
+position = Vector3(-36, 0.3, 88)
+rotation_degrees = Vector3(0, 86, 0)
+[node name="Visual" parent="AssetCity/GameplayViewDetailClusters/RiversideRestSouth/TrafficBarrier" instance=ExtResource("54_barrier1")]
+[node name="Collision" type="CollisionShape3D" parent="AssetCity/GameplayViewDetailClusters/RiversideRestSouth/TrafficBarrier"]
+position = Vector3(0, 0.56, 0)
+scale = Vector3(1.5, 1.05, 0.82)
+shape = SubResource("Shape_box")
+
+; 5. Service loading remnants fill the lot edge, not its maneuvering center.
+[node name="SouthLoadingRemains" type="Node3D" parent="AssetCity/GameplayViewDetailClusters"]
+[node name="ArmoredTruck" type="StaticBody3D" parent="AssetCity/GameplayViewDetailClusters/SouthLoadingRemains"]
+position = Vector3(4, 0.3, 98)
+rotation_degrees = Vector3(0, 84, 1)
+[node name="Visual" parent="AssetCity/GameplayViewDetailClusters/SouthLoadingRemains/ArmoredTruck" instance=ExtResource("51_truck_armored")]
+[node name="Collision" type="CollisionShape3D" parent="AssetCity/GameplayViewDetailClusters/SouthLoadingRemains/ArmoredTruck"]
+position = Vector3(0, 1.5, 0)
+scale = Vector3(2.8, 2.8, 5.4)
+shape = SubResource("Shape_box")
+[node name="Pallet" parent="AssetCity/GameplayViewDetailClusters/SouthLoadingRemains" instance=ExtResource("64_pallet_new")]
+position = Vector3(9, 0.3, 100)
+rotation_degrees = Vector3(0, 13, 0)
+[node name="Barrel" parent="AssetCity/GameplayViewDetailClusters/SouthLoadingRemains" instance=ExtResource("66_barrel_new")]
+position = Vector3(11, 0.3, 101)
+rotation_degrees = Vector3(0, -22, 0)
+[node name="Cone" parent="AssetCity/GameplayViewDetailClusters/SouthLoadingRemains" instance=ExtResource("57_cone1")]
+position = Vector3(-1, 0.3, 100)
+
+; 6. Frontage evacuation leftovers articulate the eastern playable edge.
+[node name="FrontageEvacuation" type="Node3D" parent="AssetCity/GameplayViewDetailClusters"]
+[node name="Pickup" type="StaticBody3D" parent="AssetCity/GameplayViewDetailClusters/FrontageEvacuation"]
+position = Vector3(62, 0.3, 91)
+rotation_degrees = Vector3(0, -8, -2)
+[node name="Visual" parent="AssetCity/GameplayViewDetailClusters/FrontageEvacuation/Pickup" instance=ExtResource("48_pickup")]
+[node name="Collision" type="CollisionShape3D" parent="AssetCity/GameplayViewDetailClusters/FrontageEvacuation/Pickup"]
+position = Vector3(0, 0.95, 0.1)
+scale = Vector3(2.2, 1.75, 5.0)
+shape = SubResource("Shape_box")
+[node name="TownSign" parent="AssetCity/GameplayViewDetailClusters/FrontageEvacuation" instance=ExtResource("63_town_sign")]
+position = Vector3(65, 0.3, 97)
+rotation_degrees = Vector3(0, -90, 0)
+[node name="Trash" parent="AssetCity/GameplayViewDetailClusters/FrontageEvacuation" instance=ExtResource("70_trash1")]
+position = Vector3(65, 0.3, 87)
+[node name="Hydrant" parent="AssetCity/GameplayViewDetailClusters/FrontageEvacuation" instance=ExtResource("62_hydrant")]
+position = Vector3(65, 0.3, 83)
+
+; 7. Mid-secondary construction remains leave a broad western bypass.
+[node name="SecondaryConstruction" type="Node3D" parent="AssetCity/GameplayViewDetailClusters"]
+[node name="BarrierA" type="StaticBody3D" parent="AssetCity/GameplayViewDetailClusters/SecondaryConstruction"]
+position = Vector3(13, 0.3, 52)
+rotation_degrees = Vector3(0, 18, 0)
+[node name="Visual" parent="AssetCity/GameplayViewDetailClusters/SecondaryConstruction/BarrierA" instance=ExtResource("54_barrier1")]
+[node name="Collision" type="CollisionShape3D" parent="AssetCity/GameplayViewDetailClusters/SecondaryConstruction/BarrierA"]
+position = Vector3(0, 0.65, 0)
+scale = Vector3(1.8, 0.8, 0.5)
+shape = SubResource("Shape_box")
+[node name="BarrierB" type="StaticBody3D" parent="AssetCity/GameplayViewDetailClusters/SecondaryConstruction"]
+position = Vector3(17, 0.3, 54)
+rotation_degrees = Vector3(0, -14, 0)
+[node name="Visual" parent="AssetCity/GameplayViewDetailClusters/SecondaryConstruction/BarrierB" instance=ExtResource("56_plastic_barrier")]
+[node name="Collision" type="CollisionShape3D" parent="AssetCity/GameplayViewDetailClusters/SecondaryConstruction/BarrierB"]
+position = Vector3(0, 0.3, 0)
+scale = Vector3(1.0, 0.56, 0.3)
+shape = SubResource("Shape_box")
+[node name="ConeA" parent="AssetCity/GameplayViewDetailClusters/SecondaryConstruction" instance=ExtResource("57_cone1")]
+position = Vector3(11, 0.3, 55)
+[node name="ConeB" parent="AssetCity/GameplayViewDetailClusters/SecondaryConstruction" instance=ExtResource("58_cone2")]
+position = Vector3(19, 0.3, 57)
+[node name="Cinder" parent="AssetCity/GameplayViewDetailClusters/SecondaryConstruction" instance=ExtResource("69_cinder")]
+position = Vector3(15, 0.3, 58)
+rotation_degrees = Vector3(0, 36, 0)
+[node name="RoadDamage" type="MeshInstance3D" parent="AssetCity/GameplayViewDetailClusters/SecondaryConstruction"]
+position = Vector3(15, 0.24, 55)
+scale = Vector3(2.8, 0.02, 1.4)
+rotation_degrees = Vector3(0, -9, 0)
+mesh = SubResource("Mesh_road_repair")
+
+; Sparse urban river reclamation using approved Ultimate Nature Pack FBX assets only.
+[node name="UltimateNatureRiverPass" type="Node3D" parent="AssetCity"]
+
+; AREA A: drainage outlet / future river-entrance landmark.
+[node name="DrainageOutlet" type="Node3D" parent="AssetCity/UltimateNatureRiverPass"]
+[node name="RiverMonsterSpawn_Drain" type="Marker3D" parent="AssetCity/UltimateNatureRiverPass/DrainageOutlet"]
+position = Vector3(-47, -0.45, 22)
+rotation_degrees = Vector3(0, 90, 0)
+[node name="Drain" parent="AssetCity/UltimateNatureRiverPass/DrainageOutlet" instance=ExtResource("12_drain")]
+position = Vector3(-40.2, 0.32, 22)
+rotation_degrees = Vector3(0, 90, 0)
+[node name="PipeDebris" parent="AssetCity/UltimateNatureRiverPass/DrainageOutlet" instance=ExtResource("72_pipes")]
+position = Vector3(-39.3, 0.25, 24.5)
+rotation_degrees = Vector3(0, 27, 0)
+[node name="BrokenConcrete" parent="AssetCity/UltimateNatureRiverPass/DrainageOutlet" instance=ExtResource("32_concrete_wall")]
+position = Vector3(-40.5, 0.2, 18.5)
+rotation_degrees = Vector3(4, 84, -7)
+[node name="MossRockA" parent="AssetCity/UltimateNatureRiverPass/DrainageOutlet" instance=ExtResource("82_moss1")]
+position = Vector3(-43.2, -0.45, 20.2)
+rotation_degrees = Vector3(8, 31, -4)
+scale = Vector3(1.05, 0.92, 1.08)
+[node name="MossRockB" parent="AssetCity/UltimateNatureRiverPass/DrainageOutlet" instance=ExtResource("84_moss3")]
+position = Vector3(-44.8, -0.52, 23.1)
+rotation_degrees = Vector3(-4, -22, 9)
+scale = Vector3(0.86, 0.8, 0.92)
+[node name="MossRockC" parent="AssetCity/UltimateNatureRiverPass/DrainageOutlet" instance=ExtResource("86_moss5")]
+position = Vector3(-42.8, -0.35, 25.5)
+rotation_degrees = Vector3(5, 47, -6)
+scale = Vector3(0.76, 0.72, 0.82)
+[node name="GrassA" parent="AssetCity/UltimateNatureRiverPass/DrainageOutlet" instance=ExtResource("88_grass")]
+position = Vector3(-40.3, 0.15, 25.8)
+rotation_degrees = Vector3(0, 19, 0)
+scale = Vector3(0.72, 0.72, 0.72)
+[node name="GrassB" parent="AssetCity/UltimateNatureRiverPass/DrainageOutlet" instance=ExtResource("90_grass_short")]
+position = Vector3(-39.5, 0.16, 19.5)
+rotation_degrees = Vector3(0, -34, 0)
+scale = Vector3(0.65, 0.65, 0.65)
+[node name="Plant" parent="AssetCity/UltimateNatureRiverPass/DrainageOutlet" instance=ExtResource("91_plant1")]
+position = Vector3(-41.2, 0.1, 24)
+rotation_degrees = Vector3(0, 38, 0)
+scale = Vector3(0.7, 0.7, 0.7)
+[node name="Trash" parent="AssetCity/UltimateNatureRiverPass/DrainageOutlet" instance=ExtResource("70_trash1")]
+position = Vector3(-39.2, 0.22, 21)
+
+; AREA B: a separated collapsed embankment with mixed dry and wet stone.
+[node name="CollapsedEmbankment" type="Node3D" parent="AssetCity/UltimateNatureRiverPass"]
+[node name="RiverMonsterSpawn_Collapse" type="Marker3D" parent="AssetCity/UltimateNatureRiverPass/CollapsedEmbankment"]
+position = Vector3(-47.5, -0.48, 54)
+rotation_degrees = Vector3(0, 90, 0)
+[node name="ConcreteA" parent="AssetCity/UltimateNatureRiverPass/CollapsedEmbankment" instance=ExtResource("31_hole_wall")]
+position = Vector3(-40.1, 0.18, 52)
+rotation_degrees = Vector3(7, 92, -11)
+[node name="ConcreteB" parent="AssetCity/UltimateNatureRiverPass/CollapsedEmbankment" instance=ExtResource("25_board")]
+position = Vector3(-39.4, 0.25, 56)
+rotation_degrees = Vector3(12, 67, -8)
+[node name="RockA" parent="AssetCity/UltimateNatureRiverPass/CollapsedEmbankment" instance=ExtResource("76_rock1")]
+position = Vector3(-40.2, 0.1, 48.8)
+rotation_degrees = Vector3(3, -17, 5)
+scale = Vector3(1.1, 0.94, 1.16)
+[node name="RockB" parent="AssetCity/UltimateNatureRiverPass/CollapsedEmbankment" instance=ExtResource("78_rock3")]
+position = Vector3(-41, 0.02, 53.5)
+rotation_degrees = Vector3(-6, 39, 4)
+scale = Vector3(0.9, 0.82, 0.96)
+[node name="RockC" parent="AssetCity/UltimateNatureRiverPass/CollapsedEmbankment" instance=ExtResource("80_rock5")]
+position = Vector3(-39.8, 0.12, 58.2)
+rotation_degrees = Vector3(5, 71, -3)
+scale = Vector3(0.78, 0.74, 0.84)
+[node name="MossRockA" parent="AssetCity/UltimateNatureRiverPass/CollapsedEmbankment" instance=ExtResource("83_moss2")]
+position = Vector3(-43.4, -0.4, 51)
+rotation_degrees = Vector3(8, 24, -7)
+[node name="MossRockB" parent="AssetCity/UltimateNatureRiverPass/CollapsedEmbankment" instance=ExtResource("85_moss4")]
+position = Vector3(-44.6, -0.48, 55)
+rotation_degrees = Vector3(-5, -31, 9)
+scale = Vector3(0.88, 0.8, 0.94)
+[node name="MossRockC" parent="AssetCity/UltimateNatureRiverPass/CollapsedEmbankment" instance=ExtResource("87_moss6")]
+position = Vector3(-42.9, -0.32, 58)
+rotation_degrees = Vector3(4, 54, -4)
+scale = Vector3(0.72, 0.68, 0.8)
+[node name="PlantA" parent="AssetCity/UltimateNatureRiverPass/CollapsedEmbankment" instance=ExtResource("92_plant2")]
+position = Vector3(-39.3, 0.12, 50.5)
+rotation_degrees = Vector3(0, -22, 0)
+scale = Vector3(0.7, 0.7, 0.7)
+[node name="PlantB" parent="AssetCity/UltimateNatureRiverPass/CollapsedEmbankment" instance=ExtResource("93_plant3")]
+position = Vector3(-40.2, 0.1, 56.7)
+rotation_degrees = Vector3(0, 35, 0)
+scale = Vector3(0.62, 0.62, 0.62)
+[node name="Grass" parent="AssetCity/UltimateNatureRiverPass/CollapsedEmbankment" instance=ExtResource("89_grass2")]
+position = Vector3(-39, 0.14, 54)
+rotation_degrees = Vector3(0, 16, 0)
+scale = Vector3(0.68, 0.68, 0.68)
+[node name="Bush" parent="AssetCity/UltimateNatureRiverPass/CollapsedEmbankment" instance=ExtResource("94_bush1_nature")]
+position = Vector3(-39, 0.12, 59.6)
+rotation_degrees = Vector3(0, -41, 0)
+scale = Vector3(0.66, 0.66, 0.66)
+
+; AREA C: abandoned riverside landmark, widely separated from Areas A and B.
+[node name="AbandonedRiverside" type="Node3D" parent="AssetCity/UltimateNatureRiverPass"]
+[node name="RiverMonsterSpawn_Access" type="Marker3D" parent="AssetCity/UltimateNatureRiverPass/AbandonedRiverside"]
+position = Vector3(-47, -0.45, 86)
+rotation_degrees = Vector3(0, 90, 0)
+[node name="FloodedAccessSlab" parent="AssetCity/UltimateNatureRiverPass/AbandonedRiverside" instance=ExtResource("31_hole_wall")]
+position = Vector3(-40.4, 0.08, 86.5)
+rotation_degrees = Vector3(11, 91, -5)
+[node name="BrokenRailing" type="StaticBody3D" parent="AssetCity/UltimateNatureRiverPass/AbandonedRiverside"]
+position = Vector3(-39.4, 0.28, 84)
+rotation_degrees = Vector3(2, 87, -5)
+[node name="Visual" parent="AssetCity/UltimateNatureRiverPass/AbandonedRiverside/BrokenRailing" instance=ExtResource("54_barrier1")]
+[node name="Collision" type="CollisionShape3D" parent="AssetCity/UltimateNatureRiverPass/AbandonedRiverside/BrokenRailing"]
+position = Vector3(0, 0.56, 0)
+scale = Vector3(1.5, 1.05, 0.82)
+shape = SubResource("Shape_box")
+[node name="LogMossA" parent="AssetCity/UltimateNatureRiverPass/AbandonedRiverside" instance=ExtResource("97_log_moss")]
+position = Vector3(-44.2, -0.42, 83)
+rotation_degrees = Vector3(8, 61, -12)
+scale = Vector3(1.05, 1.05, 1.05)
+[node name="LogMossB" parent="AssetCity/UltimateNatureRiverPass/AbandonedRiverside" instance=ExtResource("97_log_moss")]
+position = Vector3(-46.8, -0.58, 87)
+rotation_degrees = Vector3(-4, -28, 9)
+scale = Vector3(0.82, 0.82, 0.82)
+[node name="DryLog" parent="AssetCity/UltimateNatureRiverPass/AbandonedRiverside" instance=ExtResource("96_log")]
+position = Vector3(-42.2, -0.25, 90)
+rotation_degrees = Vector3(6, 32, -7)
+scale = Vector3(0.86, 0.86, 0.86)
+[node name="RockA" parent="AssetCity/UltimateNatureRiverPass/AbandonedRiverside" instance=ExtResource("77_rock2")]
+position = Vector3(-40, 0.08, 81)
+rotation_degrees = Vector3(4, 23, -2)
+[node name="RockB" parent="AssetCity/UltimateNatureRiverPass/AbandonedRiverside" instance=ExtResource("79_rock4")]
+position = Vector3(-40.5, 0.02, 87.5)
+rotation_degrees = Vector3(-3, -46, 6)
+scale = Vector3(0.84, 0.78, 0.9)
+[node name="RockC" parent="AssetCity/UltimateNatureRiverPass/AbandonedRiverside" instance=ExtResource("81_rock6")]
+position = Vector3(-39.6, 0.08, 92)
+rotation_degrees = Vector3(6, 58, -4)
+scale = Vector3(0.72, 0.68, 0.76)
+[node name="MossRock" parent="AssetCity/UltimateNatureRiverPass/AbandonedRiverside" instance=ExtResource("84_moss3")]
+position = Vector3(-43.5, -0.38, 89)
+rotation_degrees = Vector3(5, -19, 7)
+scale = Vector3(0.9, 0.84, 0.94)
+[node name="GrassA" parent="AssetCity/UltimateNatureRiverPass/AbandonedRiverside" instance=ExtResource("90_grass_short")]
+position = Vector3(-39.2, 0.14, 82.5)
+rotation_degrees = Vector3(0, 27, 0)
+scale = Vector3(0.7, 0.7, 0.7)
+[node name="GrassB" parent="AssetCity/UltimateNatureRiverPass/AbandonedRiverside" instance=ExtResource("88_grass")]
+position = Vector3(-39.1, 0.14, 90)
+rotation_degrees = Vector3(0, -33, 0)
+scale = Vector3(0.62, 0.62, 0.62)
+[node name="Bush" parent="AssetCity/UltimateNatureRiverPass/AbandonedRiverside" instance=ExtResource("95_bush2_nature")]
+position = Vector3(-39.3, 0.12, 94)
+rotation_degrees = Vector3(0, 42, 0)
+scale = Vector3(0.68, 0.68, 0.68)
+[node name="Trash" parent="AssetCity/UltimateNatureRiverPass/AbandonedRiverside" instance=ExtResource("71_trash2")]
+position = Vector3(-39, 0.2, 86)
+
+; Four widely separated, visual-only pieces keep more than 75% of the water open.
+[node name="FloatingRiverDebris" type="Node3D" parent="AssetCity/UltimateNatureRiverPass"]
+[node name="DriftLogNorth" parent="AssetCity/UltimateNatureRiverPass/FloatingRiverDebris" instance=ExtResource("96_log")]
+position = Vector3(-54, -0.62, 34)
+rotation_degrees = Vector3(2, 73, -3)
+scale = Vector3(0.62, 0.62, 0.62)
+[node name="DriftTire" parent="AssetCity/UltimateNatureRiverPass/FloatingRiverDebris" instance=ExtResource("67_wheel_new")]
+position = Vector3(-59, -0.58, 63)
+rotation_degrees = Vector3(86, 17, 5)
+scale = Vector3(0.72, 0.72, 0.72)
+[node name="DriftLogSouth" parent="AssetCity/UltimateNatureRiverPass/FloatingRiverDebris" instance=ExtResource("97_log_moss")]
+position = Vector3(-51, -0.63, 78)
+rotation_degrees = Vector3(-2, -38, 4)
+scale = Vector3(0.55, 0.55, 0.55)
+[node name="DriftWoodFar" parent="AssetCity/UltimateNatureRiverPass/FloatingRiverDebris" instance=ExtResource("96_log")]
+position = Vector3(-66, -0.64, 103)
+rotation_degrees = Vector3(3, 54, -2)
+scale = Vector3(0.48, 0.48, 0.48)
+
+; Two dead willows remain beyond the river blocker, never between camera and player.
+[node name="OppositeBankSilhouettes" type="Node3D" parent="AssetCity/UltimateNatureRiverPass"]
+[node name="DeadWillowNorth" parent="AssetCity/UltimateNatureRiverPass/OppositeBankSilhouettes" instance=ExtResource("98_willow1")]
+position = Vector3(-50, -0.6, 31)
+rotation_degrees = Vector3(0, 21, 0)
+scale = Vector3(0.86, 0.86, 0.86)
+[node name="DeadWillowSouth" parent="AssetCity/UltimateNatureRiverPass/OppositeBankSilhouettes" instance=ExtResource("99_willow2")]
+position = Vector3(-51, -0.6, 76)
+rotation_degrees = Vector3(0, -28, 0)
+scale = Vector3(0.78, 0.78, 0.78)
+
+; Collision-free visual continuation beyond InnerPlayableBoundary. Imported road
+; modules and props remain decoration because no StaticBody3D wrappers are used.
+[node name="BackdropContinuity" type="Node3D" parent="AssetCity"]
+
+; LAYER 2: road geometry continues directly through the invisible wall.
+[node name="RoadExtensions" type="Node3D" parent="AssetCity/BackdropContinuity"]
+[node name="NorthSecondary01" parent="AssetCity/BackdropContinuity/RoadExtensions" instance=ExtResource("42_street_straight")]
+position = Vector3(6, 0.2, -1)
+[node name="NorthSecondary02" parent="AssetCity/BackdropContinuity/RoadExtensions" instance=ExtResource("43_street_crack1")]
+position = Vector3(6, 0.2, -9)
+[node name="NorthSecondary03" parent="AssetCity/BackdropContinuity/RoadExtensions" instance=ExtResource("42_street_straight")]
+position = Vector3(6, 0.2, -17)
+[node name="NorthSecondary04" parent="AssetCity/BackdropContinuity/RoadExtensions" instance=ExtResource("44_street_crack2")]
+position = Vector3(6, 0.2, -25)
+
+[node name="NorthRiverside01" parent="AssetCity/BackdropContinuity/RoadExtensions" instance=ExtResource("43_street_crack1")]
+position = Vector3(-31, 0.2, -1)
+[node name="NorthRiverside02" parent="AssetCity/BackdropContinuity/RoadExtensions" instance=ExtResource("42_street_straight")]
+position = Vector3(-31, 0.2, -9)
+[node name="NorthRiverside03" parent="AssetCity/BackdropContinuity/RoadExtensions" instance=ExtResource("44_street_crack2")]
+position = Vector3(-31, 0.2, -17)
+[node name="NorthRiverside04" parent="AssetCity/BackdropContinuity/RoadExtensions" instance=ExtResource("42_street_straight")]
+position = Vector3(-31, 0.2, -25)
+
+[node name="SouthRiverside01" parent="AssetCity/BackdropContinuity/RoadExtensions" instance=ExtResource("44_street_crack2")]
+position = Vector3(-31, 0.2, 103)
+[node name="SouthRiverside02" parent="AssetCity/BackdropContinuity/RoadExtensions" instance=ExtResource("42_street_straight")]
+position = Vector3(-31, 0.2, 111)
+[node name="SouthRiverside03" parent="AssetCity/BackdropContinuity/RoadExtensions" instance=ExtResource("43_street_crack1")]
+position = Vector3(-31, 0.2, 119)
+[node name="SouthRiverside04" parent="AssetCity/BackdropContinuity/RoadExtensions" instance=ExtResource("42_street_straight")]
+position = Vector3(-31, 0.2, 127)
+
+[node name="EastMain01" parent="AssetCity/BackdropContinuity/RoadExtensions" instance=ExtResource("43_street_crack1")]
+position = Vector3(70, 0.2, 31)
+rotation_degrees = Vector3(0, 90, 0)
+[node name="EastMain02" parent="AssetCity/BackdropContinuity/RoadExtensions" instance=ExtResource("42_street_straight")]
+position = Vector3(78, 0.2, 31)
+rotation_degrees = Vector3(0, 90, 0)
+[node name="EastMain03" parent="AssetCity/BackdropContinuity/RoadExtensions" instance=ExtResource("44_street_crack2")]
+position = Vector3(86, 0.2, 31)
+rotation_degrees = Vector3(0, 90, 0)
+
+; LAYER 2: restrained near-backdrop detail, all visual-only.
+[node name="NearBackdrop" type="Node3D" parent="AssetCity/BackdropContinuity"]
+[node name="NorthAbandonedSports" parent="AssetCity/BackdropContinuity/NearBackdrop" instance=ExtResource("52_sports")]
+position = Vector3(22, 0.3, -13)
+rotation_degrees = Vector3(0, -28, -3)
+[node name="NorthServiceContainer" parent="AssetCity/BackdropContinuity/NearBackdrop" instance=ExtResource("74_container_green")]
+position = Vector3(54, 0.3, -18)
+rotation_degrees = Vector3(0, 8, 0)
+[node name="NorthStreetlight" parent="AssetCity/BackdropContinuity/NearBackdrop" instance=ExtResource("59_streetlight")]
+position = Vector3(12, 0.3, -12)
+rotation_degrees = Vector3(0, -9, 0)
+[node name="NorthPole" parent="AssetCity/BackdropContinuity/NearBackdrop" instance=ExtResource("24_pole")]
+position = Vector3(-19, 0.3, -16)
+rotation_degrees = Vector3(0, 5, 0)
+[node name="NorthBush" parent="AssetCity/BackdropContinuity/NearBackdrop" instance=ExtResource("95_bush2_nature")]
+position = Vector3(31, 0.12, -21)
+rotation_degrees = Vector3(0, 34, 0)
+scale = Vector3(0.72, 0.72, 0.72)
+
+[node name="SouthAbandonedPickup" parent="AssetCity/BackdropContinuity/NearBackdrop" instance=ExtResource("48_pickup")]
+position = Vector3(16, 0.3, 110)
+rotation_degrees = Vector3(0, 39, 2)
+[node name="SouthTruck" parent="AssetCity/BackdropContinuity/NearBackdrop" instance=ExtResource("50_truck")]
+position = Vector3(49, 0.3, 121)
+rotation_degrees = Vector3(0, -71, 0)
+[node name="SouthStreetlight" parent="AssetCity/BackdropContinuity/NearBackdrop" instance=ExtResource("59_streetlight")]
+position = Vector3(-21, 0.3, 113)
+rotation_degrees = Vector3(0, 11, 0)
+[node name="SouthBarrier" parent="AssetCity/BackdropContinuity/NearBackdrop" instance=ExtResource("55_barrier2")]
+position = Vector3(8, 0.3, 105)
+rotation_degrees = Vector3(0, -16, 0)
+[node name="SouthBush" parent="AssetCity/BackdropContinuity/NearBackdrop" instance=ExtResource("94_bush1_nature")]
+position = Vector3(35, 0.12, 112)
+rotation_degrees = Vector3(0, -27, 0)
+scale = Vector3(0.68, 0.68, 0.68)
+
+[node name="EastRoadSign" parent="AssetCity/BackdropContinuity/NearBackdrop" instance=ExtResource("63_town_sign")]
+position = Vector3(75, 0.3, 37)
+rotation_degrees = Vector3(0, -90, 0)
+[node name="EastStreetlight" parent="AssetCity/BackdropContinuity/NearBackdrop" instance=ExtResource("59_streetlight")]
+position = Vector3(76, 0.3, 48)
+rotation_degrees = Vector3(0, 90, 0)
+
+; LAYER 3: two distant silhouettes close the skyline with minimal draw overhead.
+[node name="FarBackdrop" type="Node3D" parent="AssetCity/BackdropContinuity"]
+[node name="NorthDistantBlock" parent="AssetCity/BackdropContinuity/FarBackdrop" instance=ExtResource("2_medium")]
+position = Vector3(43, 0.18, -29)
+rotation_degrees = Vector3(0, -7, 0)
+[node name="SoutheastDistantBlock" parent="AssetCity/BackdropContinuity/FarBackdrop" instance=ExtResource("3_small")]
+position = Vector3(113, 0.18, 120)
+rotation_degrees = Vector3(0, 11, 0)
+
+; Sparse bank silhouettes continue beyond both arena ends; water already spans farther.
+[node name="RiverContinuation" type="Node3D" parent="AssetCity/BackdropContinuity"]
+[node name="NorthMossRock" parent="AssetCity/BackdropContinuity/RiverContinuation" instance=ExtResource("83_moss2")]
+position = Vector3(-44, -0.35, -16)
+rotation_degrees = Vector3(0, 28, 0)
+scale = Vector3(0.9, 0.9, 0.9)
+[node name="NorthGrass" parent="AssetCity/BackdropContinuity/RiverContinuation" instance=ExtResource("90_grass_short")]
+position = Vector3(-40, 0.12, -21)
+rotation_degrees = Vector3(0, -19, 0)
+scale = Vector3(0.65, 0.65, 0.65)
+[node name="SouthRock" parent="AssetCity/BackdropContinuity/RiverContinuation" instance=ExtResource("79_rock4")]
+position = Vector3(-43, -0.25, 116)
+rotation_degrees = Vector3(0, -24, 0)
+scale = Vector3(0.82, 0.82, 0.82)
+[node name="SouthLog" parent="AssetCity/BackdropContinuity/RiverContinuation" instance=ExtResource("97_log_moss")]
+position = Vector3(-45, -0.45, 126)
+rotation_degrees = Vector3(6, 37, -8)
+scale = Vector3(0.78, 0.78, 0.78)
+
+; Visual-only quarantine perimeter. Existing invisible boundaries remain authoritative.
+[node name="VisualQuarantinePerimeter" type="Node3D" parent="AssetCity"]
+
+; North-west river-road closure: low staggered roadblocks and a damaged flank.
+[node name="NorthwestRoadClosure" type="Node3D" parent="AssetCity/VisualQuarantinePerimeter"]
+[node name="ConcreteLeft" parent="AssetCity/VisualQuarantinePerimeter/NorthwestRoadClosure" instance=ExtResource("54_barrier1")]
+position = Vector3(-35, 0.3, -9.4)
+rotation_degrees = Vector3(0, 8, 0)
+[node name="LowCenter" parent="AssetCity/VisualQuarantinePerimeter/NorthwestRoadClosure" instance=ExtResource("55_barrier2")]
+position = Vector3(-31.5, 0.3, -9.8)
+rotation_degrees = Vector3(0, -4, 0)
+[node name="PlasticRight" parent="AssetCity/VisualQuarantinePerimeter/NorthwestRoadClosure" instance=ExtResource("56_plastic_barrier")]
+position = Vector3(-28.5, 0.3, -9.5)
+rotation_degrees = Vector3(0, -13, 0)
+[node name="BrokenFlank" parent="AssetCity/VisualQuarantinePerimeter/NorthwestRoadClosure" instance=ExtResource("33_metal_wall")]
+position = Vector3(-40, 0.3, -10.1)
+rotation_degrees = Vector3(0, 4, -5)
+
+; A distinct checkpoint closes the north secondary street.
+[node name="NorthCheckpoint" type="Node3D" parent="AssetCity/VisualQuarantinePerimeter"]
+[node name="ConcreteA" parent="AssetCity/VisualQuarantinePerimeter/NorthCheckpoint" instance=ExtResource("27_barrier")]
+position = Vector3(2.8, 0.35, -9.6)
+rotation_degrees = Vector3(0, -7, 0)
+[node name="WoodCenter" parent="AssetCity/VisualQuarantinePerimeter/NorthCheckpoint" instance=ExtResource("34_wood_barricade")]
+position = Vector3(6, 0.3, -9.1)
+rotation_degrees = Vector3(0, 3, 0)
+[node name="ConcreteB" parent="AssetCity/VisualQuarantinePerimeter/NorthCheckpoint" instance=ExtResource("27_barrier")]
+position = Vector3(9.4, 0.35, -9.7)
+rotation_degrees = Vector3(0, 11, 0)
+[node name="DamagedFence" parent="AssetCity/VisualQuarantinePerimeter/NorthCheckpoint" instance=ExtResource("31_hole_wall")]
+position = Vector3(14.5, 0.3, -10.3)
+rotation_degrees = Vector3(0, -2, 0)
+
+; Sparse fragments imply a longer northern cordon without forming a giant wall.
+[node name="NorthEdgeFragments" type="Node3D" parent="AssetCity/VisualQuarantinePerimeter"]
+[node name="MetalWest" parent="AssetCity/VisualQuarantinePerimeter/NorthEdgeFragments" instance=ExtResource("33_metal_wall")]
+position = Vector3(-18, 0.3, -10.2)
+rotation_degrees = Vector3(0, -3, 0)
+[node name="ConcreteMid" parent="AssetCity/VisualQuarantinePerimeter/NorthEdgeFragments" instance=ExtResource("32_concrete_wall")]
+position = Vector3(28, 0.3, -10.4)
+rotation_degrees = Vector3(0, 5, 0)
+[node name="BentBarrier" parent="AssetCity/VisualQuarantinePerimeter/NorthEdgeFragments" instance=ExtResource("27_barrier")]
+position = Vector3(41, 0.35, -9.8)
+rotation_degrees = Vector3(0, -17, -4)
+[node name="MetalEast" parent="AssetCity/VisualQuarantinePerimeter/NorthEdgeFragments" instance=ExtResource("33_metal_wall")]
+position = Vector3(55, 0.3, -10.2)
+rotation_degrees = Vector3(0, 4, 0)
+
+; Southern riverside roadblock and widely spaced cordon remnants.
+[node name="SouthRiverRoadClosure" type="Node3D" parent="AssetCity/VisualQuarantinePerimeter"]
+[node name="BarrierLeft" parent="AssetCity/VisualQuarantinePerimeter/SouthRiverRoadClosure" instance=ExtResource("54_barrier1")]
+position = Vector3(-34.5, 0.3, 102.6)
+rotation_degrees = Vector3(0, -10, 0)
+[node name="BarrierCenter" parent="AssetCity/VisualQuarantinePerimeter/SouthRiverRoadClosure" instance=ExtResource("55_barrier2")]
+position = Vector3(-31, 0.3, 103)
+rotation_degrees = Vector3(0, 5, 0)
+[node name="DamagedRight" parent="AssetCity/VisualQuarantinePerimeter/SouthRiverRoadClosure" instance=ExtResource("31_hole_wall")]
+position = Vector3(-26.5, 0.3, 103.5)
+rotation_degrees = Vector3(0, -6, 0)
+[node name="RiverTransition" parent="AssetCity/VisualQuarantinePerimeter/SouthRiverRoadClosure" instance=ExtResource("27_barrier")]
+position = Vector3(-39.2, 0.35, 101.8)
+rotation_degrees = Vector3(0, 14, -3)
+
+[node name="SouthEdgeFragments" type="Node3D" parent="AssetCity/VisualQuarantinePerimeter"]
+[node name="MetalA" parent="AssetCity/VisualQuarantinePerimeter/SouthEdgeFragments" instance=ExtResource("33_metal_wall")]
+position = Vector3(-12, 0.3, 103.8)
+rotation_degrees = Vector3(0, 3, 0)
+[node name="ConcreteA" parent="AssetCity/VisualQuarantinePerimeter/SouthEdgeFragments" instance=ExtResource("32_concrete_wall")]
+position = Vector3(8, 0.3, 103.9)
+rotation_degrees = Vector3(0, -4, 0)
+[node name="BrokenCenter" parent="AssetCity/VisualQuarantinePerimeter/SouthEdgeFragments" instance=ExtResource("31_hole_wall")]
+position = Vector3(26, 0.3, 103.5)
+rotation_degrees = Vector3(0, 7, 0)
+[node name="LowRoadblock" parent="AssetCity/VisualQuarantinePerimeter/SouthEdgeFragments" instance=ExtResource("27_barrier")]
+position = Vector3(43, 0.35, 103.1)
+rotation_degrees = Vector3(0, -12, 0)
+[node name="MetalEast" parent="AssetCity/VisualQuarantinePerimeter/SouthEdgeFragments" instance=ExtResource("33_metal_wall")]
+position = Vector3(58, 0.3, 103.8)
+rotation_degrees = Vector3(0, 4, 0)
+
+; The main eastbound road ties into the existing building-frontage cordon.
+[node name="EastRoadCheckpoint" type="Node3D" parent="AssetCity/VisualQuarantinePerimeter"]
+[node name="BarrierNorth" parent="AssetCity/VisualQuarantinePerimeter/EastRoadCheckpoint" instance=ExtResource("27_barrier")]
+position = Vector3(68.2, 0.35, 27.5)
+rotation_degrees = Vector3(0, 87, 0)
+[node name="PlasticCenter" parent="AssetCity/VisualQuarantinePerimeter/EastRoadCheckpoint" instance=ExtResource("56_plastic_barrier")]
+position = Vector3(68, 0.3, 31)
+rotation_degrees = Vector3(0, 94, 0)
+[node name="BarrierSouth" parent="AssetCity/VisualQuarantinePerimeter/EastRoadCheckpoint" instance=ExtResource("54_barrier1")]
+position = Vector3(68.2, 0.3, 34.2)
+rotation_degrees = Vector3(0, 82, 0)
+
+; River remains visually open; intermittent damaged infrastructure marks the edge.
+[node name="RiverEdgeTransitions" type="Node3D" parent="AssetCity/VisualQuarantinePerimeter"]
+[node name="NorthRailing" parent="AssetCity/VisualQuarantinePerimeter/RiverEdgeTransitions" instance=ExtResource("27_barrier")]
+position = Vector3(-39.5, 0.35, 8)
+rotation_degrees = Vector3(0, 88, -3)
+[node name="MiddleBrokenRailing" parent="AssetCity/VisualQuarantinePerimeter/RiverEdgeTransitions" instance=ExtResource("54_barrier1")]
+position = Vector3(-39.4, 0.3, 48)
+rotation_degrees = Vector3(3, 91, -6)
+[node name="SouthRailing" parent="AssetCity/VisualQuarantinePerimeter/RiverEdgeTransitions" instance=ExtResource("27_barrier")]
+position = Vector3(-39.5, 0.35, 97)
+rotation_degrees = Vector3(0, 86, 2)

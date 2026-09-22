@@ -1,0 +1,381 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/combat_hud.gd" id="1_script"]
+
+[sub_resource type="StyleBoxFlat" id="HealthPanelStyle"]
+bg_color = Color(0.015, 0.055, 0.09, 0.94)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.05, 0.92, 1, 0.9)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+shadow_color = Color(0, 0.75, 1, 0.32)
+shadow_size = 7
+
+[sub_resource type="StyleBoxFlat" id="HealthBarBackground"]
+bg_color = Color(0.01, 0.025, 0.04, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.05, 0.45, 0.58, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+
+[sub_resource type="StyleBoxFlat" id="HealthBarFill"]
+bg_color = Color(0.05, 0.95, 0.72, 1)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+
+[sub_resource type="StyleBoxFlat" id="EnemyPanelStyle"]
+bg_color = Color(0.045, 0.018, 0.035, 0.94)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(1, 0.22, 0.36, 0.92)
+corner_radius_top_left = 5
+corner_radius_top_right = 5
+corner_radius_bottom_right = 5
+corner_radius_bottom_left = 5
+shadow_color = Color(1, 0.05, 0.2, 0.3)
+shadow_size = 7
+
+[sub_resource type="StyleBoxFlat" id="CardNormal"]
+bg_color = Color(0.018, 0.06, 0.1, 0.98)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.08, 0.62, 0.76, 0.9)
+corner_radius_top_left = 9
+corner_radius_top_right = 9
+corner_radius_bottom_right = 9
+corner_radius_bottom_left = 9
+shadow_color = Color(0, 0.7, 0.9, 0.3)
+shadow_size = 9
+
+[sub_resource type="StyleBoxFlat" id="CardHover"]
+bg_color = Color(0.025, 0.18, 0.24, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.18, 1, 0.88, 1)
+corner_radius_top_left = 9
+corner_radius_top_right = 9
+corner_radius_bottom_right = 9
+corner_radius_bottom_left = 9
+shadow_color = Color(0, 1, 0.85, 0.5)
+shadow_size = 13
+
+[sub_resource type="StyleBoxFlat" id="CardPressed"]
+bg_color = Color(0.04, 0.38, 0.38, 1)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.68, 1, 0.75, 1)
+corner_radius_top_left = 9
+corner_radius_top_right = 9
+corner_radius_bottom_right = 9
+corner_radius_bottom_left = 9
+
+[node name="CombatHUD" type="CanvasLayer"]
+layer = 20
+script = ExtResource("1_script")
+
+[node name="HealthPanel" type="PanelContainer" parent="."]
+offset_left = 22.0
+offset_top = 20.0
+offset_right = 278.0
+offset_bottom = 142.0
+theme_override_styles/panel = SubResource("HealthPanelStyle")
+
+[node name="Margin" type="MarginContainer" parent="HealthPanel"]
+layout_mode = 2
+theme_override_constants/margin_left = 14
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 14
+theme_override_constants/margin_bottom = 10
+
+[node name="Content" type="VBoxContainer" parent="HealthPanel/Margin"]
+layout_mode = 2
+theme_override_constants/separation = 6
+
+[node name="Header" type="Label" parent="HealthPanel/Margin/Content"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.1, 0.88, 1, 1)
+theme_override_font_sizes/font_size = 13
+text = "◈  VITAL STATUS"
+
+[node name="HealthRow" type="HBoxContainer" parent="HealthPanel/Margin/Content"]
+layout_mode = 2
+
+[node name="HealthLabel" type="Label" parent="HealthPanel/Margin/Content/HealthRow"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.72, 0.94, 1, 1)
+theme_override_font_sizes/font_size = 15
+text = "HEALTH"
+
+[node name="HealthCount" type="Label" parent="HealthPanel/Margin/Content/HealthRow"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.15, 1, 0.72, 1)
+theme_override_font_sizes/font_size = 18
+text = "05 / 05"
+
+[node name="HealthBar" type="ProgressBar" parent="HealthPanel/Margin/Content"]
+custom_minimum_size = Vector2(0, 11)
+layout_mode = 2
+max_value = 5.0
+value = 5.0
+show_percentage = false
+theme_override_styles/background = SubResource("HealthBarBackground")
+theme_override_styles/fill = SubResource("HealthBarFill")
+
+[node name="AmmoRow" type="HBoxContainer" parent="HealthPanel/Margin/Content"]
+layout_mode = 2
+
+[node name="AmmoLabel" type="Label" parent="HealthPanel/Margin/Content/AmmoRow"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.72, 0.94, 1, 1)
+theme_override_font_sizes/font_size = 15
+text = "AMMO"
+
+[node name="AmmoCount" type="Label" parent="HealthPanel/Margin/Content/AmmoRow"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.78, 0.2, 1)
+theme_override_font_sizes/font_size = 18
+text = "60"
+
+[node name="EnemyPanel" type="PanelContainer" parent="."]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -244.0
+offset_top = 20.0
+offset_right = -22.0
+offset_bottom = 92.0
+grow_horizontal = 0
+theme_override_styles/panel = SubResource("EnemyPanelStyle")
+
+[node name="Margin" type="MarginContainer" parent="EnemyPanel"]
+layout_mode = 2
+theme_override_constants/margin_left = 14
+theme_override_constants/margin_top = 8
+theme_override_constants/margin_right = 14
+theme_override_constants/margin_bottom = 8
+
+[node name="Content" type="HBoxContainer" parent="EnemyPanel/Margin"]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="Skull" type="Label" parent="EnemyPanel/Margin/Content"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.38, 0.48, 1)
+theme_override_font_sizes/font_size = 34
+text = "☠"
+vertical_alignment = 1
+
+[node name="Labels" type="VBoxContainer" parent="EnemyPanel/Margin/Content"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 0
+
+[node name="Header" type="Label" parent="EnemyPanel/Margin/Content/Labels"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.58, 0.64, 1)
+theme_override_font_sizes/font_size = 12
+text = "HOSTILES"
+horizontal_alignment = 2
+
+[node name="EnemyCount" type="Label" parent="EnemyPanel/Margin/Content"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.9, 0.92, 1)
+theme_override_font_sizes/font_size = 26
+text = "000"
+vertical_alignment = 1
+
+[node name="WaveBanner" type="Label" parent="."]
+anchors_preset = 10
+anchor_right = 1.0
+offset_top = 30.0
+offset_bottom = 105.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(0.25, 0.96, 1, 1)
+theme_override_colors/font_shadow_color = Color(0, 0.7, 1, 0.8)
+theme_override_constants/shadow_offset_x = 3
+theme_override_constants/shadow_offset_y = 3
+theme_override_font_sizes/font_size = 48
+text = "WAVE 1"
+horizontal_alignment = 1
+
+[node name="PowerOverlay" type="Control" parent="."]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+
+[node name="Shade" type="ColorRect" parent="PowerOverlay"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.005, 0.015, 0.03, 0.82)
+mouse_filter = 2
+
+[node name="Center" type="CenterContainer" parent="PowerOverlay"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ChoiceContent" type="VBoxContainer" parent="PowerOverlay/Center"]
+layout_mode = 2
+theme_override_constants/separation = 24
+
+[node name="Title" type="Label" parent="PowerOverlay/Center/ChoiceContent"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.24, 1, 0.88, 1)
+theme_override_font_sizes/font_size = 34
+text = "WAVE 1 CLEARED"
+horizontal_alignment = 1
+
+[node name="Subtitle" type="Label" parent="PowerOverlay/Center/ChoiceContent"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.68, 0.83, 0.9, 1)
+theme_override_font_sizes/font_size = 17
+text = "SELECT ONE COMBAT AUGMENT"
+horizontal_alignment = 1
+
+[node name="Cards" type="HBoxContainer" parent="PowerOverlay/Center/ChoiceContent"]
+layout_mode = 2
+theme_override_constants/separation = 22
+
+[node name="AttackCard" type="Button" parent="PowerOverlay/Center/ChoiceContent/Cards"]
+custom_minimum_size = Vector2(230, 255)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.72, 0.95, 1, 1)
+theme_override_colors/font_hover_color = Color(0.9, 1, 0.96, 1)
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("CardNormal")
+theme_override_styles/hover = SubResource("CardHover")
+theme_override_styles/pressed = SubResource("CardPressed")
+theme_override_styles/focus = SubResource("CardHover")
+text = "[ 1 ]\n\nATTACK CORE\n\n+20% DAMAGE\n\nOverclock weapon output"
+
+[node name="HealthCard" type="Button" parent="PowerOverlay/Center/ChoiceContent/Cards"]
+custom_minimum_size = Vector2(230, 255)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.72, 0.95, 1, 1)
+theme_override_colors/font_hover_color = Color(0.9, 1, 0.96, 1)
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("CardNormal")
+theme_override_styles/hover = SubResource("CardHover")
+theme_override_styles/pressed = SubResource("CardPressed")
+theme_override_styles/focus = SubResource("CardHover")
+text = "[ 2 ]\n\nVITAL ARMOR\n\n+20% MAX HEALTH\n\nReinforce survival systems"
+
+[node name="SpeedCard" type="Button" parent="PowerOverlay/Center/ChoiceContent/Cards"]
+custom_minimum_size = Vector2(230, 255)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.72, 0.95, 1, 1)
+theme_override_colors/font_hover_color = Color(0.9, 1, 0.96, 1)
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("CardNormal")
+theme_override_styles/hover = SubResource("CardHover")
+theme_override_styles/pressed = SubResource("CardPressed")
+theme_override_styles/focus = SubResource("CardHover")
+text = "[ 3 ]\n\nMOTION DRIVE\n\n+20% MOVE SPEED\n\nAccelerate movement servos"
+
+[node name="WeaponOverlay" type="Control" parent="."]
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 1
+
+[node name="Shade" type="ColorRect" parent="WeaponOverlay"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.005, 0.015, 0.03, 0.86)
+mouse_filter = 2
+
+[node name="Center" type="CenterContainer" parent="WeaponOverlay"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ChoiceContent" type="VBoxContainer" parent="WeaponOverlay/Center"]
+layout_mode = 2
+theme_override_constants/separation = 24
+
+[node name="Title" type="Label" parent="WeaponOverlay/Center/ChoiceContent"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.24, 1, 0.88, 1)
+theme_override_font_sizes/font_size = 34
+text = "WAVE 2 CLEARED"
+horizontal_alignment = 1
+
+[node name="Subtitle" type="Label" parent="WeaponOverlay/Center/ChoiceContent"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.68, 0.83, 0.9, 1)
+theme_override_font_sizes/font_size = 17
+text = "SELECT YOUR ADVANCED WEAPON"
+horizontal_alignment = 1
+
+[node name="Cards" type="HBoxContainer" parent="WeaponOverlay/Center/ChoiceContent"]
+layout_mode = 2
+theme_override_constants/separation = 28
+
+[node name="LaserCard" type="Button" parent="WeaponOverlay/Center/ChoiceContent/Cards"]
+custom_minimum_size = Vector2(290, 285)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.68, 0.9, 1, 1)
+theme_override_colors/font_hover_color = Color(0.9, 1, 1, 1)
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("CardNormal")
+theme_override_styles/hover = SubResource("CardHover")
+theme_override_styles/pressed = SubResource("CardPressed")
+theme_override_styles/focus = SubResource("CardHover")
+text = "[ 1 ]\n\nLASER ASSAULT RIFLE\n\n+50% ATTACK\nSTANDARD FIRE RATE\n\nJAVELIN ENERGY SYSTEM"
+
+[node name="ShotgunCard" type="Button" parent="WeaponOverlay/Center/ChoiceContent/Cards"]
+custom_minimum_size = Vector2(290, 285)
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 0.72, 0.5, 1)
+theme_override_colors/font_hover_color = Color(1, 0.95, 0.84, 1)
+theme_override_font_sizes/font_size = 20
+theme_override_styles/normal = SubResource("CardNormal")
+theme_override_styles/hover = SubResource("CardHover")
+theme_override_styles/pressed = SubResource("CardPressed")
+theme_override_styles/focus = SubResource("CardHover")
+text = "[ 2 ]\n\nPLASMA SHOTGUN\n\n+70% ATTACK\n-65% FIRE RATE\n\n5-PELLET FAN BURST"

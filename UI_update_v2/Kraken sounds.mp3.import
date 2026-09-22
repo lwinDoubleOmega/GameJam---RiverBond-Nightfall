@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://dsjgjn0gq18xs"
+path="res://.godot/imported/Kraken sounds.mp3-318ef4a7320ad50adaa9c9418eb9d119.mp3str"
+
+[deps]
+
+source_file="res://UI_update_v2/Kraken sounds.mp3"
+dest_files=["res://.godot/imported/Kraken sounds.mp3-318ef4a7320ad50adaa9c9418eb9d119.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

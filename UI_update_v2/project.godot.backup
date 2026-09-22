@@ -1,0 +1,23 @@
+; Preserved nested-project configuration. The active root project cannot import
+; UI_update_v2 assets while a project.godot marker exists in this folder.
+config_version=5
+
+[application]
+
+config/name="MainMenu"
+run/main_scene="res://main_menu.tscn"
+config/features=PackedStringArray("4.7", "Forward Plus")
+config/icon="res://icon.svg"
+
+[display]
+
+window/stretch/mode="canvas_items"
+window/stretch/aspect="expand"
+
+[physics]
+
+3d/physics_engine="Jolt Physics"
+
+[rendering]
+
+rendering_device/driver.windows="d3d12"

@@ -1,0 +1,11 @@
+Model Information:
+* title:	Sci-Fi Plasma Shotgun
+* source:	https://sketchfab.com/3d-models/sci-fi-plasma-shotgun-b9a0d19bbe7a4a50b6d20362e2ef7b90
+* author:	One pixel man (https://sketchfab.com/gildam)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Sci-Fi Plasma Shotgun" (https://sketchfab.com/3d-models/sci-fi-plasma-shotgun-b9a0d19bbe7a4a50b6d20362e2ef7b90) by One pixel man (https://sketchfab.com/gildam) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

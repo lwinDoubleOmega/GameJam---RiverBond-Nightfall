@@ -1,0 +1,45 @@
+[gd_scene format=3 uid="uid://b2n2p3eg58v23"]
+
+[ext_resource type="PackedScene" uid="uid://bqc8y63k7yw0l" path="res://assets/weapon/weapon2/sci-fi_-lasergun_-_gameready/scene.gltf" id="1_model"]
+[ext_resource type="AudioStream" uid="uid://cwwpdoajepd3k" path="res://assets/audio/laserGunShot.mp3" id="2_vo5ms"]
+
+[sub_resource type="StandardMaterial3D" id="FlashMaterial"]
+shading_mode = 0
+albedo_color = Color(0.22, 0.72, 1, 1)
+
+[sub_resource type="SphereMesh" id="FlashMesh"]
+material = SubResource("FlashMaterial")
+radius = 0.085
+height = 0.17
+
+[node name="Gun" type="Node3D" unique_id=1885413268]
+
+[node name="Model" parent="." unique_id=959822462 instance=ExtResource("1_model")]
+transform = Transform3D(4.5298743e-10, 0, 0.006, 0, 0.006, 0, -0.006, 0, 4.5298743e-10, 0, 0, -0.71500915)
+
+[node name="Grip" type="Marker3D" parent="." unique_id=1775964529]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.025, 0.1)
+
+[node name="Foregrip" type="Marker3D" parent="." unique_id=1246887399]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.02, -0.28)
+
+[node name="Muzzle" type="Marker3D" parent="." unique_id=1941195756]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.015, -0.86)
+
+[node name="ShotAudio" type="AudioStreamPlayer3D" parent="Muzzle" unique_id=2104613496]
+stream = ExtResource("2_vo5ms")
+volume_db = -1.0
+unit_size = 6.0
+max_distance = 32.0
+bus = &"SFX"
+
+[node name="MuzzleFlash" type="Node3D" parent="Muzzle" unique_id=1395065824]
+visible = false
+
+[node name="Flash" type="MeshInstance3D" parent="Muzzle/MuzzleFlash" unique_id=1881937750]
+mesh = SubResource("FlashMesh")
+
+[node name="Light" type="OmniLight3D" parent="Muzzle/MuzzleFlash" unique_id=2022701050]
+light_color = Color(0.16, 0.62, 1, 1)
+light_energy = 3.0
+omni_range = 3.0

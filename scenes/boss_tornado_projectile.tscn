@@ -1,0 +1,23 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/boss_tornado_projectile.gd" id="1_script"]
+[ext_resource type="PackedScene" path="res://assets/tornado_vfx/tornado_source.tscn" id="2_tornado"]
+
+[sub_resource type="CylinderShape3D" id="Shape_tornado"]
+radius = 0.72
+height = 2.6
+
+[node name="BossTornadoProjectile" type="Area3D"]
+collision_layer = 0
+collision_mask = 1
+script = ExtResource("1_script")
+
+[node name="Visual" type="Node3D" parent="."]
+
+[node name="TornadoSource" parent="Visual" instance=ExtResource("2_tornado")]
+position = Vector3(-1.24, 0.82, 0.88)
+scale = Vector3(0.22, 0.22, 0.22)
+
+[node name="Collision" type="CollisionShape3D" parent="."]
+position = Vector3(0, 1.3, 0)
+shape = SubResource("Shape_tornado")

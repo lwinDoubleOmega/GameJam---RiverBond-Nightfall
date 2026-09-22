@@ -1,0 +1,37 @@
+[gd_scene load_steps=6 format=3]
+
+[ext_resource type="Script" path="res://scripts/combat_pickup.gd" id="1_script"]
+[ext_resource type="PackedScene" path="res://models/pickups/ammo.glb" id="2_ammo_model"]
+[ext_resource type="PackedScene" path="res://models/pickups/health.glb" id="3_health_model"]
+
+[sub_resource type="SphereShape3D" id="PickupShape"]
+radius = 0.55
+
+[sub_resource type="BoxMesh" id="PickupMesh"]
+size = Vector3(0.55, 0.55, 0.55)
+
+[node name="CombatPickup" type="Area3D"]
+collision_layer = 0
+collision_mask = 1
+monitoring = true
+script = ExtResource("1_script")
+
+[node name="Collision" type="CollisionShape3D" parent="."]
+shape = SubResource("PickupShape")
+
+[node name="VisualPivot" type="Node3D" parent="."]
+
+[node name="PlaceholderMesh" type="MeshInstance3D" parent="VisualPivot"]
+rotation = Vector3(0.35, 0.65, 0.2)
+mesh = SubResource("PickupMesh")
+
+[node name="AmmoModel" parent="VisualPivot" instance=ExtResource("2_ammo_model")]
+scale = Vector3(8, 8, 8)
+
+[node name="HealthModel" parent="VisualPivot" instance=ExtResource("3_health_model")]
+scale = Vector3(0.54, 0.54, 0.54)
+
+[node name="Light" type="OmniLight3D" parent="."]
+light_energy = 1.2
+omni_range = 3.0
+shadow_enabled = false

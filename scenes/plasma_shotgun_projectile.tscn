@@ -1,0 +1,31 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/player_energy_projectile.gd" id="1_script"]
+[ext_resource type="PackedScene" path="res://assets/BinbunVFX/magic_projectiles/effects/mprojectile_basic/mprojectile_basic_vfx_04.tscn" id="2_vfx"]
+[ext_resource type="AudioStream" path="res://assets/audio/projectile_impact.wav" id="3_impact"]
+
+[sub_resource type="SphereShape3D" id="Shape_projectile"]
+radius = 0.14
+
+[node name="PlasmaShotgunProjectile" type="Area3D"]
+collision_layer = 4
+collision_mask = 3
+script = ExtResource("1_script")
+speed = 42.0
+lifetime = 0.72
+
+[node name="Effect" type="Node3D" parent="."]
+
+[node name="MProjectileBasicVFX_04" parent="Effect" instance=ExtResource("2_vfx")]
+rotation = Vector3(0, -1.5707963, 0)
+scale = Vector3(0.24, 0.24, 0.24)
+
+[node name="Collision" type="CollisionShape3D" parent="."]
+shape = SubResource("Shape_projectile")
+
+[node name="ImpactAudio" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("3_impact")
+volume_db = -5.0
+unit_size = 5.0
+max_distance = 24.0
+bus = &"SFX"

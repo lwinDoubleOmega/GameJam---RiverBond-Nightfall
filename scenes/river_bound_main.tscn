@@ -1,0 +1,1256 @@
+[gd_scene format=3 uid="uid://covx32f7e277q"]
+
+[ext_resource type="PackedScene" uid="uid://bt541vxalqye3" path="res://environment/RiverBoundEnvironment.tscn" id="1_environment"]
+
+[sub_resource type="Environment" id="Environment_h3iem"]
+tonemap_exposure = 0.52
+
+[node name="RiverBoundMain" unique_id=965514998 instance=ExtResource("1_environment")]
+
+[node name="WorldEnvironment" parent="." index="1" unique_id=1652791094]
+environment = SubResource("Environment_h3iem")
+
+[node name="OverviewCamera" parent="CameraRig" parent_id_path=PackedInt32Array(751910611) index="0" unique_id=1676893892]
+transform = Transform3D(1, 0, 0, 0, 0.49999997, 0.86602545, 0, -0.86602545, 0.49999997, -1.6151657, 35.348305, 20.820236)
+
+[node name="NorthwestCornerSeal" parent="ArenaBoundary" parent_id_path=PackedInt32Array(1403543330) index="4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -42.1, 3, -12)
+
+[node name="Collision" parent="ArenaBoundary/NorthwestCornerSeal" index="0"]
+transform = Transform3D(4, 0, 0, 0, 6, 0, 0, 0, 4, 0, 0, 0)
+
+[node name="SouthwestCornerSeal" parent="ArenaBoundary" parent_id_path=PackedInt32Array(1403543330) index="5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -42.1, 3, 106)
+
+[node name="Collision" parent="ArenaBoundary/SouthwestCornerSeal" index="0"]
+transform = Transform3D(4, 0, 0, 0, 6, 0, 0, 0, 4, 0, 0, 0)
+
+[node name="NorthInnerBoundary" parent="ArenaBoundary/InnerPlayableBoundary" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 3, 0)
+
+[node name="Collision" parent="ArenaBoundary/InnerPlayableBoundary/NorthInnerBoundary" index="0"]
+transform = Transform3D(107, 0, 0, 0, 6, 0, 0, 0, 1.2, 0, 0, 0)
+
+[node name="SouthInnerBoundary" parent="ArenaBoundary/InnerPlayableBoundary" index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 15, 3, 94)
+
+[node name="Collision" parent="ArenaBoundary/InnerPlayableBoundary/SouthInnerBoundary" index="0"]
+transform = Transform3D(107, 0, 0, 0, 6, 0, 0, 0, 1.2, 0, 0, 0)
+
+[node name="EastInnerBoundary" parent="ArenaBoundary/InnerPlayableBoundary" index="2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 66.5, 3, 47)
+
+[node name="Collision" parent="ArenaBoundary/InnerPlayableBoundary/EastInnerBoundary" index="0"]
+transform = Transform3D(1.2, 0, 0, 0, 6, 0, 0, 0, 96, 0, 0, 0)
+
+[node name="WestInnerBoundary" parent="ArenaBoundary/InnerPlayableBoundary" index="3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -36.5, 3, 47)
+
+[node name="Collision" parent="ArenaBoundary/InnerPlayableBoundary/WestInnerBoundary" index="0"]
+transform = Transform3D(1.2, 0, 0, 0, 6, 0, 0, 0, 96, 0, 0, 0)
+
+[node name="EasternFrontageBoundary" parent="ArenaBoundary" parent_id_path=PackedInt32Array(1403543330) index="7"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 70.5, 3, 47)
+
+[node name="Collision" parent="ArenaBoundary/EasternFrontageBoundary" index="0"]
+transform = Transform3D(1.2, 0, 0, 0, 6, 0, 0, 0, 118.2, 0, 0, 0)
+
+[node name="PlayableGroundBase" parent="Ground" parent_id_path=PackedInt32Array(1930033261) index="0"]
+transform = Transform3D(112, 0, 0, 0, 1.2, 0, 0, 0, 118, 14, -0.62, 47)
+
+[node name="CityBackdropGround" parent="Ground" parent_id_path=PackedInt32Array(1930033261) index="1"]
+transform = Transform3D(66, 0, 0, 0, 0.2, 0, 0, 0, 132, 103, -0.14, 47)
+
+[node name="NorthVisualBufferGround" parent="Ground" parent_id_path=PackedInt32Array(1930033261) index="2"]
+transform = Transform3D(178, 0, 0, 0, 0.2, 0, 0, 0, 24, 47, -0.14, -24)
+
+[node name="SouthVisualBufferGround" parent="Ground" parent_id_path=PackedInt32Array(1930033261) index="3"]
+transform = Transform3D(178, 0, 0, 0, 0.2, 0, 0, 0, 32, 47, -0.14, 122)
+
+[node name="SecondaryAvenue" parent="Roads" parent_id_path=PackedInt32Array(893649563) index="6"]
+transform = Transform3D(10, 0, 0, 0, 0.2, 0, 0, 0, 48, 38, 0.07, 58)
+
+[node name="SouthernBackstreet" parent="Roads" parent_id_path=PackedInt32Array(893649563) index="7"]
+transform = Transform3D(35, 0, 0, 0, 0.2, 0, 0, 0, 7.5, 7, 0.08, 82)
+
+[node name="SecondaryLaneMarking" parent="Roads" parent_id_path=PackedInt32Array(893649563) index="8"]
+transform = Transform3D(0.12, 0, 0, 0, 0.02, 0, 0, 0, 35, 38, 0.29, 59)
+
+[node name="BackstreetFadedMarking" parent="Roads" parent_id_path=PackedInt32Array(893649563) index="9"]
+transform = Transform3D(24, 0, 0, 0, 0.02, 0, 0, 0, 0.1, 7, 0.3, 82)
+
+[node name="SecondaryWestSidewalk" parent="Sidewalks" parent_id_path=PackedInt32Array(1598106052) index="5"]
+transform = Transform3D(2.5, 0, 0, 0, 0.18, 0, 0, 0, 45, 26.5, 0.16, 61)
+
+[node name="SecondaryEastSidewalk" parent="Sidewalks" parent_id_path=PackedInt32Array(1598106052) index="6"]
+transform = Transform3D(2.5, 0, 0, 0, 0.18, 0, 0, 0, 45, 49.5, 0.16, 61)
+
+[node name="BackstreetNorthSidewalk" parent="Sidewalks" parent_id_path=PackedInt32Array(1598106052) index="7"]
+transform = Transform3D(35, 0, 0, 0, 0.18, 0, 0, 0, 2.4, 7, 0.16, 72.5)
+
+[node name="BackstreetSouthSidewalk" parent="Sidewalks" parent_id_path=PackedInt32Array(1598106052) index="8"]
+transform = Transform3D(35, 0, 0, 0, 0.18, 0, 0, 0, 2.4, 7, 0.16, 91.5)
+
+[node name="Player" parent="." index="17"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -35, 0.1, 33)
+
+[node name="Skeleton3D" parent="Player/Visual" index="0" unique_id=858236914]
+bones/7/rotation = Quaternion(-0.5463142, -0.44209698, 0.5699608, -0.42571822)
+bones/8/rotation = Quaternion(-0.06730479, -0.0014781934, 0.021907521, 0.9974908)
+bones/9/rotation = Quaternion(-0.014342471, -0.0001797968, 0.012533737, 0.99981856)
+bones/10/rotation = Quaternion(0.04161693, 0.109088205, 0.030176844, 0.99270195)
+bones/11/rotation = Quaternion(0.11520078, 0.031131983, 0.25901845, 0.95847225)
+bones/12/rotation = Quaternion(0.09919669, 9.305782e-25, -1.558651e-25, 0.99506783)
+bones/13/rotation = Quaternion(-0.14172398, 8.271807e-25, 1.0081265e-24, 0.98990625)
+bones/15/rotation = Quaternion(-0.017471062, -0.00088866294, 0.050791726, 0.9985561)
+bones/16/rotation = Quaternion(0.097597614, -1.6543612e-24, -2.0679515e-25, 0.99522597)
+bones/17/rotation = Quaternion(0.011364967, 7.8194427e-25, -6.3977384e-25, 0.99993545)
+bones/19/rotation = Quaternion(0.0034016122, -2.5205092e-05, -0.0074116006, 0.99996674)
+bones/20/rotation = Quaternion(0.072171986, -1.1373734e-24, 1.0342462e-24, 0.99739224)
+bones/21/rotation = Quaternion(0.0047519454, -1.6486346e-20, -3.469408e-18, 0.99998873)
+bones/23/rotation = Quaternion(0.07048214, -0.002042189, -0.028890392, 0.99709255)
+bones/24/rotation = Quaternion(0.010270144, -1.0000484e-24, -6.4623485e-26, 0.99994725)
+bones/25/rotation = Quaternion(-0.09331362, 1.3655363e-17, 3.0221412e-18, 0.9956368)
+bones/27/rotation = Quaternion(0.053076282, -0.0028482643, -0.05351071, 0.9971517)
+bones/28/rotation = Quaternion(0.09630219, 6.9066434e-18, -6.6823046e-19, 0.99535215)
+bones/29/rotation = Quaternion(-0.16061084, 5.572308e-19, -3.424406e-18, 0.9870178)
+bones/31/rotation = Quaternion(0.557752, -0.43427745, 0.560109, 0.43196493)
+bones/32/rotation = Quaternion(-0.07120729, -0.0015880706, 0.022239879, 0.99721235)
+bones/33/rotation = Quaternion(-0.012379362, 0.0004886007, -0.039435007, 0.9991453)
+bones/34/rotation = Quaternion(0.045612153, -0.08757355, -0.030481294, 0.9946464)
+bones/36/rotation = Quaternion(0.06070187, 3.369631e-18, 5.5408776e-17, 0.99815595)
+bones/37/rotation = Quaternion(-0.13845532, -3.1019277e-24, 3.3047006e-24, 0.9903687)
+bones/39/rotation = Quaternion(-0.0058361758, 0.0002784395, -0.047655255, 0.9988468)
+bones/40/rotation = Quaternion(0.08370735, -1.1616751e-18, -1.3829083e-17, 0.9964904)
+bones/41/rotation = Quaternion(0.027943397, -3.877924e-19, -1.3872368e-17, 0.99960953)
+bones/43/rotation = Quaternion(0.0016552683, -7.3145593e-06, -0.004417834, 0.9999889)
+bones/44/rotation = Quaternion(0.07733075, 4.135903e-25, -2.0679515e-25, 0.9970055)
+bones/45/rotation = Quaternion(-0.18087311, -1.2550592e-18, 6.824447e-18, 0.98350644)
+bones/47/rotation = Quaternion(0.032551773, 0.001043475, 0.03202251, 0.99895644)
+bones/48/rotation = Quaternion(0.021550402, 3.7383704e-20, 1.7343205e-18, 0.9997678)
+bones/49/rotation = Quaternion(-0.11073571, -1.0339758e-25, -7.754818e-26, 0.9938499)
+bones/51/rotation = Quaternion(0.041027993, 0.0036482587, 0.08849642, 0.9952245)
+bones/53/rotation = Quaternion(-0.11972684, -6.888982e-18, -8.307718e-19, 0.9928069)
+bones/55/rotation = Quaternion(-3.6999298e-19, -0.006042444, 0.99998176, 6.1231224e-17)
+bones/56/rotation = Quaternion(-0.03374463, -0.00068092346, 0.020163123, 0.9992269)
+bones/57/rotation = Quaternion(0.4761552, -0.020935522, 0.011340291, 0.87903893)
+bones/60/rotation = Quaternion(-3.8746732e-19, -0.006327822, 0.99998, 6.123111e-17)
+bones/61/rotation = Quaternion(-0.031157179, 0.00062872487, -0.02016523, 0.9993109)
+bones/62/rotation = Quaternion(0.4750448, 0.03412002, -0.0010700942, 0.8792993)
+
+[node name="Crosshair" parent="Player/AimCrosshair" index="0"]
+layout_mode = 3
+anchors_preset = 0
+
+[node name="Top" parent="Player/AimCrosshair/Crosshair" index="0"]
+layout_mode = 0
+
+[node name="Bottom" parent="Player/AimCrosshair/Crosshair" index="1"]
+layout_mode = 0
+
+[node name="Left" parent="Player/AimCrosshair/Crosshair" index="2"]
+layout_mode = 0
+
+[node name="Right" parent="Player/AimCrosshair/Crosshair" index="3"]
+layout_mode = 0
+
+[node name="Center" parent="Player/AimCrosshair/Crosshair" index="4"]
+layout_mode = 0
+
+[node name="RoadNetwork" parent="AssetCity" parent_id_path=PackedInt32Array(696588717) index="0" unique_id=873059588]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1000, 0)
+
+[node name="MainStreetFarWest" parent="AssetCity/RoadNetwork" index="9"]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -31, 0.25, 31)
+
+[node name="MainStreetEastA" parent="AssetCity/RoadNetwork" index="10"]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 47, 0.25, 31)
+
+[node name="MainStreetEastB" parent="AssetCity/RoadNetwork" index="11"]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 62, 0.25, 31)
+
+[node name="FrontageJunction" parent="AssetCity/RoadNetwork" index="12"]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 61, 0.26, 31)
+
+[node name="SecondaryStreetNorth" parent="AssetCity/RoadNetwork" index="13"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 43, 0.25, 16)
+
+[node name="SecondaryStreetCenter" parent="AssetCity/RoadNetwork" index="14"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 43, 0.25, 47)
+
+[node name="SecondaryTJunction" parent="AssetCity/RoadNetwork" index="15"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 43, 0.26, 58)
+
+[node name="SecondaryStreetSouth" parent="AssetCity/RoadNetwork" index="16"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 43, 0.25, 76)
+
+[node name="SecondaryStreetFarSouth" parent="AssetCity/RoadNetwork" index="17"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 43, 0.25, 94)
+
+[node name="RiversideStreetNorth" parent="AssetCity/RoadNetwork" index="18"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31, 0.25, 16)
+
+[node name="RiversideStreetSouthA" parent="AssetCity/RoadNetwork" index="19"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31, 0.25, 53)
+
+[node name="RiversideStreetSouthB" parent="AssetCity/RoadNetwork" index="20"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31, 0.25, 71)
+
+[node name="RiversideStreetSouthC" parent="AssetCity/RoadNetwork" index="21"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31, 0.25, 89)
+
+[node name="RiversideTConnection" parent="AssetCity/RoadNetwork" index="22"]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -31, 0.26, 58)
+
+[node name="MainCrosswalkEast" parent="AssetCity/RoadNetwork" index="23"]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 42, 0.33, 31)
+
+[node name="ServiceCrosswalk" parent="AssetCity/RoadNetwork" index="24"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 43, 0.33, 58)
+
+[node name="MainLaneMarkingEast" parent="AssetCity/RoadNetwork" index="25"]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 49, 0.32, 31)
+
+[node name="RiversideLaneMarking" parent="AssetCity/RoadNetwork" index="26"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31, 0.32, 70)
+
+[node name="MainNorthWalkWest" parent="AssetCity/RoadNetwork/ExpandedRoadSidewalks" index="0"]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -20, 0.34, 22)
+
+[node name="MainNorthWalkCenter" parent="AssetCity/RoadNetwork/ExpandedRoadSidewalks" index="1"]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 12, 0.34, 22)
+
+[node name="MainNorthWalkEast" parent="AssetCity/RoadNetwork/ExpandedRoadSidewalks" index="2"]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 48, 0.34, 22)
+
+[node name="MainSouthWalkWest" parent="AssetCity/RoadNetwork/ExpandedRoadSidewalks" index="3"]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -18, 0.34, 40)
+
+[node name="MainSouthWalkCenter" parent="AssetCity/RoadNetwork/ExpandedRoadSidewalks" index="4"]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 14, 0.34, 40)
+
+[node name="MainSouthWalkEast" parent="AssetCity/RoadNetwork/ExpandedRoadSidewalks" index="5"]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 53, 0.34, 40)
+
+[node name="FrontageWalkNorth" parent="AssetCity/RoadNetwork/ExpandedRoadSidewalks" index="6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 65, 0.34, 18)
+
+[node name="FrontageWalkCenter" parent="AssetCity/RoadNetwork/ExpandedRoadSidewalks" index="7"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 65, 0.34, 52)
+
+[node name="FrontageWalkSouth" parent="AssetCity/RoadNetwork/ExpandedRoadSidewalks" index="8"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 65, 0.34, 84)
+
+[node name="LogicalRoadJunctions" parent="AssetCity" parent_id_path=PackedInt32Array(696588717) index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1000, 0)
+
+[node name="MainFourWay" parent="AssetCity/LogicalRoadJunctions" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0.24, 31)
+
+[node name="MainSecondaryJunction" parent="AssetCity/LogicalRoadJunctions" index="1"]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 38, 0.25, 31)
+
+[node name="BackstreetJunction" parent="AssetCity/LogicalRoadJunctions" index="2"]
+transform = Transform3D(-1, 0, -8.742278e-08, 0, 1, 0, 8.742278e-08, 0, -1, 38, 0.25, 82)
+
+[node name="MainJunctionCrosswalk" parent="AssetCity/LogicalRoadJunctions" index="3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0.33, 25)
+
+[node name="SecondaryJunctionCrosswalk" parent="AssetCity/LogicalRoadJunctions" index="4"]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 38, 0.33, 31)
+
+[node name="PromenadeWalkD" parent="AssetCity/RiversideAssets" parent_id_path=PackedInt32Array(31812741) index="3"]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -39, 0.34, 73)
+
+[node name="PromenadeRoadBarrier" parent="AssetCity/RiversideAssets" parent_id_path=PackedInt32Array(31812741) index="4"]
+transform = Transform3D(0.034899496, 0, 0.99939084, 0, 1, 0, -0.99939084, 0, 0.034899496, -38.5, 0.35, 68)
+
+[node name="PromenadeDrainSouth" parent="AssetCity/RiversideAssets" parent_id_path=PackedInt32Array(31812741) index="5"]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -37.5, 0.35, 79)
+
+[node name="PromenadeRubbleSouth" parent="AssetCity/RiversideAssets" parent_id_path=PackedInt32Array(31812741) index="6"]
+transform = Transform3D(0.27685824, 0.16292399, 0.946998, -0.1035112, 0.98484325, -0.1391731, -0.9553193, -0.059493683, 0.28952643, -36.2, 0.38, 82)
+
+[node name="BrokenRiverAccessSlab" parent="AssetCity/RiversideAssets" parent_id_path=PackedInt32Array(31812741) index="8"]
+transform = Transform3D(0.015586404, 0.15942703, 0.9870867, -0.120368935, 0.9803263, -0.15643448, -0.9926069, -0.11637632, 0.034469824, -42.4, 0.05, 47)
+
+[node name="NorthRoadStain" parent="AssetCity/SurfacePolish" parent_id_path=PackedInt32Array(1019328645) index="6"]
+transform = Transform3D(2.7485561, 0, 0.2098899, 0, 0.018, 0, -0.53426516, 0, 1.0797899, 6, 0.235, 14)
+
+[node name="MainRoadDarkPatch" parent="AssetCity/SurfacePolish" parent_id_path=PackedInt32Array(1019328645) index="7"]
+transform = Transform3D(3.5731661, 0, -0.17061709, 0, 0.018, 0, 0.43872964, 0, 1.3895646, 39, 0.235, 31)
+
+[node name="SouthRoadRepair" parent="AssetCity/SurfacePolish" parent_id_path=PackedInt32Array(1019328645) index="8"]
+transform = Transform3D(3.1049464, 0, 0.30240238, 0, 0.018, 0, -0.7741501, 0, 1.2128696, 21, 0.235, 79)
+
+[node name="RiversideSiltStain" parent="AssetCity/SurfacePolish" parent_id_path=PackedInt32Array(1019328645) index="9"]
+transform = Transform3D(1.494292, 0, -0.3311918, 0, 0.018, 0, 0.13073361, 0, 3.7855399, -31.5, 0.235, 38)
+
+[node name="SidewalkWearWest" parent="AssetCity/SurfacePolish" parent_id_path=PackedInt32Array(1019328645) index="10"]
+transform = Transform3D(0.6491092, 0, 0.16224147, 0, 0.018, 0, -0.03401837, 0, 3.0957513, -37.7, 0.355, 29)
+
+[node name="SidewalkWearSouth" parent="AssetCity/SurfacePolish" parent_id_path=PackedInt32Array(1019328645) index="11"]
+transform = Transform3D(0.5785872, 0, -0.18834247, 0, 0.018, 0, 0.04045875, 0, 2.693423, -37.6, 0.355, 74)
+
+[node name="RiverWetBandNorth" parent="AssetCity/SurfacePolish" parent_id_path=PackedInt32Array(1019328645) index="12"]
+transform = Transform3D(0.5475733, 0.0030485925, 0.34899497, -0.047935657, 0.034866814, 0, -0.019121682, -0.00010645919, 9.993908, -41.4, 0.03, 17)
+
+[node name="RiverWetBandDrain" parent="AssetCity/SurfacePolish" parent_id_path=PackedInt32Array(1019328645) index="13"]
+transform = Transform3D(0.647528, -0.0024381306, -0.34018373, 0.045341704, 0.034914743, 0, 0.033935506, -0.000127777, 6.4910917, -41.7, 0.01, 39)
+
+[node name="RiverWetBandCollapse" parent="AssetCity/SurfacePolish" parent_id_path=PackedInt32Array(1019328645) index="14"]
+transform = Transform3D(0.71333104, 0.003644575, 0.61009014, -0.0752605, 0.034808267, 0, -0.06240837, -0.00031885892, 6.973363, -41.6, -0.01, 55)
+
+[node name="RiverWetBandAccess" parent="AssetCity/SurfacePolish" parent_id_path=PackedInt32Array(1019328645) index="15"]
+transform = Transform3D(0.6757623, -0.0030430201, -0.55805176, 0.0592659, 0.034866814, 0, 0.0472539, -0.00021278868, 7.9805126, -41.5, 0, 86)
+
+[node name="CommercialStreet" parent="AssetCity/Expansion" parent_id_path=PackedInt32Array(2070344061) index="0" unique_id=1246707077]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1000, 0)
+
+[node name="SouthCollapsedAccess" parent="AssetCity/Expansion/DamagedRiversideSouth" parent_id_path=PackedInt32Array(641798641) index="4"]
+transform = Transform3D(-0.021977223, 0.124775894, 0.9919415, 0.10374933, 0.9871089, -0.12186935, -0.9943607, 0.10023492, -0.034639325, -42.2, 0.08, 94)
+
+[node name="FuelCan" parent="AssetCity/AbandonedDetailPass/StorytellingClusters/CurbsideBreakdown" index="0"]
+transform = Transform3D(0.8550793, -0.059792966, -0.5150381, 0.06975647, 0.9975641, 0, 0.51378345, -0.03592724, 0.8571673, 47.4, 0.26, 33.7)
+
+[node name="LooseWheel" parent="AssetCity/AbandonedDetailPass/StorytellingClusters/CurbsideBreakdown" index="1"]
+transform = Transform3D(0.8763712, 0.47579914, 0.07475798, -0.046160877, 0.23747711, -0.9702957, -0.47941917, 0.8468883, 0.23008141, 45.6, 0.3, 33.1)
+
+[node name="DroppedCrate" parent="AssetCity/AbandonedDetailPass/StorytellingClusters/CurbsideBreakdown" index="2"]
+transform = Transform3D(0.9135454, 0, 0.40673664, 0, 1, 0, -0.40673664, 0, 0.9135454, 48.3, 0.25, 35.2)
+
+[node name="BentPanel" parent="AssetCity/AbandonedDetailPass/StorytellingClusters/CurbsideBreakdown" index="3"]
+transform = Transform3D(0.9329488, -0.16020232, -0.32239974, 0.12068332, 0.98288673, -0.1391731, 0.33917826, 0.09093312, 0.9363168, 47.7, 0.38, 36.1)
+
+[node name="ServiceUtility" parent="AssetCity/AbandonedDetailPass/StorytellingClusters/CollapsedServiceArea" index="0"]
+transform = Transform3D(0.98785585, 0.0690776, -0.1391731, -0.06975647, 0.9975641, 0, 0.13883409, 0.009708225, 0.99026805, 12.5, 0.8, 75.5)
+
+[node name="ServicePallet" parent="AssetCity/AbandonedDetailPass/StorytellingClusters/CollapsedServiceArea" index="1"]
+transform = Transform3D(0.88294756, 0, 0.46947157, 0, 1, 0, -0.46947157, 0, 0.88294756, 14.2, 0.25, 76.2)
+
+[node name="ServiceCan" parent="AssetCity/AbandonedDetailPass/StorytellingClusters/CollapsedServiceArea" index="2"]
+transform = Transform3D(0.7313537, 0, 0.6819984, 0, 1, 0, -0.6819984, 0, 0.7313537, 13.1, 0.26, 73.9)
+
+[node name="ServiceScrap" parent="AssetCity/AbandonedDetailPass/StorytellingClusters/CollapsedServiceArea" index="3"]
+transform = Transform3D(0.4210297, 0.15404472, 0.8938704, -0.1384107, 0.98484325, -0.104528464, -0.89642423, -0.07971164, 0.4359697, 15.3, 0.36, 74.6)
+
+[node name="ServiceBush" parent="AssetCity/AbandonedDetailPass/StorytellingClusters/CollapsedServiceArea" index="4"]
+transform = Transform3D(0.72320336, 0, -0.2921931, 0, 0.78, 0, 0.2921931, 0, 0.72320336, 10.8, 0.24, 76.8)
+
+[node name="CornerBarrier" parent="AssetCity/AbandonedDetailPass/StorytellingClusters/BarricadedCorner" index="0"]
+transform = Transform3D(0.8290376, 0, 0.5591929, 0, 1, 0, -0.5591929, 0, 0.8290376, 73.2, 0.35, 57.1)
+
+[node name="CornerBarrierDebris" parent="AssetCity/AbandonedDetailPass/StorytellingClusters/BarricadedCorner" index="1"]
+transform = Transform3D(0.9462012, -0.14096583, -0.29125914, 0.1729874, 0.98106027, 0.08715574, 0.27345675, -0.13285102, 0.9526658, 75.1, 0.38, 56.3)
+
+[node name="CornerBarrel" parent="AssetCity/AbandonedDetailPass/StorytellingClusters/BarricadedCorner" index="2"]
+transform = Transform3D(0.9781476, 0, 0.2079117, 0, 1, 0, -0.2079117, 0, 0.9781476, 71.8, 0.25, 55.8)
+
+[node name="CornerTire" parent="AssetCity/AbandonedDetailPass/StorytellingClusters/BarricadedCorner" index="3"]
+transform = Transform3D(0.8574521, -0.51178294, -0.053423997, 0.010621611, 0.12140558, -0.99254614, 0.5144542, 0.8504933, 0.109535426, 74.4, 0.28, 58.3)
+
+[node name="CheckpointPallet" parent="AssetCity/AbandonedDetailPass/StorytellingClusters/CheckpointRemains" index="0"]
+transform = Transform3D(0.9702957, 0, -0.2419219, 0, 1, 0, 0.2419219, 0, 0.9702957, 60.8, 0.25, 77.8)
+
+[node name="CheckpointCan" parent="AssetCity/AbandonedDetailPass/StorytellingClusters/CheckpointRemains" index="1"]
+transform = Transform3D(0.79863554, 0, 0.601815, 0, 1, 0, -0.601815, 0, 0.79863554, 62.4, 0.26, 78.6)
+
+[node name="CheckpointCrate" parent="AssetCity/AbandonedDetailPass/StorytellingClusters/CheckpointRemains" index="2"]
+transform = Transform3D(0.8746197, 0, -0.4848096, 0, 1, 0, 0.4848096, 0, 0.8746197, 59.5, 0.25, 79.2)
+
+[node name="CheckpointScrap" parent="AssetCity/AbandonedDetailPass/StorytellingClusters/CheckpointRemains" index="3"]
+transform = Transform3D(0.661183, 0.13702215, 0.7376056, -0.06923652, 0.9901284, -0.12186935, -0.747023, 0.029508706, 0.66414297, 63.3, 0.37, 76.9)
+
+[node name="Drain" parent="AssetCity/AbandonedDetailPass/StorytellingClusters/RiversideDrainPile" index="0"]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -37.3, 0.28, 52.5)
+
+[node name="DrainMetal" parent="AssetCity/AbandonedDetailPass/StorytellingClusters/RiversideDrainPile" index="1"]
+transform = Transform3D(0.2917726, 0.18026409, 0.9393475, -0.10324155, 0.98227775, -0.15643448, -0.95089954, -0.051336385, 0.30521247, -35.8, 0.36, 54.1)
+
+[node name="DrainTire" parent="AssetCity/AbandonedDetailPass/StorytellingClusters/RiversideDrainPile" index="2"]
+transform = Transform3D(0.93405604, -0.35630774, -0.024167163, 0.039062347, 0.16919763, -0.9848077, 0.3549837, 0.9189216, 0.17195828, -36.1, 0.3, 50.8)
+
+[node name="DrainBarrel" parent="AssetCity/AbandonedDetailPass/StorytellingClusters/RiversideDrainPile" index="3"]
+transform = Transform3D(0.95105654, 0, -0.309017, 0, 1, 0, 0.309017, 0, 0.95105654, -34.7, 0.25, 52.2)
+
+[node name="DrainBush" parent="AssetCity/AbandonedDetailPass/StorytellingClusters/RiversideDrainPile" index="4"]
+transform = Transform3D(0.6171605, 0, 0.37082744, 0, 0.72, 0, -0.37082744, 0, 0.6171605, -35.2, 0.24, 55.5)
+
+[node name="WarehouseCan" parent="AssetCity/AbandonedDetailPass/FacadeMicroDetail" index="0"]
+transform = Transform3D(0.9335804, 0, 0.35836795, 0, 1, 0, -0.35836795, 0, 0.9335804, 25.8, 0.26, 13.1)
+
+[node name="WarehouseScrap" parent="AssetCity/AbandonedDetailPass/FacadeMicroDetail" index="1"]
+transform = Transform3D(0.8239023, -0.16372684, -0.54256654, 0.13864352, 0.9864998, -0.08715574, 0.5495115, -0.0034155175, 0.8354792, 27.4, 0.36, 14)
+
+[node name="ApartmentCrate" parent="AssetCity/AbandonedDetailPass/FacadeMicroDetail" index="2"]
+transform = Transform3D(0.9563048, 0, -0.2923717, 0, 1, 0, 0.2923717, 0, 0.9563048, 33, 0.25, 47.6)
+
+[node name="StorefrontBarrel" parent="AssetCity/AbandonedDetailPass/FacadeMicroDetail" index="3"]
+transform = Transform3D(0.89879405, 0, 0.43837115, 0, 1, 0, -0.43837115, 0, 0.89879405, 45.8, 0.25, 88)
+
+[node name="StorefrontBush" parent="AssetCity/AbandonedDetailPass/FacadeMicroDetail" index="4"]
+transform = Transform3D(0.5358473, 0, -0.41864982, 0, 0.68, 0, 0.41864982, 0, 0.5358473, 43.9, 0.24, 88.8)
+
+[node name="LotSurface" parent="AssetCity/AbandonedServiceLot" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12, 0.12, 82)
+
+[node name="Mesh" parent="AssetCity/AbandonedServiceLot/LotSurface" index="0"]
+transform = Transform3D(24, 0, 0, 0, 0.16, 0, 0, 0, 15, 0, 0, 0)
+
+[node name="Collision" parent="AssetCity/AbandonedServiceLot/LotSurface" index="1"]
+transform = Transform3D(24, 0, 0, 0, 0.16, 0, 0, 0, 15, 0, 0, 0)
+
+[node name="ParkingStripeA" parent="AssetCity/AbandonedServiceLot" index="1"]
+transform = Transform3D(0.12, 0, 0, 0, 0.02, 0, 0, 0, 4.8, 2, 0.31, 79)
+
+[node name="ParkingStripeB" parent="AssetCity/AbandonedServiceLot" index="2"]
+transform = Transform3D(0.12, 0, 0, 0, 0.02, 0, 0, 0, 4.8, 10, 0.31, 79)
+
+[node name="ParkingStripeC" parent="AssetCity/AbandonedServiceLot" index="3"]
+transform = Transform3D(0.12, 0, 0, 0, 0.02, 0, 0, 0, 4.8, 18, 0.31, 79)
+
+[node name="ParkingStripeD" parent="AssetCity/AbandonedServiceLot" index="4"]
+transform = Transform3D(0.12, 0, 0, 0, 0.02, 0, 0, 0, 4.8, 26, 0.31, 79)
+
+[node name="LotWreckA" parent="AssetCity/AbandonedServiceLot" index="5"]
+transform = Transform3D(0.9948294, 0.052136805, 0.08715574, -0.05233596, 0.9986295, 0, -0.08703629, -0.004561379, 0.9961947, 5, -1000, 79)
+
+[node name="Chassis" parent="AssetCity/AbandonedServiceLot/LotWreckA" index="0"]
+transform = Transform3D(2.8, 0, 0, 0, 0.58, 0, 0, 0, 1.3, 0, 0, 0)
+
+[node name="Cabin" parent="AssetCity/AbandonedServiceLot/LotWreckA" index="1"]
+transform = Transform3D(1.3, 0, 0, 0, 0.63, 0, 0, 0, 0.96, -0.2, 0.54, 0)
+
+[node name="Collision" parent="AssetCity/AbandonedServiceLot/LotWreckA" index="2"]
+transform = Transform3D(2.8, 0, 0, 0, 1.5, 0, 0, 0, 1.3, 0, 0, 0)
+
+[node name="LotWreckB" parent="AssetCity/AbandonedServiceLot" index="6"]
+transform = Transform3D(0.9852824, -0.06889766, -0.15643448, 0.06975647, 0.9975641, 0, 0.15605341, -0.010912317, 0.98768836, 22, -1000, 87)
+
+[node name="Chassis" parent="AssetCity/AbandonedServiceLot/LotWreckB" index="0"]
+transform = Transform3D(3, 0, 0, 0, 0.61, 0, 0, 0, 1.38, 0, 0, 0)
+
+[node name="Cabin" parent="AssetCity/AbandonedServiceLot/LotWreckB" index="1"]
+transform = Transform3D(1.42, 0, 0, 0, 0.67, 0, 0, 0, 1.03, 0.2, 0.57, 0)
+
+[node name="Collision" parent="AssetCity/AbandonedServiceLot/LotWreckB" index="2"]
+transform = Transform3D(3, 0, 0, 0, 1.58, 0, 0, 0, 1.38, 0, 0, 0)
+
+[node name="LoadingPallet" parent="AssetCity/AbandonedServiceLot" index="7"]
+transform = Transform3D(0.95105654, 0, -0.309017, 0, 1, 0, 0.309017, 0, 0.95105654, 29, 0.25, 91)
+
+[node name="LoadingBarrelA" parent="AssetCity/AbandonedServiceLot" index="8"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 27.5, 0.25, 92)
+
+[node name="LoadingBarrelB" parent="AssetCity/AbandonedServiceLot" index="9"]
+transform = Transform3D(0.8571673, 0, 0.5150381, 0, 1, 0, -0.5150381, 0, 0.8571673, 29, 0.25, 93)
+
+[node name="LoadingUtility" parent="AssetCity/AbandonedServiceLot" index="10"]
+transform = Transform3D(0.92718387, 0, -0.37460658, 0, 1, 0, 0.37460658, 0, 0.92718387, 31, 0.8, 89)
+
+[node name="LotBarrier" parent="AssetCity/AbandonedServiceLot" index="11"]
+transform = Transform3D(0.9781476, 0, 0.2079117, 0, 1, 0, -0.2079117, 0, 0.9781476, -8, 0.35, 93)
+
+[node name="LotTireA" parent="AssetCity/AbandonedServiceLot" index="12"]
+transform = Transform3D(0.95124733, 0.3068361, 0.031307135, -0.012129734, 0.13864352, -0.99026805, -0.30819052, 0.94161016, 0.13560611, -5, 0.28, 92)
+
+[node name="LotTireB" parent="AssetCity/AbandonedServiceLot" index="13"]
+transform = Transform3D(0.88468295, -0.45851466, -0.08426324, 0.040488224, 0.25563258, -0.9659258, 0.46443158, 0.85112643, 0.24471824, -4, 0.3, 93)
+
+[node name="LotBushA" parent="AssetCity/AbandonedServiceLot" index="14"]
+transform = Transform3D(0.6394818, 0, 0.28471565, 0, 0.7, 0, -0.28471565, 0, 0.6394818, -10, 0.24, 70)
+
+[node name="LotBushB" parent="AssetCity/AbandonedServiceLot" index="15"]
+transform = Transform3D(0.5571587, 0, -0.33477473, 0, 0.65, 0, 0.33477473, 0, 0.5571587, 32, 0.24, 72)
+
+[node name="LotAsphaltDamageA" parent="AssetCity/AbandonedServiceLot" index="16"]
+transform = Transform3D(3.1049464, 0, 0.33869067, 0, 0.025, 0, -0.7741501, 0, 1.358414, 0, 0.32, 88)
+
+[node name="LotAsphaltDamageB" parent="AssetCity/AbandonedServiceLot" index="17"]
+transform = Transform3D(3.7301831, 0, -0.22897081, 0, 0.025, 0, 0.7250742, 0, 1.1779526, 16, 0.32, 75)
+
+[node name="FrontageWallA" parent="AssetCity/EasternBuildingFrontage" index="0"]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 69.4, 0.3, 4)
+
+[node name="FrontageBarrierA" parent="AssetCity/EasternBuildingFrontage" index="1"]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 68.8, 0.35, 14)
+
+[node name="FrontageMetalA" parent="AssetCity/EasternBuildingFrontage" index="2"]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 69.4, 0.3, 23)
+
+[node name="FrontageWallB" parent="AssetCity/EasternBuildingFrontage" index="3"]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 69.4, 0.3, 34)
+
+[node name="FrontageBarrierB" parent="AssetCity/EasternBuildingFrontage" index="4"]
+transform = Transform3D(0.06975651, 0, 0.9975641, 0, 1, 0, -0.9975641, 0, 0.06975651, 68.8, 0.35, 44)
+
+[node name="FrontageMetalB" parent="AssetCity/EasternBuildingFrontage" index="5"]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 69.4, 0.3, 54)
+
+[node name="FrontageWallC" parent="AssetCity/EasternBuildingFrontage" index="6"]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 69.4, 0.3, 65)
+
+[node name="FrontageBarrierC" parent="AssetCity/EasternBuildingFrontage" index="7"]
+transform = Transform3D(-0.06975648, 0, 0.9975641, 0, 1, 0, -0.9975641, 0, -0.06975648, 68.8, 0.35, 75)
+
+[node name="FrontageMetalC" parent="AssetCity/EasternBuildingFrontage" index="8"]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 69.4, 0.3, 85)
+
+[node name="FrontageWallD" parent="AssetCity/EasternBuildingFrontage" index="9"]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 69.4, 0.3, 96)
+
+[node name="FrontageBushA" parent="AssetCity/EasternBuildingFrontage" index="10"]
+transform = Transform3D(0.9563048, 0, 0.2923717, 0, 1, 0, -0.2923717, 0, 0.9563048, 67.8, 0.24, 9)
+
+[node name="FrontageBushB" parent="AssetCity/EasternBuildingFrontage" index="11"]
+transform = Transform3D(0.71903527, 0, -0.35069692, 0, 0.8, 0, 0.35069692, 0, 0.71903527, 68.1, 0.24, 29)
+
+[node name="FrontageBushC" parent="AssetCity/EasternBuildingFrontage" index="12"]
+transform = Transform3D(0.7771459, 0, 0.6293204, 0, 1, 0, -0.6293204, 0, 0.7771459, 67.9, 0.24, 60)
+
+[node name="FrontageBushD" parent="AssetCity/EasternBuildingFrontage" index="13"]
+transform = Transform3D(0.73622036, 0, -0.14310674, 0, 0.75, 0, 0.14310674, 0, 0.73622036, 68.2, 0.24, 90)
+
+[node name="PlayableRoadWrecks" parent="AssetCity" parent_id_path=PackedInt32Array(696588717) index="14"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1000, 0)
+
+[node name="WreckWest" parent="AssetCity/PlayableRoadWrecks" index="0"]
+transform = Transform3D(0.97199655, 0.067968614, 0.22495104, -0.06975647, 0.9975641, 0, -0.22440308, -0.01569179, 0.97437006, -13, 0.8, 27)
+
+[node name="Chassis" parent="AssetCity/PlayableRoadWrecks/WreckWest" index="0"]
+transform = Transform3D(3.1, 0, 0, 0, 0.62, 0, 0, 0, 1.4, 0, 0, 0)
+
+[node name="Cabin" parent="AssetCity/PlayableRoadWrecks/WreckWest" index="1"]
+transform = Transform3D(1.5, 0, 0, 0, 0.68, 0, 0, 0, 1.05, -0.25, 0.58, 0)
+
+[node name="Collision" parent="AssetCity/PlayableRoadWrecks/WreckWest" index="2"]
+transform = Transform3D(3.1, 0, 0, 0, 1.6, 0, 0, 0, 1.4, 0, 0, 0)
+
+[node name="WreckIntersection" parent="AssetCity/PlayableRoadWrecks" index="1"]
+transform = Transform3D(0.9100691, -0.07962073, -0.40673664, 0.08715574, 0.9961947, 0, 0.4051889, -0.03544943, 0.9135454, 14, 0.8, 35)
+
+[node name="Chassis" parent="AssetCity/PlayableRoadWrecks/WreckIntersection" index="0"]
+transform = Transform3D(2.9, 0, 0, 0, 0.6, 0, 0, 0, 1.35, 0, 0, 0)
+
+[node name="Cabin" parent="AssetCity/PlayableRoadWrecks/WreckIntersection" index="1"]
+transform = Transform3D(1.35, 0, 0, 0, 0.66, 0, 0, 0, 1, 0.2, 0.56, 0)
+
+[node name="Collision" parent="AssetCity/PlayableRoadWrecks/WreckIntersection" index="2"]
+transform = Transform3D(2.9, 0, 0, 0, 1.55, 0, 0, 0, 1.35, 0, 0, 0)
+
+[node name="WreckService" parent="AssetCity/PlayableRoadWrecks" index="2"]
+transform = Transform3D(0.3901957, 0.020449292, 0.9205048, -0.05233596, 0.9986295, 0, -0.9192433, -0.048175503, 0.3907312, 28, 0.8, 54)
+
+[node name="Chassis" parent="AssetCity/PlayableRoadWrecks/WreckService" index="0"]
+transform = Transform3D(3, 0, 0, 0, 0.61, 0, 0, 0, 1.38, 0, 0, 0)
+
+[node name="Cabin" parent="AssetCity/PlayableRoadWrecks/WreckService" index="1"]
+transform = Transform3D(1.42, 0, 0, 0, 0.67, 0, 0, 0, 1.02, -0.2, 0.57, 0)
+
+[node name="Collision" parent="AssetCity/PlayableRoadWrecks/WreckService" index="2"]
+transform = Transform3D(3, 0, 0, 0, 1.58, 0, 0, 0, 1.38, 0, 0, 0)
+
+[node name="WreckCommercial" parent="AssetCity/PlayableRoadWrecks" index="3"]
+transform = Transform3D(0.9487398, -0.06634235, -0.309017, 0.06975647, 0.9975641, 0, 0.30826426, -0.021555936, 0.95105654, 50, 0.8, 62)
+
+[node name="Chassis" parent="AssetCity/PlayableRoadWrecks/WreckCommercial" index="0"]
+transform = Transform3D(3.2, 0, 0, 0, 0.64, 0, 0, 0, 1.45, 0, 0, 0)
+
+[node name="Cabin" parent="AssetCity/PlayableRoadWrecks/WreckCommercial" index="1"]
+transform = Transform3D(1.52, 0, 0, 0, 0.7, 0, 0, 0, 1.08, 0.25, 0.59, 0)
+
+[node name="Collision" parent="AssetCity/PlayableRoadWrecks/WreckCommercial" index="2"]
+transform = Transform3D(3.2, 0, 0, 0, 1.62, 0, 0, 0, 1.45, 0, 0, 0)
+
+[node name="WreckSouth" parent="AssetCity/PlayableRoadWrecks" index="4"]
+transform = Transform3D(0.85390556, 0.074707046, 0.5150381, -0.08715574, 0.9961947, 0, -0.5130782, -0.044888522, 0.8571673, 36, 0.8, 88)
+
+[node name="Chassis" parent="AssetCity/PlayableRoadWrecks/WreckSouth" index="0"]
+transform = Transform3D(2.8, 0, 0, 0, 0.58, 0, 0, 0, 1.32, 0, 0, 0)
+
+[node name="Cabin" parent="AssetCity/PlayableRoadWrecks/WreckSouth" index="1"]
+transform = Transform3D(1.32, 0, 0, 0, 0.64, 0, 0, 0, 0.98, -0.2, 0.55, 0)
+
+[node name="Collision" parent="AssetCity/PlayableRoadWrecks/WreckSouth" index="2"]
+transform = Transform3D(2.8, 0, 0, 0, 1.5, 0, 0, 0, 1.32, 0, 0, 0)
+
+[node name="RiverWeedA" parent="AssetCity/RecompositionVegetation" index="0"]
+transform = Transform3D(0.5791542, 0, 0.2950938, 0, 0.65, 0, -0.2950938, 0, 0.5791542, -36, 0.24, 23)
+
+[node name="RiverWeedB" parent="AssetCity/RecompositionVegetation" index="1"]
+transform = Transform3D(0.61059463, 0, -0.38154188, 0, 0.72, 0, 0.38154188, 0, 0.61059463, -35, 0.24, 64)
+
+[node name="RiverWeedC" parent="AssetCity/RecompositionVegetation" index="2"]
+transform = Transform3D(0.68713903, 0, 0.13356629, 0, 0.7, 0, -0.13356629, 0, 0.68713903, -36.5, 0.24, 96)
+
+[node name="CurbWeedA" parent="AssetCity/RecompositionVegetation" index="3"]
+transform = Transform3D(0.4534393, 0, 0.422839, 0, 0.62, 0, -0.422839, 0, 0.4534393, -4, 0.24, 20)
+
+[node name="CurbWeedB" parent="AssetCity/RecompositionVegetation" index="4"]
+transform = Transform3D(0.5575318, 0, -0.15986966, 0, 0.58, 0, 0.15986966, 0, 0.5575318, 24, 0.24, 43)
+
+[node name="CurbWeedC" parent="AssetCity/RecompositionVegetation" index="5"]
+transform = Transform3D(0.5570234, 0, 0.390032, 0, 0.68, 0, -0.390032, 0, 0.5570234, 53, 0.24, 52)
+
+[node name="M00" parent="AssetCity/NewCityRoads/MainStreet" index="0"]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -34, 0.22, 31)
+
+[node name="M01" parent="AssetCity/NewCityRoads/MainStreet" index="1"]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -26, 0.22, 31)
+
+[node name="M02" parent="AssetCity/NewCityRoads/MainStreet" index="2"]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -18, 0.22, 31)
+
+[node name="M03" parent="AssetCity/NewCityRoads/MainStreet" index="3"]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -10, 0.22, 31)
+
+[node name="M04" parent="AssetCity/NewCityRoads/MainStreet" index="4"]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -2, 0.22, 31)
+
+[node name="MainFourWay" parent="AssetCity/NewCityRoads/MainStreet" index="5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0.22, 31)
+
+[node name="M06" parent="AssetCity/NewCityRoads/MainStreet" index="6"]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 14, 0.22, 31)
+
+[node name="M07" parent="AssetCity/NewCityRoads/MainStreet" index="7"]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 22, 0.22, 31)
+
+[node name="M08" parent="AssetCity/NewCityRoads/MainStreet" index="8"]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 30, 0.22, 31)
+
+[node name="FrontageT" parent="AssetCity/NewCityRoads/MainStreet" index="9"]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 38, 0.22, 31)
+
+[node name="M10" parent="AssetCity/NewCityRoads/MainStreet" index="10"]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 46, 0.22, 31)
+
+[node name="M11" parent="AssetCity/NewCityRoads/MainStreet" index="11"]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 54, 0.22, 31)
+
+[node name="M12" parent="AssetCity/NewCityRoads/MainStreet" index="12"]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 62, 0.22, 31)
+
+[node name="S00" parent="AssetCity/NewCityRoads/SecondaryStreet" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0.22, 7)
+
+[node name="S01" parent="AssetCity/NewCityRoads/SecondaryStreet" index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0.22, 15)
+
+[node name="S02" parent="AssetCity/NewCityRoads/SecondaryStreet" index="2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0.22, 23)
+
+[node name="S04" parent="AssetCity/NewCityRoads/SecondaryStreet" index="3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0.22, 39)
+
+[node name="S05" parent="AssetCity/NewCityRoads/SecondaryStreet" index="4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0.22, 47)
+
+[node name="S06" parent="AssetCity/NewCityRoads/SecondaryStreet" index="5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0.22, 55)
+
+[node name="S07" parent="AssetCity/NewCityRoads/SecondaryStreet" index="6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0.22, 63)
+
+[node name="S08" parent="AssetCity/NewCityRoads/SecondaryStreet" index="7"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0.22, 71)
+
+[node name="SouthTurn" parent="AssetCity/NewCityRoads/SecondaryStreet" index="8"]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 6, 0.22, 79)
+
+[node name="BackstreetA" parent="AssetCity/NewCityRoads/SecondaryStreet" index="9"]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 14, 0.22, 79)
+
+[node name="BackstreetB" parent="AssetCity/NewCityRoads/SecondaryStreet" index="10"]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 22, 0.22, 79)
+
+[node name="BackstreetC" parent="AssetCity/NewCityRoads/SecondaryStreet" index="11"]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 30, 0.22, 79)
+
+[node name="R00" parent="AssetCity/NewCityRoads/RiversideStreet" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31, 0.22, 7)
+
+[node name="R01" parent="AssetCity/NewCityRoads/RiversideStreet" index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31, 0.22, 15)
+
+[node name="R02" parent="AssetCity/NewCityRoads/RiversideStreet" index="2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31, 0.22, 23)
+
+[node name="R03" parent="AssetCity/NewCityRoads/RiversideStreet" index="3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31, 0.22, 39)
+
+[node name="R04" parent="AssetCity/NewCityRoads/RiversideStreet" index="4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31, 0.22, 47)
+
+[node name="R05" parent="AssetCity/NewCityRoads/RiversideStreet" index="5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31, 0.22, 55)
+
+[node name="R06" parent="AssetCity/NewCityRoads/RiversideStreet" index="6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31, 0.22, 63)
+
+[node name="R07" parent="AssetCity/NewCityRoads/RiversideStreet" index="7"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31, 0.22, 71)
+
+[node name="R08" parent="AssetCity/NewCityRoads/RiversideStreet" index="8"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31, 0.22, 79)
+
+[node name="R09" parent="AssetCity/NewCityRoads/RiversideStreet" index="9"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31, 0.22, 87)
+
+[node name="R10" parent="AssetCity/NewCityRoads/RiversideStreet" index="10"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31, 0.22, 95)
+
+[node name="PickupCurb" parent="AssetCity/NewVehicleSet" index="0"]
+transform = Transform3D(0.24159035, 0.012661215, 0.9702957, -0.05233596, 0.9986295, 0, -0.96896595, -0.050781358, 0.2419219, -17, 0.3, 26)
+
+[node name="Collision" parent="AssetCity/NewVehicleSet/PickupCurb" index="1"]
+transform = Transform3D(2.2, 0, 0, 0, 1.75, 0, 0, 0, 5, 0, 0.95, 0.1)
+
+[node name="ArmoredPickup" parent="AssetCity/NewVehicleSet" index="1"]
+transform = Transform3D(0.37437844, -0.013073583, -0.92718387, 0.034899496, 0.99939084, 0, 0.92661905, -0.032358248, 0.37460664, 57, 0.3, 36)
+
+[node name="Collision" parent="AssetCity/NewVehicleSet/ArmoredPickup" index="1"]
+transform = Transform3D(2.5, 0, 0, 0, 1.9, 0, 0, 0, 5.3, 0, 1, 0.1)
+
+[node name="ServiceTruck" parent="AssetCity/NewVehicleSet" index="2"]
+transform = Transform3D(0.052335974, 0, 0.9986295, 0, 1, 0, -0.9986295, 0, 0.052335974, 25, 0.3, 86)
+
+[node name="Collision" parent="AssetCity/NewVehicleSet/ServiceTruck" index="1"]
+transform = Transform3D(2.55, 0, 0, 0, 2.7, 0, 0, 0, 5.1, 0, 1.4, 0)
+
+[node name="ArmoredTruck" parent="AssetCity/NewVehicleSet" index="3"]
+transform = Transform3D(0.97755176, 0.034136858, 0.2079117, -0.034899496, 0.99939084, 0, -0.20778506, -0.0072560133, 0.9781476, 55, 0.3, 67)
+
+[node name="Collision" parent="AssetCity/NewVehicleSet/ArmoredTruck" index="1"]
+transform = Transform3D(2.8, 0, 0, 0, 2.8, 0, 0, 0, 5.4, 0, 1.5, 0)
+
+[node name="SportsCrash" parent="AssetCity/NewVehicleSet" index="4"]
+transform = Transform3D(0.48296475, -0.042253938, -0.8746197, 0.08715574, 0.9961947, 0, 0.8712916, -0.07622813, 0.48480958, 18, 0.3, 35)
+
+[node name="Collision" parent="AssetCity/NewVehicleSet/SportsCrash" index="1"]
+transform = Transform3D(2.5, 0, 0, 0, 1.75, 0, 0, 0, 5.4, 0, 0.92, 0.1)
+
+[node name="ArmoredSports" parent="AssetCity/NewVehicleSet" index="5"]
+transform = Transform3D(0.98633474, 0.051691618, 0.15643448, -0.05233596, 0.9986295, 0, -0.15622008, -0.008187149, 0.98768836, -26, 0.3, 58)
+
+[node name="Collision" parent="AssetCity/NewVehicleSet/ArmoredSports" index="1"]
+transform = Transform3D(2.8, 0, 0, 0, 1.75, 0, 0, 0, 5.4, 0, 0.92, 0.1)
+
+[node name="PickupCheckpoint" parent="AssetCity/NewVehicleSet" index="6"]
+transform = Transform3D(0.7430316, -0.012969665, -0.6691306, 0.017452406, 0.9998477, 0, 0.6690287, -0.011677939, 0.7431448, 46, 0.3, 75)
+
+[node name="Collision" parent="AssetCity/NewVehicleSet/PickupCheckpoint" index="1"]
+transform = Transform3D(2.2, 0, 0, 0, 1.75, 0, 0, 0, 5, 0, 0.95, 0.1)
+
+[node name="SportsRiverside" parent="AssetCity/NewVehicleSet" index="7"]
+transform = Transform3D(0.9487398, -0.06634235, 0.309017, 0.06975647, 0.9975641, 0, -0.30826426, 0.021555936, 0.95105654, -25, 0.3, 88)
+
+[node name="Collision" parent="AssetCity/NewVehicleSet/SportsRiverside" index="1"]
+transform = Transform3D(2.5, 0, 0, 0, 1.75, 0, 0, 0, 5.4, 0, 0.92, 0.1)
+
+[node name="Light" parent="AssetCity/NewAssetZones/Riverside" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -37, 0.3, 48)
+
+[node name="Pipes" parent="AssetCity/NewAssetZones/Riverside" index="1"]
+transform = Transform3D(0.9563048, 0, 0.2923717, 0, 1, 0, -0.2923717, 0, 0.9563048, -36, 0.3, 72)
+
+[node name="WheelStack" parent="AssetCity/NewAssetZones/Riverside" index="2"]
+transform = Transform3D(0.9135454, 0, -0.40673664, 0, 1, 0, 0.40673664, 0, 0.9135454, -36, 0.3, 82)
+
+[node name="Trash" parent="AssetCity/NewAssetZones/Riverside" index="3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -35, 0.3, 67)
+
+[node name="Barrier1" parent="AssetCity/NewAssetZones/MainRoad" index="0"]
+transform = Transform3D(0.9781476, 0, -0.2079117, 0, 1, 0, 0.2079117, 0, 0.9781476, 29, 0.3, 36)
+
+[node name="Collision" parent="AssetCity/NewAssetZones/MainRoad/Barrier1" index="1"]
+transform = Transform3D(1.5, 0, 0, 0, 1.05, 0, 0, 0, 0.82, 0, 0.56, 0)
+
+[node name="Barrier2" parent="AssetCity/NewAssetZones/MainRoad" index="1"]
+transform = Transform3D(0.95105654, 0, 0.309017, 0, 1, 0, -0.309017, 0, 0.95105654, 48, 0.3, 26)
+
+[node name="Collision" parent="AssetCity/NewAssetZones/MainRoad/Barrier2" index="1"]
+transform = Transform3D(1.5, 0, 0, 0, 0.76, 0, 0, 0, 0.72, 0, 0.4, 0)
+
+[node name="Cone1" parent="AssetCity/NewAssetZones/MainRoad" index="2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 26, 0.3, 36)
+
+[node name="Cone2" parent="AssetCity/NewAssetZones/MainRoad" index="3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 51, 0.3, 27)
+
+[node name="TrafficLight" parent="AssetCity/NewAssetZones/MainRoad" index="4"]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 10, 0.3, 36)
+
+[node name="RedContainer" parent="AssetCity/NewAssetZones/Service" index="0"]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 31, 0.3, 94)
+
+[node name="Collision" parent="AssetCity/NewAssetZones/Service/RedContainer" index="1"]
+transform = Transform3D(5.5, 0, 0, 0, 2.5, 0, 0, 0, 2.45, 0, 1.3, 0)
+
+[node name="Pallet" parent="AssetCity/NewAssetZones/Service" index="1"]
+transform = Transform3D(0.9563048, 0, -0.2923717, 0, 1, 0, 0.2923717, 0, 0.9563048, 27, 0.3, 93)
+
+[node name="BrokenPallet" parent="AssetCity/NewAssetZones/Service" index="2"]
+transform = Transform3D(0.8571673, 0, 0.5150381, 0, 1, 0, -0.5150381, 0, 0.8571673, 23, 0.3, 94)
+
+[node name="Barrel" parent="AssetCity/NewAssetZones/Service" index="3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 28, 0.3, 90)
+
+[node name="Cinder" parent="AssetCity/NewAssetZones/Service" index="4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21, 0.3, 92)
+
+[node name="Hydrant" parent="AssetCity/NewAssetZones/Frontage" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 64, 0.3, 47)
+
+[node name="TownSign" parent="AssetCity/NewAssetZones/Frontage" index="1"]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 63, 0.3, 18)
+
+[node name="Trash2" parent="AssetCity/NewAssetZones/Frontage" index="2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 65, 0.3, 58)
+
+[node name="PlasticBarrier" parent="AssetCity/NewAssetZones/Frontage" index="3"]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 64, 0.3, 72)
+
+[node name="Collision" parent="AssetCity/NewAssetZones/Frontage/PlasticBarrier" index="1"]
+transform = Transform3D(1.8, 0, 0, 0, 0.8, 0, 0, 0, 0.5, 0, 0.65, 0)
+
+[node name="GreenContainer" parent="AssetCity/GameplayViewDetailClusters/NorthMaintenance" index="0"]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 17, 0.3, 10)
+
+[node name="Collision" parent="AssetCity/GameplayViewDetailClusters/NorthMaintenance/GreenContainer" index="1"]
+transform = Transform3D(5.5, 0, 0, 0, 2.5, 0, 0, 0, 2.45, 0, 1.34, 0)
+
+[node name="BrokenPallet" parent="AssetCity/GameplayViewDetailClusters/NorthMaintenance" index="1"]
+transform = Transform3D(0.95105654, 0, -0.309017, 0, 1, 0, 0.309017, 0, 0.95105654, 13, 0.3, 10)
+
+[node name="Barrel" parent="AssetCity/GameplayViewDetailClusters/NorthMaintenance" index="2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 13, 0.3, 13)
+
+[node name="Cinder" parent="AssetCity/GameplayViewDetailClusters/NorthMaintenance" index="3"]
+transform = Transform3D(0.88294756, 0, 0.46947157, 0, 1, 0, -0.46947157, 0, 0.88294756, 20, 0.3, 13)
+
+[node name="Streetlight" parent="AssetCity/GameplayViewDetailClusters/NorthMaintenance" index="4"]
+transform = Transform3D(0.9659258, 0, 0.25881904, 0, 1, 0, -0.25881904, 0, 0.9659258, 22, 0.3, 9)
+
+[node name="ArmoredSports" parent="AssetCity/GameplayViewDetailClusters/WestRoadsideCrash" index="0"]
+transform = Transform3D(0.2916596, 0.020394823, 0.9563047, -0.06975647, 0.9975641, 0, -0.95397526, -0.066708446, 0.29237178, -5, 0.3, 44)
+
+[node name="Collision" parent="AssetCity/GameplayViewDetailClusters/WestRoadsideCrash/ArmoredSports" index="1"]
+transform = Transform3D(2.8, 0, 0, 0, 1.75, 0, 0, 0, 5.4, 0, 0.92, 0.1)
+
+[node name="LooseWheel" parent="AssetCity/GameplayViewDetailClusters/WestRoadsideCrash" index="1"]
+transform = Transform3D(0.90725005, 0.41666913, 0.05730822, -0.032524552, 0.20535192, -0.9781476, -0.4193322, 0.8855605, 0.1998575, -1.5, 0.3, 46)
+
+[node name="Cone" parent="AssetCity/GameplayViewDetailClusters/WestRoadsideCrash" index="2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 0.3, 46)
+
+[node name="Barrier" parent="AssetCity/GameplayViewDetailClusters/WestRoadsideCrash" index="3"]
+transform = Transform3D(0.9781476, 0, -0.2079117, 0, 1, 0, 0.2079117, 0, 0.9781476, -11, 0.3, 47)
+
+[node name="Collision" parent="AssetCity/GameplayViewDetailClusters/WestRoadsideCrash/Barrier" index="1"]
+transform = Transform3D(1.5, 0, 0, 0, 0.76, 0, 0, 0, 0.72, 0, 0.4, 0)
+
+[node name="AsphaltDamage" parent="AssetCity/GameplayViewDetailClusters/WestRoadsideCrash" index="4"]
+transform = Transform3D(2.2692447, 0, 0.39068177, 0, 0.02, 0, -0.78136355, 0, 1.1346223, -6, 0.24, 46)
+
+[node name="PlasticBarrier" parent="AssetCity/GameplayViewDetailClusters/RiversideCleanupNorth" index="0"]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -37, 0.3, 11)
+
+[node name="Collision" parent="AssetCity/GameplayViewDetailClusters/RiversideCleanupNorth/PlasticBarrier" index="1"]
+transform = Transform3D(1, 0, 0, 0, 0.56, 0, 0, 0, 0.3, 0, 0.3, 0)
+
+[node name="Pipes" parent="AssetCity/GameplayViewDetailClusters/RiversideCleanupNorth" index="1"]
+transform = Transform3D(0.9135454, 0, 0.40673664, 0, 1, 0, -0.40673664, 0, 0.9135454, -36, 0.3, 15)
+
+[node name="TrashA" parent="AssetCity/GameplayViewDetailClusters/RiversideCleanupNorth" index="2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -35, 0.3, 18)
+
+[node name="Wheel" parent="AssetCity/GameplayViewDetailClusters/RiversideCleanupNorth" index="3"]
+transform = Transform3D(0.93997425, -0.34001645, -0.028935717, 0.019369153, 0.13781868, -0.99026805, 0.34069532, 0.93026596, 0.13613184, -37, 0.3, 20)
+
+[node name="Couch" parent="AssetCity/GameplayViewDetailClusters/RiversideRestSouth" index="0"]
+transform = Transform3D(0.30901697, 0, 0.95105654, 0, 1, 0, -0.95105654, 0, 0.30901697, -36, 0.3, 92)
+
+[node name="WheelStack" parent="AssetCity/GameplayViewDetailClusters/RiversideRestSouth" index="1"]
+transform = Transform3D(0.9563048, 0, -0.2923717, 0, 1, 0, 0.2923717, 0, 0.9563048, -35, 0.3, 97)
+
+[node name="TrashB" parent="AssetCity/GameplayViewDetailClusters/RiversideRestSouth" index="2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -37, 0.3, 99)
+
+[node name="TrafficBarrier" parent="AssetCity/GameplayViewDetailClusters/RiversideRestSouth" index="3"]
+transform = Transform3D(0.06975651, 0, 0.9975641, 0, 1, 0, -0.9975641, 0, 0.06975651, -36, 0.3, 88)
+
+[node name="Collision" parent="AssetCity/GameplayViewDetailClusters/RiversideRestSouth/TrafficBarrier" index="1"]
+transform = Transform3D(1.5, 0, 0, 0, 1.05, 0, 0, 0, 0.82, 0, 0.56, 0)
+
+[node name="ArmoredTruck" parent="AssetCity/GameplayViewDetailClusters/SouthLoadingRemains" index="0"]
+transform = Transform3D(0.1045125, -0.0018242724, 0.9945219, 0.017452406, 0.9998477, 0, -0.99437046, 0.0173568, 0.10452842, 4, 0.3, 98)
+
+[node name="Collision" parent="AssetCity/GameplayViewDetailClusters/SouthLoadingRemains/ArmoredTruck" index="1"]
+transform = Transform3D(2.8, 0, 0, 0, 2.8, 0, 0, 0, 5.4, 0, 1.5, 0)
+
+[node name="Pallet" parent="AssetCity/GameplayViewDetailClusters/SouthLoadingRemains" index="1"]
+transform = Transform3D(0.97437006, 0, 0.22495104, 0, 1, 0, -0.22495104, 0, 0.97437006, 9, 0.3, 100)
+
+[node name="Barrel" parent="AssetCity/GameplayViewDetailClusters/SouthLoadingRemains" index="2"]
+transform = Transform3D(0.92718387, 0, -0.37460658, 0, 1, 0, 0.37460658, 0, 0.92718387, 11, 0.3, 101)
+
+[node name="Cone" parent="AssetCity/GameplayViewDetailClusters/SouthLoadingRemains" index="3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0.3, 100)
+
+[node name="Pickup" parent="AssetCity/GameplayViewDetailClusters/FrontageEvacuation" index="0"]
+transform = Transform3D(0.9896648, 0.034559857, -0.1391731, -0.034899496, 0.99939084, 0, 0.13908833, 0.004857071, 0.99026805, 62, 0.3, 91)
+
+[node name="Collision" parent="AssetCity/GameplayViewDetailClusters/FrontageEvacuation/Pickup" index="1"]
+transform = Transform3D(2.2, 0, 0, 0, 1.75, 0, 0, 0, 5, 0, 0.95, 0.1)
+
+[node name="TownSign" parent="AssetCity/GameplayViewDetailClusters/FrontageEvacuation" index="1"]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 65, 0.3, 97)
+
+[node name="Trash" parent="AssetCity/GameplayViewDetailClusters/FrontageEvacuation" index="2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 65, 0.3, 87)
+
+[node name="Hydrant" parent="AssetCity/GameplayViewDetailClusters/FrontageEvacuation" index="3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 65, 0.3, 83)
+
+[node name="BarrierA" parent="AssetCity/GameplayViewDetailClusters/SecondaryConstruction" index="0"]
+transform = Transform3D(0.95105654, 0, 0.309017, 0, 1, 0, -0.309017, 0, 0.95105654, 13, 0.3, 52)
+
+[node name="Collision" parent="AssetCity/GameplayViewDetailClusters/SecondaryConstruction/BarrierA" index="1"]
+transform = Transform3D(1.8, 0, 0, 0, 0.8, 0, 0, 0, 0.5, 0, 0.65, 0)
+
+[node name="BarrierB" parent="AssetCity/GameplayViewDetailClusters/SecondaryConstruction" index="1"]
+transform = Transform3D(0.9702957, 0, -0.2419219, 0, 1, 0, 0.2419219, 0, 0.9702957, 17, 0.3, 54)
+
+[node name="Collision" parent="AssetCity/GameplayViewDetailClusters/SecondaryConstruction/BarrierB" index="1"]
+transform = Transform3D(1, 0, 0, 0, 0.56, 0, 0, 0, 0.3, 0, 0.3, 0)
+
+[node name="ConeA" parent="AssetCity/GameplayViewDetailClusters/SecondaryConstruction" index="2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 11, 0.3, 55)
+
+[node name="ConeB" parent="AssetCity/GameplayViewDetailClusters/SecondaryConstruction" index="3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 19, 0.3, 57)
+
+[node name="Cinder" parent="AssetCity/GameplayViewDetailClusters/SecondaryConstruction" index="4"]
+transform = Transform3D(0.809017, 0, 0.58778524, 0, 1, 0, -0.58778524, 0, 0.809017, 15, 0.3, 58)
+
+[node name="RoadDamage" parent="AssetCity/GameplayViewDetailClusters/SecondaryConstruction" index="5"]
+transform = Transform3D(2.7655275, 0, -0.21900827, 0, 0.02, 0, 0.43801653, 0, 1.3827637, 15, 0.24, 55)
+
+[node name="RiverMonsterSpawn_Drain" parent="AssetCity/UltimateNatureRiverPass/DrainageOutlet" index="0"]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -47, -0.45, 22)
+
+[node name="Drain" parent="AssetCity/UltimateNatureRiverPass/DrainageOutlet" index="1"]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -40.2, 0.32, 22)
+
+[node name="PipeDebris" parent="AssetCity/UltimateNatureRiverPass/DrainageOutlet" index="2"]
+transform = Transform3D(0.8910065, 0, 0.4539905, 0, 1, 0, -0.4539905, 0, 0.8910065, -39.3, 0.25, 24.5)
+
+[node name="BrokenConcrete" parent="AssetCity/UltimateNatureRiverPass/DrainageOutlet" index="3"]
+transform = Transform3D(0.09529468, 0.08159604, 0.99209934, -0.12157249, 0.9901284, -0.06975647, -0.9879975, -0.11396456, 0.104273796, -40.5, 0.2, 18.5)
+
+[node name="MossRockA" parent="AssetCity/UltimateNatureRiverPass/DrainageOutlet" index="4"]
+transform = Transform3D(0.8925831, 0.12079399, 0.5508278, -0.072531484, 0.9088274, -0.15030695, -0.54821026, 0.07643066, 0.9167315, -43.2, -0.45, 20.2)
+
+[node name="MossRockB" parent="AssetCity/UltimateNatureRiverPass/DrainageOutlet" index="5"]
+transform = Transform3D(0.79107666, -0.09538721, -0.34379855, 0.13420594, 0.78822595, 0.064175956, 0.30949405, -0.097985744, 0.8509313, -44.8, -0.52, 23.1)
+
+[node name="MossRockC" parent="AssetCity/UltimateNatureRiverPass/DrainageOutlet" index="6"]
+transform = Transform3D(0.5104156, 0.09697013, 0.59742796, -0.07913934, 0.71333104, -0.071467705, -0.5575059, -0.012479635, 0.5571106, -42.8, -0.35, 25.5)
+
+[node name="GrassA" parent="AssetCity/UltimateNatureRiverPass/DrainageOutlet" index="7"]
+transform = Transform3D(0.6807734, 0, 0.23440906, 0, 0.72, 0, -0.23440906, 0, 0.6807734, -40.3, 0.15, 25.8)
+
+[node name="GrassB" parent="AssetCity/UltimateNatureRiverPass/DrainageOutlet" index="8"]
+transform = Transform3D(0.53887445, 0, -0.36347538, 0, 0.65, 0, 0.36347538, 0, 0.53887445, -39.5, 0.16, 19.5)
+
+[node name="Plant" parent="AssetCity/UltimateNatureRiverPass/DrainageOutlet" index="9"]
+transform = Transform3D(0.55160755, 0, 0.43096304, 0, 0.7, 0, -0.43096304, 0, 0.55160755, -41.2, 0.1, 24)
+
+[node name="Trash" parent="AssetCity/UltimateNatureRiverPass/DrainageOutlet" index="10"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -39.2, 0.22, 21)
+
+[node name="RiverMonsterSpawn_Collapse" parent="AssetCity/UltimateNatureRiverPass/CollapsedEmbankment" index="0"]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -47.5, -0.48, 54)
+
+[node name="ConcreteA" parent="AssetCity/UltimateNatureRiverPass/CollapsedEmbankment" index="1"]
+transform = Transform3D(-0.057497866, 0.11289826, 0.9919415, -0.18938674, 0.9743103, -0.12186935, -0.9802177, -0.1948678, -0.034639325, -40.1, 0.18, 52)
+
+[node name="ConcreteB" parent="AssetCity/UltimateNatureRiverPass/CollapsedEmbankment" index="2"]
+transform = Transform3D(0.36029315, 0.24390045, 0.9003896, -0.13613184, 0.96862835, -0.2079117, -0.92285264, -0.047662534, 0.3821928, -39.4, 0.25, 56)
+
+[node name="RockA" parent="AssetCity/UltimateNatureRiverPass/CollapsedEmbankment" index="3"]
+transform = Transform3D(1.0464654, -0.09267533, -0.33868635, 0.09573992, 0.93513966, -0.06070971, 0.32518333, 0.0229142, 1.1077932, -40.2, 0.1, 48.8)
+
+[node name="RockB" parent="AssetCity/UltimateNatureRiverPass/CollapsedEmbankment" index="4"]
+transform = Transform3D(0.69359773, -0.098262735, 0.600838, 0.0624369, 0.81352144, 0.100347325, -0.5701086, -0.030452192, 0.7419731, -41, 0.02, 53.5)
+
+[node name="RockC" parent="AssetCity/UltimateNatureRiverPass/CollapsedEmbankment" index="5"]
+transform = Transform3D(0.25023106, 0.073506676, 0.7912133, -0.040666707, 0.73617375, -0.07321081, -0.73765206, -0.0156498, 0.27243656, -39.8, 0.12, 58.2)
+
+[node name="MossRockA" parent="AssetCity/UltimateNatureRiverPass/CollapsedEmbankment" index="6"]
+transform = Transform3D(0.8998374, 0.16751805, 0.4027783, -0.12068332, 0.98288673, -0.1391731, -0.41919947, 0.07662454, 0.90465486, -43.4, -0.4, 51)
+
+[node name="MossRockB" parent="AssetCity/UltimateNatureRiverPass/CollapsedEmbankment" index="7"]
+transform = Transform3D(0.7511999, -0.07180371, -0.48229352, 0.1371385, 0.78714395, 0.08192639, 0.4373691, -0.12348559, 0.8026712, -44.6, -0.48, 55)
+
+[node name="MossRockC" parent="AssetCity/UltimateNatureRiverPass/CollapsedEmbankment" index="8"]
+transform = Transform3D(0.41934013, 0.066162996, 0.64563704, -0.05010232, 0.67669123, -0.055805176, -0.5831326, -0.01056191, 0.4690828, -42.9, -0.32, 58)
+
+[node name="PlantA" parent="AssetCity/UltimateNatureRiverPass/CollapsedEmbankment" index="9"]
+transform = Transform3D(0.6490287, 0, -0.2622246, 0, 0.7, 0, 0.2622246, 0, 0.6490287, -39.3, 0.12, 50.5)
+
+[node name="PlantB" parent="AssetCity/UltimateNatureRiverPass/CollapsedEmbankment" index="10"]
+transform = Transform3D(0.50787425, 0, 0.3556174, 0, 0.62, 0, -0.3556174, 0, 0.50787425, -40.2, 0.1, 56.7)
+
+[node name="Grass" parent="AssetCity/UltimateNatureRiverPass/CollapsedEmbankment" index="11"]
+transform = Transform3D(0.653658, 0, 0.1874334, 0, 0.68, 0, -0.1874334, 0, 0.653658, -39, 0.14, 54)
+
+[node name="Bush" parent="AssetCity/UltimateNatureRiverPass/CollapsedEmbankment" index="12"]
+transform = Transform3D(0.49810836, 0, -0.43299899, 0, 0.66, 0, 0.43299899, 0, 0.49810836, -39, 0.12, 59.6)
+
+[node name="RiverMonsterSpawn_Access" parent="AssetCity/UltimateNatureRiverPass/AbandonedRiverside" index="0"]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, -47, -0.45, 86)
+
+[node name="FloodedAccessSlab" parent="AssetCity/UltimateNatureRiverPass/AbandonedRiverside" index="1"]
+transform = Transform3D(-0.03401351, 0.1885329, 0.9814777, -0.085554436, 0.9778918, -0.190809, -0.9957528, -0.09045986, -0.017131703, -40.4, 0.08, 86.5)
+
+[node name="BrokenRailing" parent="AssetCity/UltimateNatureRiverPass/AbandonedRiverside" index="2"]
+transform = Transform3D(0.049099296, 0.039280426, 0.9980212, -0.087102644, 0.9955879, -0.034899496, -0.9949886, -0.08521674, 0.052304093, -39.4, 0.28, 84)
+
+[node name="Collision" parent="AssetCity/UltimateNatureRiverPass/AbandonedRiverside/BrokenRailing" index="1"]
+transform = Transform3D(1.5, 0, 0, 0, 1.05, 0, 0, 0, 0.82, 0, 0.56, 0)
+
+[node name="LogMossA" parent="AssetCity/UltimateNatureRiverPass/AbandonedRiverside" index="3"]
+transform = Transform3D(0.47135293, 0.23085423, 0.9094133, -0.21618272, 1.0170597, -0.14613175, -0.91301227, -0.12163792, 0.504096, -44.2, -0.42, 83)
+
+[node name="LogMossB" parent="AssetCity/UltimateNatureRiverPass/AbandonedRiverside" index="4"]
+transform = Transform3D(0.719304, -0.086737916, -0.38402894, 0.1279638, 0.8079316, 0.057200305, 0.37232643, -0.110105135, 0.7222534, -46.8, -0.58, 87)
+
+[node name="DryLog" parent="AssetCity/UltimateNatureRiverPass/AbandonedRiverside" index="5"]
+transform = Transform3D(0.7180796, 0.13616367, 0.45323405, -0.104233496, 0.84891367, -0.08989448, -0.4616243, 0.020127013, 0.72532606, -42.2, -0.25, 90)
+
+[node name="RockA" parent="AssetCity/UltimateNatureRiverPass/AbandonedRiverside" index="6"]
+transform = Transform3D(0.9189929, 0.05936458, 0.38977933, -0.034814484, 0.9969564, -0.06975647, -0.39273402, 0.05053573, 0.9182626, -40, 0.08, 81)
+
+[node name="RockB" parent="AssetCity/UltimateNatureRiverPass/AbandonedRiverside" index="7"]
+transform = Transform3D(0.5836221, -0.02743297, -0.6465185, 0.08768357, 0.7746639, 0.047102362, 0.59774315, -0.086851396, 0.62433577, -40.5, 0.02, 87.5)
+
+[node name="RockC" parent="AssetCity/UltimateNatureRiverPass/AbandonedRiverside" index="8"]
+transform = Transform3D(0.3761603, 0.08526829, 0.6409858, -0.049949527, 0.67462754, -0.07944163, -0.6118893, -0.0026520854, 0.40053242, -39.6, 0.08, 92)
+
+[node name="MossRock" parent="AssetCity/UltimateNatureRiverPass/AbandonedRiverside" index="9"]
+transform = Transform3D(0.8415114, -0.12045042, -0.3048695, 0.10926504, 0.8305661, -0.08192639, 0.2998659, 0.035377715, 0.88540536, -43.5, -0.38, 89)
+
+[node name="GrassA" parent="AssetCity/UltimateNatureRiverPass/AbandonedRiverside" index="10"]
+transform = Transform3D(0.62370455, 0, 0.31779334, 0, 0.7, 0, -0.31779334, 0, 0.62370455, -39.2, 0.14, 82.5)
+
+[node name="GrassB" parent="AssetCity/UltimateNatureRiverPass/AbandonedRiverside" index="11"]
+transform = Transform3D(0.5199757, 0, -0.33767623, 0, 0.62, 0, 0.33767623, 0, 0.5199757, -39.1, 0.14, 90)
+
+[node name="Bush" parent="AssetCity/UltimateNatureRiverPass/AbandonedRiverside" index="12"]
+transform = Transform3D(0.5053385, 0, 0.45500883, 0, 0.68, 0, -0.45500883, 0, 0.5053385, -39.3, 0.12, 94)
+
+[node name="Trash" parent="AssetCity/UltimateNatureRiverPass/AbandonedRiverside" index="13"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -39, 0.2, 86)
+
+[node name="DriftLogNorth" parent="AssetCity/UltimateNatureRiverPass/FloatingRiverDebris" index="0"]
+transform = Transform3D(0.17993914, 0.03015083, 0.5925478, -0.03242853, 0.61877316, -0.021637687, -0.59242743, -0.02471288, 0.18116008, -54, -0.62, 34)
+
+[node name="DriftTire" parent="AssetCity/UltimateNatureRiverPass/FloatingRiverDebris" index="1"]
+transform = Transform3D(0.70422167, 0.14918561, 0.014684277, 0.00437737, 0.05003357, -0.71824616, -0.1498426, 0.7025955, 0.04803011, -59, -0.58, 63)
+
+[node name="DriftLogSouth" parent="AssetCity/UltimateNatureRiverPass/FloatingRiverDebris" index="2"]
+transform = Transform3D(0.43317455, -0.018444201, -0.33840758, 0.03834269, 0.548326, 0.019194722, 0.33673388, -0.03870931, 0.43314195, -51, -0.63, 78)
+
+[node name="DriftWoodFar" parent="AssetCity/UltimateNatureRiverPass/FloatingRiverDebris" index="3"]
+transform = Transform3D(0.2812558, 0.030157581, 0.38779595, -0.0167288, 0.47905016, -0.02512126, -0.38860694, 0.0012044557, 0.28175026, -66, -0.64, 103)
+
+[node name="DeadWillowNorth" parent="AssetCity/UltimateNatureRiverPass/OppositeBankSilhouettes" index="0"]
+transform = Transform3D(0.80287915, 0, 0.30819646, 0, 0.86, 0, -0.30819646, 0, 0.80287915, -50, -0.6, 31)
+
+[node name="DeadWillowSouth" parent="AssetCity/UltimateNatureRiverPass/OppositeBankSilhouettes" index="1"]
+transform = Transform3D(0.68869907, 0, -0.3661878, 0, 0.78, 0, 0.3661878, 0, 0.68869907, -51, -0.6, 76)
+
+[node name="NorthSecondary01" parent="AssetCity/BackdropContinuity/RoadExtensions" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0.2, -1)
+
+[node name="NorthSecondary02" parent="AssetCity/BackdropContinuity/RoadExtensions" index="1"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0.2, -9)
+
+[node name="NorthSecondary03" parent="AssetCity/BackdropContinuity/RoadExtensions" index="2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0.2, -17)
+
+[node name="NorthSecondary04" parent="AssetCity/BackdropContinuity/RoadExtensions" index="3"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6, 0.2, -25)
+
+[node name="NorthRiverside01" parent="AssetCity/BackdropContinuity/RoadExtensions" index="4"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31, 0.2, -1)
+
+[node name="NorthRiverside02" parent="AssetCity/BackdropContinuity/RoadExtensions" index="5"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31, 0.2, -9)
+
+[node name="NorthRiverside03" parent="AssetCity/BackdropContinuity/RoadExtensions" index="6"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31, 0.2, -17)
+
+[node name="NorthRiverside04" parent="AssetCity/BackdropContinuity/RoadExtensions" index="7"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31, 0.2, -25)
+
+[node name="SouthRiverside01" parent="AssetCity/BackdropContinuity/RoadExtensions" index="8"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31, 0.2, 103)
+
+[node name="SouthRiverside02" parent="AssetCity/BackdropContinuity/RoadExtensions" index="9"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31, 0.2, 111)
+
+[node name="SouthRiverside03" parent="AssetCity/BackdropContinuity/RoadExtensions" index="10"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31, 0.2, 119)
+
+[node name="SouthRiverside04" parent="AssetCity/BackdropContinuity/RoadExtensions" index="11"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -31, 0.2, 127)
+
+[node name="EastMain01" parent="AssetCity/BackdropContinuity/RoadExtensions" index="12"]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 70, 0.2, 31)
+
+[node name="EastMain02" parent="AssetCity/BackdropContinuity/RoadExtensions" index="13"]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 78, 0.2, 31)
+
+[node name="EastMain03" parent="AssetCity/BackdropContinuity/RoadExtensions" index="14"]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 86, 0.2, 31)
+
+[node name="NorthAbandonedSports" parent="AssetCity/BackdropContinuity/NearBackdrop" index="0"]
+transform = Transform3D(0.8817375, 0.04620991, -0.46947157, -0.05233596, 0.9986295, 0, 0.46882817, 0.024570245, 0.88294756, 22, 0.3, -13)
+
+[node name="NorthServiceContainer" parent="AssetCity/BackdropContinuity/NearBackdrop" index="1"]
+transform = Transform3D(0.99026805, 0, 0.1391731, 0, 1, 0, -0.1391731, 0, 0.99026805, 54, 0.3, -18)
+
+[node name="NorthStreetlight" parent="AssetCity/BackdropContinuity/NearBackdrop" index="2"]
+transform = Transform3D(0.98768836, 0, -0.15643448, 0, 1, 0, 0.15643448, 0, 0.98768836, 12, 0.3, -12)
+
+[node name="NorthPole" parent="AssetCity/BackdropContinuity/NearBackdrop" index="3"]
+transform = Transform3D(0.9961947, 0, 0.08715574, 0, 1, 0, -0.08715574, 0, 0.9961947, -19, 0.3, -16)
+
+[node name="NorthBush" parent="AssetCity/BackdropContinuity/NearBackdrop" index="4"]
+transform = Transform3D(0.5969071, 0, 0.4026189, 0, 0.72, 0, -0.4026189, 0, 0.5969071, 31, 0.12, -21)
+
+[node name="SouthAbandonedPickup" parent="AssetCity/BackdropContinuity/NearBackdrop" index="5"]
+transform = Transform3D(0.77667254, -0.027122, 0.6293204, 0.034899496, 0.99939084, 0, -0.628937, 0.021962963, 0.7771459, 16, 0.3, 110)
+
+[node name="SouthTruck" parent="AssetCity/BackdropContinuity/NearBackdrop" index="6"]
+transform = Transform3D(0.32556814, 0, -0.94551855, 0, 1, 0, 0.94551855, 0, 0.32556814, 49, 0.3, 121)
+
+[node name="SouthStreetlight" parent="AssetCity/BackdropContinuity/NearBackdrop" index="7"]
+transform = Transform3D(0.98162717, 0, 0.190809, 0, 1, 0, -0.190809, 0, 0.98162717, -21, 0.3, 113)
+
+[node name="SouthBarrier" parent="AssetCity/BackdropContinuity/NearBackdrop" index="8"]
+transform = Transform3D(0.9612617, 0, -0.27563736, 0, 1, 0, 0.27563736, 0, 0.9612617, 8, 0.3, 105)
+
+[node name="SouthBush" parent="AssetCity/BackdropContinuity/NearBackdrop" index="9"]
+transform = Transform3D(0.60588443, 0, -0.30871353, 0, 0.68, 0, 0.30871353, 0, 0.60588443, 35, 0.12, 112)
+
+[node name="EastRoadSign" parent="AssetCity/BackdropContinuity/NearBackdrop" index="10"]
+transform = Transform3D(-4.371139e-08, 0, -1, 0, 1, 0, 1, 0, -4.371139e-08, 75, 0.3, 37)
+
+[node name="EastStreetlight" parent="AssetCity/BackdropContinuity/NearBackdrop" index="11"]
+transform = Transform3D(-4.371139e-08, 0, 1, 0, 1, 0, -1, 0, -4.371139e-08, 76, 0.3, 48)
+
+[node name="NorthDistantBlock" parent="AssetCity/BackdropContinuity/FarBackdrop" index="0"]
+transform = Transform3D(0.99254614, 0, -0.12186935, 0, 1, 0, 0.12186935, 0, 0.99254614, 43, 0.18, -29)
+
+[node name="SoutheastDistantBlock" parent="AssetCity/BackdropContinuity/FarBackdrop" index="1"]
+transform = Transform3D(0.98162717, 0, 0.190809, 0, 1, 0, -0.190809, 0, 0.98162717, 113, 0.18, 120)
+
+[node name="NorthMossRock" parent="AssetCity/BackdropContinuity/RiverContinuation" index="0"]
+transform = Transform3D(0.79465276, 0, 0.4225244, 0, 0.9, 0, -0.4225244, 0, 0.79465276, -44, -0.35, -16)
+
+[node name="NorthGrass" parent="AssetCity/BackdropContinuity/RiverContinuation" index="1"]
+transform = Transform3D(0.614587, 0, -0.21161929, 0, 0.65, 0, 0.21161929, 0, 0.614587, -40, 0.12, -21)
+
+[node name="SouthRock" parent="AssetCity/BackdropContinuity/RiverContinuation" index="2"]
+transform = Transform3D(0.74910724, 0, -0.33352405, 0, 0.82, 0, 0.33352405, 0, 0.74910724, -43, -0.25, 116)
+
+[node name="SouthLog" parent="AssetCity/BackdropContinuity/RiverContinuation" index="3"]
+transform = Transform3D(0.6100445, 0.13528566, 0.46684417, -0.10796034, 0.7681777, -0.0815322, -0.47390956, -0.00084921595, 0.6195232, -45, -0.45, 126)
+
+[node name="ConcreteLeft" parent="AssetCity/VisualQuarantinePerimeter/NorthwestRoadClosure" index="0"]
+transform = Transform3D(0.99026805, 0, 0.1391731, 0, 1, 0, -0.1391731, 0, 0.99026805, -35, 0.3, -9.4)
+
+[node name="LowCenter" parent="AssetCity/VisualQuarantinePerimeter/NorthwestRoadClosure" index="1"]
+transform = Transform3D(0.9975641, 0, -0.06975647, 0, 1, 0, 0.06975647, 0, 0.9975641, -31.5, 0.3, -9.8)
+
+[node name="PlasticRight" parent="AssetCity/VisualQuarantinePerimeter/NorthwestRoadClosure" index="2"]
+transform = Transform3D(0.97437006, 0, -0.22495104, 0, 1, 0, 0.22495104, 0, 0.97437006, -28.5, 0.3, -9.5)
+
+[node name="BrokenFlank" parent="AssetCity/VisualQuarantinePerimeter/NorthwestRoadClosure" index="3"]
+transform = Transform3D(0.9937681, 0.08694343, 0.06975647, -0.08715574, 0.9961947, 0, -0.06949103, -0.0060796766, 0.9975641, -40, 0.3, -10.1)
+
+[node name="ConcreteA" parent="AssetCity/VisualQuarantinePerimeter/NorthCheckpoint" index="0"]
+transform = Transform3D(0.99254614, 0, -0.12186935, 0, 1, 0, 0.12186935, 0, 0.99254614, 2.8, 0.35, -9.6)
+
+[node name="WoodCenter" parent="AssetCity/VisualQuarantinePerimeter/NorthCheckpoint" index="1"]
+transform = Transform3D(0.9986295, 0, 0.05233596, 0, 1, 0, -0.05233596, 0, 0.9986295, 6, 0.3, -9.1)
+
+[node name="ConcreteB" parent="AssetCity/VisualQuarantinePerimeter/NorthCheckpoint" index="2"]
+transform = Transform3D(0.98162717, 0, 0.190809, 0, 1, 0, -0.190809, 0, 0.98162717, 9.4, 0.35, -9.7)
+
+[node name="DamagedFence" parent="AssetCity/VisualQuarantinePerimeter/NorthCheckpoint" index="3"]
+transform = Transform3D(0.99939084, 0, -0.034899496, 0, 1, 0, 0.034899496, 0, 0.99939084, 14.5, 0.3, -10.3)
+
+[node name="MetalWest" parent="AssetCity/VisualQuarantinePerimeter/NorthEdgeFragments" index="0"]
+transform = Transform3D(0.9986295, 0, -0.05233596, 0, 1, 0, 0.05233596, 0, 0.9986295, -18, 0.3, -10.2)
+
+[node name="ConcreteMid" parent="AssetCity/VisualQuarantinePerimeter/NorthEdgeFragments" index="1"]
+transform = Transform3D(0.9961947, 0, 0.08715574, 0, 1, 0, -0.08715574, 0, 0.9961947, 28, 0.3, -10.4)
+
+[node name="BentBarrier" parent="AssetCity/VisualQuarantinePerimeter/NorthEdgeFragments" index="2"]
+transform = Transform3D(0.9539753, 0.066708446, -0.2923717, -0.06975647, 0.9975641, 0, 0.2916595, 0.020394817, 0.9563048, 41, 0.35, -9.8)
+
+[node name="MetalEast" parent="AssetCity/VisualQuarantinePerimeter/NorthEdgeFragments" index="3"]
+transform = Transform3D(0.9975641, 0, 0.06975647, 0, 1, 0, -0.06975647, 0, 0.9975641, 55, 0.3, -10.2)
+
+[node name="BarrierLeft" parent="AssetCity/VisualQuarantinePerimeter/SouthRiverRoadClosure" index="0"]
+transform = Transform3D(0.9848077, 0, -0.17364818, 0, 1, 0, 0.17364818, 0, 0.9848077, -34.5, 0.3, 102.6)
+
+[node name="BarrierCenter" parent="AssetCity/VisualQuarantinePerimeter/SouthRiverRoadClosure" index="1"]
+transform = Transform3D(0.9961947, 0, 0.08715574, 0, 1, 0, -0.08715574, 0, 0.9961947, -31, 0.3, 103)
+
+[node name="DamagedRight" parent="AssetCity/VisualQuarantinePerimeter/SouthRiverRoadClosure" index="2"]
+transform = Transform3D(0.9945219, 0, -0.104528464, 0, 1, 0, 0.104528464, 0, 0.9945219, -26.5, 0.3, 103.5)
+
+[node name="RiverTransition" parent="AssetCity/VisualQuarantinePerimeter/SouthRiverRoadClosure" index="3"]
+transform = Transform3D(0.96896595, 0.050781358, 0.2419219, -0.05233596, 0.9986295, 0, -0.24159035, -0.012661215, 0.9702957, -39.2, 0.35, 101.8)
+
+[node name="MetalA" parent="AssetCity/VisualQuarantinePerimeter/SouthEdgeFragments" index="0"]
+transform = Transform3D(0.9986295, 0, 0.05233596, 0, 1, 0, -0.05233596, 0, 0.9986295, -12, 0.3, 103.8)
+
+[node name="ConcreteA" parent="AssetCity/VisualQuarantinePerimeter/SouthEdgeFragments" index="1"]
+transform = Transform3D(0.9975641, 0, -0.06975647, 0, 1, 0, 0.06975647, 0, 0.9975641, 8, 0.3, 103.9)
+
+[node name="BrokenCenter" parent="AssetCity/VisualQuarantinePerimeter/SouthEdgeFragments" index="2"]
+transform = Transform3D(0.99254614, 0, 0.12186935, 0, 1, 0, -0.12186935, 0, 0.99254614, 26, 0.3, 103.5)
+
+[node name="LowRoadblock" parent="AssetCity/VisualQuarantinePerimeter/SouthEdgeFragments" index="3"]
+transform = Transform3D(0.9781476, 0, -0.2079117, 0, 1, 0, 0.2079117, 0, 0.9781476, 43, 0.35, 103.1)
+
+[node name="MetalEast" parent="AssetCity/VisualQuarantinePerimeter/SouthEdgeFragments" index="4"]
+transform = Transform3D(0.9975641, 0, 0.06975647, 0, 1, 0, -0.06975647, 0, 0.9975641, 58, 0.3, 103.8)
+
+[node name="BarrierNorth" parent="AssetCity/VisualQuarantinePerimeter/EastRoadCheckpoint" index="0"]
+transform = Transform3D(0.052335974, 0, 0.9986295, 0, 1, 0, -0.9986295, 0, 0.052335974, 68.2, 0.35, 27.5)
+
+[node name="PlasticCenter" parent="AssetCity/VisualQuarantinePerimeter/EastRoadCheckpoint" index="1"]
+transform = Transform3D(-0.06975648, 0, 0.9975641, 0, 1, 0, -0.9975641, 0, -0.06975648, 68, 0.3, 31)
+
+[node name="BarrierSouth" parent="AssetCity/VisualQuarantinePerimeter/EastRoadCheckpoint" index="2"]
+transform = Transform3D(0.1391731, 0, 0.99026805, 0, 1, 0, -0.99026805, 0, 0.1391731, 68.2, 0.3, 34.2)
+
+[node name="NorthRailing" parent="AssetCity/VisualQuarantinePerimeter/RiverEdgeTransitions" index="0"]
+transform = Transform3D(0.034851667, 0.0018264985, 0.99939084, -0.05233596, 0.9986295, 0, -0.9980212, -0.052304078, 0.034899496, -39.5, 0.35, 8)
+
+[node name="MiddleBrokenRailing" parent="AssetCity/VisualQuarantinePerimeter/RiverEdgeTransitions" index="1"]
+transform = Transform3D(-0.022826511, 0.050217066, 0.99847746, -0.10438521, 0.99315894, -0.05233596, -0.994275, -0.105420925, -0.017428434, -39.4, 0.3, 48)
+
+[node name="SouthRailing" parent="AssetCity/VisualQuarantinePerimeter/RiverEdgeTransitions" index="2"]
+transform = Transform3D(0.06971402, -0.002434467, 0.9975641, 0.034899496, 0.99939084, 0, -0.9969564, 0.034814484, 0.06975651, -39.5, 0.35, 97)
+
+[editable path="Player"]
+[editable path="Player/Visual"]

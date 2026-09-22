@@ -1,0 +1,21 @@
+[gd_scene format=3]
+
+[ext_resource type="Script" path="res://scripts/enemy_ranged_projectile.gd" id="1_script"]
+[ext_resource type="PackedScene" path="res://assets/BinbunVFX/magic_projectiles/effects/mprojectile_basic/mprojectile_basic_vfx_03.tscn" id="2_vfx"]
+
+[sub_resource type="SphereShape3D" id="Shape_projectile"]
+radius = 0.24
+
+[node name="BossRadialProjectile" type="Area3D"]
+collision_layer = 4
+collision_mask = 1
+script = ExtResource("1_script")
+speed = 6.2
+lifetime = 10.0
+
+[node name="MProjectileBasicVFX03" parent="." instance=ExtResource("2_vfx")]
+rotation = Vector3(0, 1.5707963, 0)
+scale = Vector3(0.52, 0.52, 0.52)
+
+[node name="Collision" type="CollisionShape3D" parent="."]
+shape = SubResource("Shape_projectile")

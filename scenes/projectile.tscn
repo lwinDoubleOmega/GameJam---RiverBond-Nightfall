@@ -1,0 +1,113 @@
+[gd_scene format=3 uid="uid://dntl2kg757jnn"]
+
+[ext_resource type="Script" uid="uid://bi63axjrp7ah3" path="res://scripts/projectile.gd" id="1_script"]
+[ext_resource type="AudioStream" uid="uid://vbfjg8lqbrbh" path="res://assets/audio/projectile_impact.wav" id="2_impact_audio"]
+
+[sub_resource type="StandardMaterial3D" id="Material_tracer"]
+shading_mode = 0
+albedo_color = Color(1.0104107, 0.9945696, 0, 1)
+refraction_scale = 0.0
+grow_amount = -4.989
+
+[sub_resource type="CylinderMesh" id="Mesh_tracer"]
+material = SubResource("Material_tracer")
+top_radius = 0.022
+bottom_radius = 0.022
+height = 0.52
+radial_segments = 6
+
+[sub_resource type="Gradient" id="Gradient_trail"]
+offsets = PackedFloat32Array(0, 0.45, 1)
+colors = PackedColorArray(1, 0.9, 0.48, 0.8, 1, 0.42, 0.04, 0.38, 0.35, 0.04, 0.005, 0)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture_trail"]
+gradient = SubResource("Gradient_trail")
+
+[sub_resource type="ParticleProcessMaterial" id="Particles_trail"]
+direction = Vector3(0, 0, 1)
+spread = 2.0
+initial_velocity_min = 0.4
+initial_velocity_max = 1.0
+gravity = Vector3(0, 0, 0)
+scale_min = 0.18
+scale_max = 0.42
+color_ramp = SubResource("GradientTexture_trail")
+
+[sub_resource type="StandardMaterial3D" id="Material_particle"]
+transparency = 1
+shading_mode = 0
+albedo_color = Color(1, 0.63, 0.15, 0.72)
+billboard_mode = 1
+
+[sub_resource type="QuadMesh" id="Mesh_particle"]
+material = SubResource("Material_particle")
+size = Vector2(0.045, 0.045)
+
+[sub_resource type="SphereMesh" id="Mesh_impact"]
+material = SubResource("Material_tracer")
+radius = 0.07
+height = 0.14
+radial_segments = 8
+rings = 4
+
+[sub_resource type="ParticleProcessMaterial" id="Particles_impact"]
+emission_shape = 1
+emission_sphere_radius = 0.025
+direction = Vector3(0, 1, 0)
+spread = 180.0
+initial_velocity_min = 1.4
+initial_velocity_max = 3.2
+gravity = Vector3(0, -5, 0)
+scale_min = 0.35
+scale_max = 0.75
+
+[sub_resource type="SphereShape3D" id="Shape_projectile"]
+radius = 0.045
+
+[node name="Projectile" type="Area3D" unique_id=755699471]
+collision_layer = 4
+collision_mask = 3
+script = ExtResource("1_script")
+
+[node name="FlightVisual" type="Node3D" parent="." unique_id=1835532447]
+
+[node name="Tracer" type="MeshInstance3D" parent="FlightVisual" unique_id=1692424286]
+transform = Transform3D(1, 0, 0, 0, -3.6199901e-06, -1, 0, 1, -3.6199901e-06, 0, 0, 0)
+mesh = SubResource("Mesh_tracer")
+
+[node name="Trail" type="GPUParticles3D" parent="FlightVisual" unique_id=990697059]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.22)
+amount = 12
+lifetime = 0.12
+preprocess = 0.08
+randomness = 0.25
+visibility_aabb = AABB(-0.5, -0.5, -2, 1, 1, 4)
+process_material = SubResource("Particles_trail")
+draw_pass_1 = SubResource("Mesh_particle")
+
+[node name="ImpactVisual" type="Node3D" parent="." unique_id=2125039282]
+visible = false
+
+[node name="Flash" type="MeshInstance3D" parent="ImpactVisual" unique_id=1341592806]
+mesh = SubResource("Mesh_impact")
+
+[node name="Sparks" type="GPUParticles3D" parent="ImpactVisual" unique_id=41105081]
+emitting = false
+amount = 10
+lifetime = 0.16
+one_shot = true
+explosiveness = 1.0
+randomness = 0.6
+visibility_aabb = AABB(-1, -1, -1, 2, 2, 2)
+process_material = SubResource("Particles_impact")
+draw_pass_1 = SubResource("Mesh_particle")
+
+[node name="Collision" type="CollisionShape3D" parent="." unique_id=1728612261]
+shape = SubResource("Shape_projectile")
+
+[node name="ImpactAudio" type="AudioStreamPlayer3D" parent="." unique_id=1545549570]
+stream = ExtResource("2_impact_audio")
+volume_db = -3.0
+unit_size = 5.0
+max_distance = 22.0
+bus = &"SFX"

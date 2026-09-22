@@ -1,0 +1,34 @@
+[gd_scene format=3 uid="uid://cg32wvp418f6l"]
+
+[ext_resource type="Script" uid="uid://dqme22ggnsnnj" path="res://video/outro.gd" id="1_script"]
+[ext_resource type="VideoStream" uid="uid://bxmksdexxi6ca" path="res://video/outro.ogv" id="2_wjcd8"]
+
+[node name="Outro" type="Control" unique_id=1016679113]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_script")
+
+[node name="Background" type="ColorRect" parent="." unique_id=855464558]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 1)
+
+[node name="VideoStreamPlayer" type="VideoStreamPlayer" parent="." unique_id=1871512558]
+z_index = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+stream = ExtResource("2_wjcd8")
+expand = true
