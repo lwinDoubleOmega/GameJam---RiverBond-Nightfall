@@ -2,6 +2,10 @@
 
 This is a standalone Godot 4.7.1 project containing the complete River Bound environment/combat integration tested on 2026-08-14. It is a teammate-review build, separate from the earlier combat prototype and the original environment project.
 
+## Play online
+
+[Play River Bound: Nightfall in your browser on itch.io](https://lwindoubleomega.itch.io/riverbound-nightfall).
+
 ## Run
 
 1. Open this folder's `project.godot` in Godot 4.7.1 Standard.
